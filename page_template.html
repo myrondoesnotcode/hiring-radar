@@ -162,30 +162,53 @@ nav.bar .post span{display:grid;place-items:center;width:44px;height:28px;border
 .btn.ghost{background:transparent;color:var(--fg);border:1px solid var(--line);font-weight:600}
 .toast{position:absolute;left:50%;top:40%;transform:translateX(-50%);z-index:9;background:rgba(0,0,0,.8);color:#fff;padding:10px 16px;border-radius:8px;font-size:14px;font-weight:600;pointer-events:none}
 
-/* ---------- DISCOVER (ranking) ---------- */
-#rank{position:absolute;inset:0 0 var(--nav-h);overflow-y:auto;background:var(--bg);color:var(--fg)}
-.wrap{padding-block:calc(env(safe-area-inset-top,0px) + 18px) 30px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:20px}
-.wrap .bug{font-family:var(--pixel);font-size:15px}.wrap .bug b{color:var(--orange);font-weight:400}
-.wrap h2{font-family:var(--display);font-size:28px;margin:0;line-height:1}
-.sum{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px}
-.kpi .n{font-family:var(--display);font-size:26px;font-variant-numeric:tabular-nums}
-.kpi .l{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
-.bars{display:grid;gap:6px}
-.bar{display:grid;grid-template-columns:110px 1fr 40px;gap:10px;align-items:center;font-size:13px}
-.bar .t{height:14px;background:var(--lock);border-radius:3px;overflow:hidden}
-.bar .t i{display:block;height:100%;background:var(--orange)}
-.bar .v{font-family:var(--mono);text-align:right;font-variant-numeric:tabular-nums}
-.wrap h4{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.08em;margin:0;color:var(--muted)}
-.blk{display:grid;gap:10px;min-width:0}
-.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
-table{border-collapse:collapse;width:100%;font-size:13px;min-width:640px}
-th,td{padding:8px 10px;text-align:right;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums;white-space:nowrap}
-th:first-child,td:first-child,th:nth-child(2),td:nth-child(2){text-align:left}
-th{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);cursor:pointer;user-select:none;position:sticky;top:0;background:var(--bg)}
-th[aria-sort]{color:var(--fg)}
-td.hot{color:var(--orange);font-weight:700}
-.foot{font-size:12px;color:var(--muted)}
+/* ---------- DISCOVER (Explore) ---------- */
+#rank{position:absolute;inset:0 0 var(--nav-h);overflow-y:auto;background:var(--feed-bg);color:var(--on-feed)}
+.ex{padding:calc(env(safe-area-inset-top,0px) + 14px) max(16px,env(safe-area-inset-right,0px)) 28px max(16px,env(safe-area-inset-left,0px));display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
+.ex-head{position:sticky;top:0;z-index:2;margin:calc(-14px - env(safe-area-inset-top,0px)) -16px 0;padding:calc(env(safe-area-inset-top,0px) + 12px) 16px 10px;background:linear-gradient(var(--feed-bg) 80%,transparent);display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+.search{display:flex;align-items:center;gap:8px;height:42px;padding:0 14px;border-radius:12px;background:var(--glass)}
+.search svg{width:18px;height:18px;flex:none;opacity:.7}
+.search input{flex:1;min-width:0;height:100%;border:0;background:none;color:#fff;font:inherit;font-size:16px;outline:none}
+.search input::placeholder{color:rgba(255,255,255,.55)}
+.chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:0 16px;min-width:0}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;padding:7px 13px;border-radius:999px;background:var(--glass);font-size:13px;font-weight:600;white-space:nowrap}
+.chip small{font-family:var(--mono);font-weight:400;opacity:.65;margin-left:4px}
+.chip[aria-pressed="true"]{background:#fff;color:#000}
+.pulse{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-radius:14px;background:rgba(255,255,255,.06);padding:12px 4px}
+.pulse div{display:grid;justify-items:center;gap:2px;text-align:center}
+.pulse div+div{border-left:1px solid rgba(255,255,255,.1)}
+.pulse b{font-family:var(--display);font-size:21px;font-weight:400;font-variant-numeric:tabular-nums}
+.pulse b.o{color:var(--orange)}
+.pulse span{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:var(--on-feed-dim);line-height:1.2}
+.ex h4{display:flex;align-items:baseline;justify-content:space-between;margin:0;font-family:var(--display);font-weight:400;font-size:19px}
+.ex h4 small{font-family:var(--mono);font-size:11px;color:var(--on-feed-dim);text-transform:uppercase;letter-spacing:.05em}
+.top5{display:grid;gap:4px}
+.t5{display:grid;grid-template-columns:30px 44px minmax(0,1fr) auto;align-items:center;gap:12px;padding:8px 6px;border-radius:12px;text-align:left;width:100%}
+.t5:active{background:rgba(255,255,255,.06)}
+.t5 .rk{font-family:var(--display);font-size:24px;color:rgba(255,255,255,.35);text-align:center}
+.t5:first-child .rk{color:var(--orange)}
+.lg{width:44px;height:44px;border-radius:50%;overflow:hidden;background:hsl(var(--h) 60% 38%);display:grid;place-items:center;font-family:var(--display);font-size:18px}
+.lg img{width:100%;height:100%;object-fit:cover;background:#fff}
+.t5 b{display:block;font-size:15px}
+.t5 small{display:block;font-size:12px;color:var(--on-feed-dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.t5 .up{font-family:var(--mono);font-weight:600;font-size:14px;color:var(--orange);white-space:nowrap}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.tile{position:relative;aspect-ratio:3/4;border-radius:14px;overflow:hidden;text-align:left;background:linear-gradient(160deg,hsl(var(--h) 65% 32%),hsl(calc(var(--h) + 40) 60% 14%))}
+.tile .cvb{position:absolute;inset:-20px;width:calc(100% + 40px);height:calc(100% + 40px);object-fit:cover;filter:blur(18px) brightness(.55);transform:scale(1.1)}
+.tile .cv{position:absolute;left:8px;right:8px;top:38px;width:calc(100% - 16px);aspect-ratio:1.91/1;object-fit:cover;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.4)}
+.tile::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(0,0,0,.85))}
+.tile .badge{position:absolute;top:8px;left:8px;z-index:1;padding:3px 8px;border-radius:999px;background:var(--orange);color:#11100D;font-family:var(--mono);font-size:11px;font-weight:600}
+.tile .meta{position:absolute;left:10px;right:10px;bottom:10px;z-index:1;display:grid;gap:6px}
+.tile .meta .row{display:flex;align-items:center;gap:8px;min-width:0}
+.tile .lg{width:28px;height:28px;flex:none;font-size:12px;border:1.5px solid #fff}
+.tile b{font-size:14px;line-height:1.15;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tile .stat{font-size:12px;color:var(--on-feed-dim)}
+.tile .stat em{font-style:normal;color:#fff;font-weight:700}
+.tile .match{font-size:11px;color:#fff;background:rgba(255,255,255,.18);border-radius:6px;padding:3px 6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.blk{display:grid;gap:10px;min-width:0}.blk[hidden]{display:none}
+.empty{padding:30px 0;text-align:center;color:var(--on-feed-dim)}
+.foot{font-size:12px;color:rgba(255,255,255,.5);margin:0}
 @media (prefers-reduced-motion: reduce){.coach .hand i,.photo,.frame img,.bgfx,.ticker .run,.disc,.swipe{animation:none}.burst{animation-duration:.01s}}
 </style>
 
@@ -409,30 +432,81 @@ document.getElementById("t-fy").onclick = () => {
 
 // DISCOVER
 const app = document.getElementById("app"), rank = document.getElementById("rank");
-const cols = [["name","Company"],["ats","Board"],["israel_new30","IL new 30d"],["israel","Open in IL"],["jobs","Worldwide"],["ai_israel","AI/ML in IL"],["us_pay_median_mid","US pay mid"]];
-let sortKey = "israel_new30", sortDir = -1;
-function renderRank() {
-  const rows = [...C].sort((a, b) => { const x = a[sortKey], y = b[sortKey]; return (typeof x === "string" ? x.localeCompare(y) : (x ?? -1) - (y ?? -1)) * sortDir; });
-  const maxCity = Math.max(...T.cities.map(x => x[1])), maxTeam = Math.max(...T.teams.map(x => x[1]));
-  rank.innerHTML = `<div class="wrap">
-    <span class="bug">DEPLOY<b>.</b></span>
-    <h2>Israeli tech hiring, ${esc(T.date)}</h2>
-    <div class="sum">
-      <div class="kpi"><div class="n">${fmt(T.companies)}</div><div class="l">Companies</div></div>
-      <div class="kpi"><div class="n">${fmt(T.israel)}</div><div class="l">Open in Israel</div></div>
-      <div class="kpi"><div class="n">${fmt(T.israel_new30)}</div><div class="l">IL, last 30 days</div></div>
-      <div class="kpi"><div class="n">${T.israel ? Math.round(T.ai_israel / T.israel * 100) : 0}%</div><div class="l">IL roles AI/ML</div></div>
-    </div>
-    <div class="blk"><h4>Where the Israel roles are</h4><div class="bars">${T.cities.map(([k, v]) => `<div class="bar"><span>${esc(k)}</span><span class="t"><i style="width:${v / maxCity * 100}%"></i></span><span class="v">${v}</span></div>`).join("")}</div></div>
-    <div class="blk"><h4>Teams hiring most in Israel</h4><div class="bars">${T.teams.slice(0, 8).map(([k, v]) => `<div class="bar"><span>${esc(k)}</span><span class="t"><i style="width:${v / maxTeam * 100}%"></i></span><span class="v">${v}</span></div>`).join("")}</div></div>
-    <div class="blk"><h4>All companies · tap a column to sort</h4>
-    <div class="tbl"><table><thead><tr>${cols.map(([k, l]) => `<th tabindex="0" data-k="${k}" ${k === sortKey ? `aria-sort="${sortDir < 0 ? "descending" : "ascending"}"` : ""}>${l}${k === sortKey ? (sortDir < 0 ? " ↓" : " ↑") : ""}</th>`).join("")}</tr></thead>
-    <tbody>${rows.map(c => `<tr><td>${esc(c.name)}</td><td>${esc(c.ats)}</td><td class="${c.israel_new30 >= 10 ? "hot" : ""}">${c.israel_new30}</td><td>${c.israel}</td><td>${c.jobs}</td><td>${c.ai_israel}</td><td>${c.us_pay_median_mid ? "$" + Math.round(c.us_pay_median_mid / 1000) + "K" : "–"}</td></tr>`).join("")}</tbody></table></div></div>
-    <p class="foot">Read directly from each company's public job board (Greenhouse, Lever, Ashby, Workable, SmartRecruiters). "Last 30 days" uses the first-published date, which resets when a role is reposted. US pay is the midpoint of posted US base-salary ranges; Israeli postings don't list pay. Companies on Comeet or Workday aren't included yet. Like counts in the feed are illustrative. Logos and images come from each company's own website. ${T.has_previous ? "Compared with " + esc(T.previous_date) + "." : "First snapshot; daily changes start with the next one."}</p>
-  </div>`;
-  rank.querySelectorAll("th").forEach(th => { const go = () => { const k = th.dataset.k; sortDir = k === sortKey ? -sortDir : (k === "name" || k === "ats" ? 1 : -1); sortKey = k; renderRank(); };
-    th.onclick = go; th.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } }; });
+let exQ = "", exChip = "all";
+const SEARCH_ICO = '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>';
+const logoOf = c => IMG[c.name]?.logo ? `<img src="${IMG[c.name].logo}" alt="">` : esc(c.name[0]);
+const CHIPS = [["all", "All", C.length], ["new", "🔥 Hiring fast", C.filter(c => c.israel_new30 >= 5).length], ["ai", "AI/ML", C.filter(c => c.ai_israel > 0).length]]
+  .concat(T.teams.filter(([k]) => k !== "Other").slice(0, 5).map(([k, v]) => ["team:" + k, k, v]))
+  .concat(T.cities.filter(([k]) => k !== "Israel (other)").slice(0, 4).map(([k, v]) => ["city:" + k, "📍 " + k, v]));
+function exFilter() {
+  const q = exQ.trim().toLowerCase();
+  let rows = C.filter(c => {
+    if (exChip === "new" && c.israel_new30 < 5) return false;
+    if (exChip === "ai" && !c.ai_israel) return false;
+    if (exChip.startsWith("team:") && !c.teams_israel.some(([k]) => k === exChip.slice(5))) return false;
+    if (exChip.startsWith("city:") && !c.cities.some(([k]) => k === exChip.slice(5))) return false;
+    return true;
+  }).map(c => {
+    let match = null;
+    if (q && !c.name.toLowerCase().includes(q)) { match = c.latest_israel.find(j => j.title.toLowerCase().includes(q)); if (!match) return null; }
+    return {c, match};
+  }).filter(Boolean);
+  const key = exChip === "ai" ? "ai_israel" : exChip.startsWith("team:") || exChip.startsWith("city:") ? null : "israel_new30";
+  const cnt = c => exChip.startsWith("team:") ? (c.teams_israel.find(([k]) => k === exChip.slice(5)) || [0, 0])[1] : exChip.startsWith("city:") ? (c.cities.find(([k]) => k === exChip.slice(5)) || [0, 0])[1] : c[key];
+  rows.sort((a, b) => cnt(b.c) - cnt(a.c) || b.c.israel - a.c.israel);
+  return {rows, cnt};
 }
+function tileHTML({c, match}, cnt) {
+  const lbl = exChip === "ai" ? "AI/ML roles" : exChip.startsWith("team:") ? exChip.slice(5) + " roles" : exChip.startsWith("city:") ? "in " + exChip.slice(5) : "jobs in Israel";
+  const n = exChip === "all" || exChip === "new" ? c.israel : cnt(c);
+  return `<button class="tile" data-jump="${esc(c.name)}" style="--h:${hue(c.name)}">
+    ${IMG[c.name]?.cover ? `<img class="cvb" src="${IMG[c.name].cover}" alt=""><img class="cv" src="${IMG[c.name].cover}" alt="" loading="lazy">` : ""}
+    ${c.israel_new30 ? `<span class="badge">+${c.israel_new30} new</span>` : ""}
+    <span class="meta">
+      ${match ? `<span class="match">${esc(match.title)}</span>` : ""}
+      <span class="row"><span class="lg">${logoOf(c)}</span><b>${esc(c.name)}</b></span>
+      <span class="stat"><em>${fmt(n)}</em> ${lbl}</span>
+    </span></button>`;
+}
+function renderGrid() {
+  const {rows, cnt} = exFilter();
+  const g = rank.querySelector("#ex-grid");
+  g.innerHTML = rows.length ? rows.map(r => tileHTML(r, cnt)).join("") : `<p class="empty" style="grid-column:1/-1">Nothing matches “${esc(exQ)}” yet.</p>`;
+  rank.querySelector("#ex-count").textContent = `${rows.length} companies`;
+  rank.querySelector(".top5-blk").hidden = !!exQ || exChip !== "all";
+}
+function renderRank() {
+  const top = [...C].sort((a, b) => b.israel_new30 - a.israel_new30).slice(0, 5);
+  rank.innerHTML = `<div class="ex">
+    <div class="ex-head">
+      <label class="search">${SEARCH_ICO}<input id="ex-q" type="search" placeholder="Search companies or roles" aria-label="Search companies or roles" autocomplete="off"></label>
+      <div class="chips" role="group" aria-label="Filter">${CHIPS.map(([k, l, n]) => `<button class="chip" data-chip="${esc(k)}" aria-pressed="${k === exChip}">${esc(l)}<small>${n}</small></button>`).join("")}</div>
+    </div>
+    <div class="pulse">
+      <div><b class="o">${fmt(T.israel_new30)}</b><span>New this month</span></div>
+      <div><b>${fmt(T.israel)}</b><span>Open in Israel</span></div>
+      <div><b>${fmt(T.companies)}</b><span>Companies</span></div>
+      <div><b>${T.israel ? Math.round(T.ai_israel / T.israel * 100) : 0}%</b><span>AI / ML</span></div>
+    </div>
+    <div class="blk top5-blk"><h4>Hiring fastest <small>Last 30 days</small></h4>
+      <div class="top5">${top.map((c, i) => `<button class="t5" data-jump="${esc(c.name)}"><span class="rk">${i + 1}</span><span class="lg" style="--h:${hue(c.name)}">${logoOf(c)}</span><span><b>${esc(c.name)}</b><small>${esc((c.new_teams[0] || ["", 0])[0] ? "Mostly " + c.new_teams[0][0] : fmt(c.israel) + " open in Israel")} · ${fmt(c.israel)} open</small></span><span class="up">+${c.israel_new30}</span></button>`).join("")}</div>
+    </div>
+    <div class="blk"><h4>Explore <small id="ex-count"></small></h4><div class="grid" id="ex-grid"></div></div>
+    <p class="foot">Read directly from each company's public job board. "New this month" uses each role's first-published date. Companies on Comeet or Workday aren't included yet. Logos and images come from each company's own website. Updated ${esc(T.date)}.</p>
+  </div>`;
+  renderGrid();
+  const q = rank.querySelector("#ex-q");
+  q.oninput = () => { exQ = q.value; renderGrid(); };
+  rank.querySelectorAll(".chip").forEach(b => b.onclick = () => {
+    exChip = b.dataset.chip; rank.querySelectorAll(".chip").forEach(x => x.setAttribute("aria-pressed", x === b)); renderGrid();
+  });
+}
+rank.addEventListener("click", e => {
+  const j = e.target.closest("[data-jump]"); if (!j) return;
+  view("feed");
+  const t = feed.querySelector(`.slide[data-name="${CSS.escape(j.dataset.jump)}"]`);
+  if (t) requestAnimationFrame(() => t.scrollIntoView());
+});
 renderRank();
 function view(v) {
   const d = v === "discover";
