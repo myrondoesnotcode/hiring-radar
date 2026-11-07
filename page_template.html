@@ -149,8 +149,8 @@ nav.bar .post span{display:grid;place-items:center;width:44px;height:28px;border
 .sheet li b{display:block;font-size:14px}
 .sheet li small{color:var(--muted);font-size:12px}
 .sheet li.locked{filter:blur(3px);pointer-events:none;user-select:none}
-.sheet li:has(a.ja){display:block;padding:0}.sheet a.ja{display:grid;grid-template-columns:36px 1fr auto;gap:10px;align-items:center;padding:10px max(16px,env(safe-area-inset-right,0px)) 10px max(16px,env(safe-area-inset-left,0px));color:inherit;text-decoration:none}
-.sheet a.ja:active{background:var(--lock)}.sheet a.ja .go{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--orange);white-space:nowrap}
+.sheet li .acts{display:flex;gap:14px;align-items:center;margin-top:6px}.sheet a.ja,.sheet .cv{font-family:var(--mono);font-size:12px;font-weight:600;white-space:nowrap;text-decoration:none;padding:4px 0;background:none}.sheet a.ja{color:var(--orange)}.sheet .cv{color:var(--fg);border-bottom:1px dashed var(--muted)}.sheet .cvband{margin:10px 16px 2px;padding:12px 14px;border-radius:14px;background:rgba(255,90,24,.14);border:1px solid rgba(255,90,24,.45);color:var(--fg);text-align:left;font-size:13px;line-height:1.35}.sheet .cvband b{display:block;font-size:15px;color:var(--orange)}
+.su textarea{width:100%;min-height:76px;padding:12px 14px;border-radius:12px;border:1.5px solid #11100D;background:#fff;font:inherit;font-size:16px;color:#11100D;resize:vertical}.su input[type=url]{width:100%;padding:13px 14px;border-radius:12px;border:1.5px solid #11100D;background:#fff;font:inherit;font-size:16px;color:#11100D}.su .role{font-family:var(--mono);font-size:12px;background:#E9E2CF;border-radius:10px;padding:8px 10px}
 .sheet .unlock{margin:8px 16px 14px;padding:12px;border-radius:999px;background:var(--orange);color:#11100D;font-weight:700;text-align:center}
 
 /* gate */
@@ -362,6 +362,7 @@ function gate(reason, who) {
     alerts: ["Get hiring alerts", "Know the day a company you follow opens new roles."],
     me: ["Your Deploy profile", "Save companies, follow teams and get alerts."],
     follow: ["Follow companies", "Get alerts when they open new roles. It's free."],
+    connect: who ? [`Get an intro to ${who.name}`, `Deploy can connect you with people at ${who.name}. Free for Deploy Log subscribers.`] : ["Connect via Deploy", "Deploy can connect you with people at the companies you like. It's free."],
   }[reason] || ["Join Deploy", ""];
   layer.innerHTML = `<div class="gate" role="dialog" aria-modal="true" aria-labelledby="g-h"><div class="box">
     <div class="lockicon">[#]</div><h3 id="g-h">${copy[0]}</h3><p id="g-p">${copy[1]}</p>
@@ -374,16 +375,50 @@ function gate(reason, who) {
 function sheet(c) {
   const free = MEMBER ? Infinity : 3, more = Math.min(c.locked_roles || 0, 5);
   track("roles", {c: c.name});
-  const row = (j, k) => { const inner = `<span class="ic">${esc((j.dept || "R")[0])}</span><span><b>${esc(j.title)}</b><small>${esc(j.dept || "")}${j.dept ? " · " : ""}${esc(j.location)} · ${ago(j.published)}</small></span>`;
-    return k >= free ? `<li class="locked">${inner}</li>` : j.url ? `<li><a class="ja" href="${esc(j.url)}" target="_blank" rel="noopener" data-apply="${esc(c.name)}">${inner}<span class="go">Apply ↗</span></a></li>` : `<li>${inner}</li>`; };
+  const CV = !!window.RADAR_CONNECT;
+  const row = (j, k) => { const meta = `<b>${esc(j.title)}</b><small>${esc(j.dept || "")}${j.dept ? " · " : ""}${esc(j.location)} · ${ago(j.published)}</small>`;
+    if (k >= free) return `<li class="locked"><span class="ic">${esc((j.dept || "R")[0])}</span><span>${meta}</span></li>`;
+    const acts = (j.url ? `<a class="ja" href="${esc(j.url)}" target="_blank" rel="noopener" data-apply="${k}">Apply ↗</a>` : "") + (CV ? `<button class="cv" data-cv="${k}">Connect via Deploy</button>` : "");
+    return `<li><span class="ic">${esc((j.dept || "R")[0])}</span><span>${meta}${acts ? `<span class="acts">${acts}</span>` : ""}</span></li>`; };
   layer.innerHTML = `<div class="sheet-bg" id="s-bg"></div><div class="sheet" role="dialog" aria-modal="true" aria-label="Open roles">
     <header>${fmt(c.israel)} open roles in Israel<button id="s-x" aria-label="Close">×</button></header>
+    ${CV ? `<button class="cvband" id="s-cv"><b>Get an intro to ${esc(c.name)} ›</b>Connect via Deploy: tell us what you want, and we intro you if we know someone there.</button>` : ""}
     <ul>${c.latest_israel.map(row).join("")}${Array.from({length: more}, (_, k) => `<li class="locked"><span class="ic">·</span><span><b>${["Senior Software Engineer", "Product Manager", "Data Scientist", "DevOps Engineer", "Account Executive"][k]}</b><small>Members only · Israel</small></span></li>`).join("")}</ul>
     ${c.israel > free ? `<button class="unlock" id="s-u">Sign up to see all ${fmt(c.israel)} roles</button>` : ""}</div>`;
   const close = () => layer.innerHTML = "";
   document.getElementById("s-bg").onclick = close; document.getElementById("s-x").onclick = close;
   const u = document.getElementById("s-u"); if (u) u.onclick = () => gate("roles");
-  layer.querySelectorAll("[data-apply]").forEach(a => a.onclick = () => track("apply", {c: c.name, t: a.querySelector("b").textContent.slice(0, 80)}));
+  layer.querySelectorAll("[data-apply]").forEach(a => a.onclick = () => track("apply", {c: c.name, t: (c.latest_israel[+a.dataset.apply] || {}).title?.slice(0, 80)}));
+  layer.querySelectorAll("[data-cv]").forEach(b => b.onclick = () => connect(c, c.latest_israel[+b.dataset.cv]));
+  const band = document.getElementById("s-cv"); if (band) band.onclick = () => connect(c, null);
+}
+/* "Connect via Deploy": members send a short request that lands with Deploy (radar-connect function); others get the sign-up gate */
+function connect(c, j) {
+  track("connect", {c: c.name, t: j ? j.title.slice(0, 80) : ""});
+  if (!MEMBER) return gate("connect", c);
+  layer.innerHTML = `<div class="su" role="dialog" aria-modal="true" aria-labelledby="cv-h"><div class="box"><button class="x" aria-label="Close">×</button>
+    <h3 id="cv-h">Connect via Deploy</h3>
+    <p>Tell us what you're after at <b>${esc(c.name)}</b>. Deploy reads every request and, if we know the right person, introduces you. If we can help, we'll email you.</p>
+    ${j ? `<div class="role">${esc(j.title)} · ${esc(j.location)}</div>` : ""}
+    <form id="cv-f" novalidate style="display:grid;gap:10px">
+      <textarea id="cv-n" maxlength="600" placeholder="${j ? "Why this role, in a line or two" : "What role or team are you interested in?"}" aria-label="Your note"></textarea>
+      <input type="url" id="cv-l" placeholder="LinkedIn URL (optional)" autocomplete="url" aria-label="LinkedIn URL">
+      <label class="ck"><input type="checkbox" id="cv-ok"><span>Deploy can share my name, email, LinkedIn and this note with people at ${esc(c.name)}.</span></label>
+      <div id="cv-e"></div><button class="go" id="cv-go">Send to Deploy</button></form></div></div>`;
+  const box = layer.querySelector(".su"), close = () => layer.innerHTML = "";
+  box.addEventListener("click", e => { if (e.target === box || e.target.closest(".x")) close(); });
+  document.getElementById("cv-n").focus();
+  document.getElementById("cv-f").onsubmit = e => { e.preventDefault();
+    const note = document.getElementById("cv-n").value.trim(), li = document.getElementById("cv-l").value.trim(), err = m => document.getElementById("cv-e").innerHTML = `<div class="err" role="alert">${esc(m)}</div>`;
+    if (note.length < 5) return err("Add a short note so we know how to help.");
+    if (!document.getElementById("cv-ok").checked) return err("Tick the box so we can share your request.");
+    const go = document.getElementById("cv-go"); go.disabled = true; go.textContent = "Sending…";
+    window.RADAR_CONNECT({company: c.name, role_title: j ? j.title : "", role_url: j ? j.url || "" : "", note, linkedin: li}).then(r => {
+      if (!r || r.error) { go.disabled = false; go.textContent = "Send to Deploy"; return err((r && r.error) || "That didn't go through. Try again in a minute."); }
+      track("connect_sent", {c: c.name});
+      box.querySelector(".box").innerHTML = `<button class="x" aria-label="Close">×</button><h3>Sent to Deploy</h3><p>We've got your request for ${esc(c.name)}. If we can help, we'll email you at <b>${esc(r.email || "your email")}</b>.</p><button class="go" id="cv-done">Back to the Radar</button>`;
+      document.getElementById("cv-done").onclick = close;
+    }); };
 }
 function burst(x, y, el) {
   const b = document.createElement("div"); b.className = "burst"; b.style.left = x + "px"; b.style.top = y + "px";

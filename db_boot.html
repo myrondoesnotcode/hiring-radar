@@ -20,6 +20,14 @@
   function track(ev, props) { sb.rpc("radar_track", { p_sid: sid, p_event: ev, p_props: props || {} }).then(function () {}, function () {}); }
   window.RADAR_TRACK = track;
   window.RADAR_FOLLOW = function (name, on) { if (session) sb.rpc("radar_follow", { p_company: name, p_on: on }).then(function () {}, function () {}); };
+  /* "Connect via Deploy": signed-in members only; the radar-connect function saves the request and emails Deploy */
+  window.RADAR_CONNECT = function (req) {
+    if (!session) return Promise.resolve({ error: "Sign in first." });
+    return sb.functions.invoke("radar-connect", { body: req }).then(function (r) {
+      if (r.error) return (r.error.context && r.error.context.json ? r.error.context.json() : Promise.resolve({})).then(function (b) { return { error: (b && b.error) || "That didn't go through. Try again in a minute." }; }, function () { return { error: "That didn't go through. Try again in a minute." }; });
+      return r.data || { ok: true };
+    }, function () { return { error: "That didn't go through. Try again in a minute." }; });
+  };
   var valid = function (e) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e); };
 
   /* same pending-consent record the Deploy DB uses, so a magic link opened at /db/ finishes the sign-up too */
@@ -68,7 +76,7 @@
       sub: '<h3 id="su-h">One step left</h3><p>You\'re signed in as <b>' + esc(session && session.user.email) + '</b>. The full Radar is free for Deploy Log subscribers.</p>' +
         '<label class="ck"><input type="checkbox" id="su-c"><span>' + CONSENT + '</span></label>' + E + '<button class="go" id="su-go">Subscribe and open</button>',
       wait: '<h3 id="su-h">Opening the full Radar…</h3><p>One moment.</p>',
-      acct: '<h3 id="su-h">You\'re in</h3><p>Signed in as <b>' + esc(session && session.user.email) + '</b>. Hiring alerts are coming soon.</p>' +
+      acct: '<h3 id="su-h">You\'re in</h3><p>Signed in as <b>' + esc(session && session.user.email) + '</b>. Follow companies to get a weekly email when they open new roles.</p>' +
         '<a class="go" href="/db/" style="text-align:center;text-decoration:none">Open the Deploy DB</a><button class="lnk" id="su-out">Sign out</button>'
     }[step];
     host.innerHTML = '<div class="box">' + X + html + "</div>";
