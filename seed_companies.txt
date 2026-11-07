@@ -1,0 +1,154 @@
+# Israeli tech companies to track (founded in Israel or with large Israeli R&D). One per line: Name | optional slug hints, comma-separated
+Wiz | wizinc
+Cato Networks | catonetworks
+Taboola
+Outbrain | teads
+Payoneer
+JFrog
+Similarweb
+Riskified
+monday.com | mondaycom, monday
+Fiverr
+Lemonade
+Wix | wix
+Check Point | checkpoint
+CyberArk
+SentinelOne | sentinellabs
+Snyk
+Armis | armissecurity
+Axonius
+Island | islandio, island
+Cyera
+Orca Security | orca, orcasecurity
+Transmit Security | transmitsecurity
+Pentera
+Aqua Security | aquasec
+Checkmarx
+Imperva
+Claroty
+Forter
+Melio | meliopayments
+Rapyd
+Tipalti
+Papaya Global | papayaglobal
+HiBob | hibob, bob
+Gong | gongio
+AppsFlyer
+Lightricks
+Playtika
+Moon Active | moonactive
+Plarium
+Yotpo
+Navan | tripactions
+Hippo | hippoinsurance
+Next Insurance | nextinsurance
+Pagaya
+eToro
+Lusha
+Bizzabo
+WalkMe
+Fireblocks
+StarkWare | starkware, starkwareindustries
+AI21 Labs | ai21, ai21labs
+Decart | decart, decartai
+Hailo | hailo, hailotech
+NeuReality
+Mobileye
+Innoviz | innovizt, innoviz
+Via | via, ridewithvia
+Optibus
+Guesty
+HoneyBook
+Sisense
+Kaltura
+Artlist
+Atera
+Explorium
+Natural Intelligence | naturalintelligence, naturalint
+VAST Data | vastdata
+Viz.ai | vizai
+Windward
+Seeking Alpha | seekingalpha
+Radware
+Tabnine
+Qodo | qodo, codiumai
+Lightrun
+Coralogix
+Komodor
+Firefly | fireflyai, gofirefly
+Zesty | zestytech, zesty
+env0 | env0
+Port | getport, port
+Torq | torq, torqio
+Silverfort
+Salt Security | saltsecurity
+Oligo | oligosecurity, oligo
+Upwind | upwind, upwindsecurity
+Zenity
+Apiiro
+OX Security | oxsecurity
+Legit Security | legitsecurity
+Cycode
+Hunters | huntersai, hunters
+Vulcan Cyber | vulcancyber
+Sygnia
+Cellebrite
+NICE | nice, niceltd
+Amdocs
+Verbit | verbit, verbitai
+Hour One | hourone
+D-ID | did, d-id
+Tavily
+Wonderful | wonderful, wonderfulai
+Lasso Security | lassosecurity, lasso
+Permit.io | permitio, permit
+IRONSCALES | ironscales
+Fordefi
+Trustmi
+Quris-AI | quris
+QuantHealth
+Package.ai | packageai
+Anzu.io | anzu
+DoorLoop
+Cujo AI | cujoai, cujo
+Novee Security | novee
+Onyx Security | onyxsecurity
+Dragonfly | dragonfly
+AllCloud | allcloud
+Nebius
+Pointer | pointer
+Simply | simply, joytunes
+Social Discovery Group | socialdiscoverygroup
+Yad2
+Mixtiles
+Rise | riseup
+Melio
+Fundbox
+Bringg
+Gloat
+Jit | jit, jitio
+Aim Security | aimsecurity
+Noma Security | noma, nomasecurity
+Prompt Security | promptsecurity
+Run:ai | runai
+Pinecone | pinecone
+Aidoc
+Tailor Brands | tailorbrands
+Payem
+Unit | unit
+Spot by NetApp | spot
+Spectralops
+Mend | mend, whitesource
+Varonis
+Kape | kape
+Glassbox
+Duda
+Elementor
+Monday | monday
+Similarweb
+Zencity
+Overwolf
+Tabit
+Anima | animaapp
+Base44 | base44
+Lovable | lovable

@@ -1,0 +1,6 @@
+site/
+_site/
+__pycache__/
+*.src
+.DS_Store
+discover.log

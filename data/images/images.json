@@ -1,0 +1,239 @@
+{
+ "Nebius": {
+  "name": "Nebius",
+  "domain": "nebius.com",
+  "cover": "nebius-cover.jpg",
+  "logo": "nebius-logo.png"
+ },
+ "Cato Networks": {
+  "name": "Cato Networks",
+  "domain": "catonetworks.com",
+  "cover": null,
+  "logo": "catonetworks-logo.png"
+ },
+ "Taboola": {
+  "name": "Taboola",
+  "domain": "taboola.com",
+  "cover": "taboola-cover.jpg",
+  "logo": "taboola-logo.png"
+ },
+ "AppsFlyer": {
+  "name": "AppsFlyer",
+  "domain": "appsflyer.com",
+  "cover": "appsflyer-cover.jpg",
+  "logo": "appsflyer-logo.png"
+ },
+ "Wiz": {
+  "name": "Wiz",
+  "domain": "wiz.io",
+  "cover": "wiz-cover.jpg",
+  "logo": "wiz-logo.png"
+ },
+ "Similarweb": {
+  "name": "Similarweb",
+  "domain": "similarweb.com",
+  "cover": "similarweb-cover.jpg",
+  "logo": "similarweb-logo.png"
+ },
+ "Moon Active": {
+  "name": "Moon Active",
+  "domain": "moonactive.com",
+  "cover": null,
+  "logo": "moonactive-logo.png",
+  "cover_error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+ },
+ "JFrog": {
+  "name": "JFrog",
+  "domain": "jfrog.com",
+  "cover": "jfrog-cover.jpg",
+  "logo": "jfrog-logo.png"
+ },
+ "Lemonade": {
+  "name": "Lemonade",
+  "domain": "lemonade.com",
+  "cover": "lemonade-cover.jpg",
+  "logo": "lemonade-logo.png"
+ },
+ "Payoneer": {
+  "name": "Payoneer",
+  "domain": "payoneer.com",
+  "cover": "payoneer-cover.jpg",
+  "logo": "payoneer-logo.png"
+ },
+ "SentinelOne": {
+  "name": "SentinelOne",
+  "domain": "sentinelone.com",
+  "cover": null,
+  "logo": "sentinelone-logo.png",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "Wonderful": {
+  "name": "Wonderful",
+  "domain": "wonderful.ai",
+  "cover": "wonderful-cover.jpg",
+  "logo": "wonderful-logo.png"
+ },
+ "Navan": {
+  "name": "Navan",
+  "domain": "navan.com",
+  "cover": "navan-cover.jpg",
+  "logo": "navan-logo.png"
+ },
+ "Riskified": {
+  "name": "Riskified",
+  "domain": "riskified.com",
+  "cover": "riskified-cover.jpg",
+  "logo": "riskified-logo.png"
+ },
+ "NICE": {
+  "name": "NICE",
+  "domain": "nice.com",
+  "cover": "nice-cover.jpg",
+  "logo": "nice-logo.png"
+ },
+ "Via": {
+  "name": "Via",
+  "domain": "ridewithvia.com",
+  "cover": "via-cover.jpg",
+  "logo": "via-logo.png"
+ },
+ "Gong": {
+  "name": "Gong",
+  "domain": "gong.io",
+  "cover": "gong-cover.jpg",
+  "logo": "gong-logo.png"
+ },
+ "Island": {
+  "name": "Island",
+  "domain": "island.io",
+  "cover": "island-cover.jpg",
+  "logo": "island-logo.png"
+ },
+ "Forter": {
+  "name": "Forter",
+  "domain": "forter.com",
+  "cover": "forter-cover.jpg",
+  "logo": "forter-logo.png"
+ },
+ "Tavily": {
+  "name": "Tavily",
+  "domain": "tavily.com",
+  "cover": "tavily-cover.jpg",
+  "logo": "tavily-logo.png"
+ },
+ "Mixtiles": {
+  "name": "Mixtiles",
+  "domain": "mixtiles.com",
+  "cover": "mixtiles-cover.jpg",
+  "logo": "mixtiles-logo.png"
+ },
+ "WalkMe": {
+  "name": "WalkMe",
+  "domain": "walkme.com",
+  "cover": "walkme-cover.jpg",
+  "logo": "walkme-logo.png"
+ },
+ "Axonius": {
+  "name": "Axonius",
+  "domain": "axonius.com",
+  "cover": null,
+  "logo": "axonius-logo.png",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "Simply": {
+  "name": "Simply",
+  "domain": "hellosimply.com",
+  "cover": "simply-cover.jpg",
+  "logo": "simply-logo.png"
+ },
+ "Transmit Security": {
+  "name": "Transmit Security",
+  "domain": "transmitsecurity.com",
+  "cover": "transmitsecurity-cover.jpg",
+  "logo": "transmitsecurity-logo.png"
+ },
+ "Yotpo": {
+  "name": "Yotpo",
+  "domain": "yotpo.com",
+  "cover": "yotpo-cover.jpg",
+  "logo": "yotpo-logo.png"
+ },
+ "HoneyBook": {
+  "name": "HoneyBook",
+  "domain": "honeybook.com",
+  "cover": "honeybook-cover.jpg",
+  "logo": "honeybook-logo.png"
+ },
+ "Apiiro": {
+  "name": "Apiiro",
+  "domain": "apiiro.com",
+  "cover": null,
+  "logo": "apiiro-logo.png"
+ },
+ "Orca Security": {
+  "name": "Orca Security",
+  "domain": "orca.security",
+  "cover": "orcasecurity-cover.jpg",
+  "logo": "orcasecurity-logo.png"
+ },
+ "Windward": {
+  "name": "Windward",
+  "domain": "windward.ai",
+  "cover": "windward-cover.jpg",
+  "logo": "windward-logo.png"
+ },
+ "DoorLoop": {
+  "name": "DoorLoop",
+  "domain": "doorloop.com",
+  "cover": "doorloop-cover.jpg",
+  "logo": "doorloop-logo.png"
+ },
+ "Duda": {
+  "name": "Duda",
+  "domain": "duda.co",
+  "cover": "duda-cover.jpg",
+  "logo": "duda-logo.png"
+ },
+ "QuantHealth": {
+  "name": "QuantHealth",
+  "domain": "quanthealth.ai",
+  "cover": null,
+  "logo": "quanthealth-logo.png"
+ },
+ "Salt Security": {
+  "name": "Salt Security",
+  "domain": "salt.security",
+  "cover": "saltsecurity-cover.jpg",
+  "logo": "saltsecurity-logo.png"
+ },
+ "Sisense": {
+  "name": "Sisense",
+  "domain": "sisense.com",
+  "cover": "sisense-cover.jpg",
+  "logo": "sisense-logo.png"
+ },
+ "Lightrun": {
+  "name": "Lightrun",
+  "domain": "lightrun.com",
+  "cover": "lightrun-cover.jpg",
+  "logo": "lightrun-logo.png"
+ },
+ "Snyk": {
+  "name": "Snyk",
+  "domain": "snyk.io",
+  "cover": "snyk-cover.jpg",
+  "logo": "snyk-logo.png"
+ },
+ "Torq": {
+  "name": "Torq",
+  "domain": "torq.io",
+  "cover": "torq-cover.jpg",
+  "logo": "torq-logo.png"
+ },
+ "Unit": {
+  "name": "Unit",
+  "domain": "unit.co",
+  "cover": "unit-cover.jpg",
+  "logo": "unit-logo.png"
+ }
+}
