@@ -15,6 +15,11 @@
   var sb = window.supabase.createClient(C.url, C.anonKey, { auth: { storage: storage, persistSession: true, autoRefreshToken: true, detectSessionInUrl: true, flowType: "implicit" } });
   var here = location.origin + location.pathname, session = null;
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+  /* funnel tracking: anonymous browser id + step name (Supabase radar_track) */
+  var sid = storage.getItem("hr-sid"); if (!sid) { sid = Math.random().toString(36).slice(2) + Date.now().toString(36); storage.setItem("hr-sid", sid); }
+  function track(ev, props) { sb.rpc("radar_track", { p_sid: sid, p_event: ev, p_props: props || {} }).then(function () {}, function () {}); }
+  window.RADAR_TRACK = track;
+  window.RADAR_FOLLOW = function (name, on) { if (session) sb.rpc("radar_follow", { p_company: name, p_on: on }).then(function () {}, function () {}); };
   var valid = function (e) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e); };
 
   /* same pending-consent record the Deploy DB uses, so a magic link opened at /db/ finishes the sign-up too */
@@ -37,9 +42,9 @@
     ui("wait");
     return bee("check").then(function () { return sb.rpc("is_member"); }).then(function (r) {
       if (r.error) { ui("email", "We couldn't check your subscription. Try again in a minute."); return; }
-      if (r.data) return location.reload();
+      if (r.data) { track("signed_in", { m: true }); return location.reload(); }
       var p = takePending(session.user.email);
-      if (p) return subscribe(p.name, p.text).then(function (x) { if (x.error) return ui("sub", "Subscribing didn't work. Try again."); location.reload(); });
+      if (p) return subscribe(p.name, p.text).then(function (x) { if (x.error) return ui("sub", "Subscribing didn't work. Try again."); track("subscribed"); location.reload(); });
       ui("sub");
     });
   }
@@ -75,7 +80,7 @@
         go.disabled = true; go.textContent = "Sending…";
         sb.auth.signInWithOtp({ email: v, options: { shouldCreateUser: true, emailRedirectTo: here } }).then(function (r) {
           if (r.error) { var m = (r.error.message || "").toLowerCase(); return ui("email", r.error.status === 429 || m.indexOf("rate") > -1 ? "Too many emails sent. Wait a minute, then try again." : "We couldn't send the email: " + r.error.message); }
-          sentTo = v; ui("code");
+          sentTo = v; track("code_sent", { consent: consent }); ui("code");
         }); };
     } else if (step === "code") {
       var t = document.getElementById("su-t"); t.focus();
@@ -88,20 +93,27 @@
           session = r.data.session; afterSignIn(); }); };
     } else if (step === "sub") {
       go.onclick = function () { if (!document.getElementById("su-c").checked) return ui("sub", "Tick the box to get the Deploy Log, then try again.");
-        go.disabled = true; subscribe("", CONSENT).then(function (x) { if (x.error) return ui("sub", "Subscribing didn't work. Try again."); location.reload(); }); };
+        go.disabled = true; subscribe("", CONSENT).then(function (x) { if (x.error) return ui("sub", "Subscribing didn't work. Try again."); track("subscribed"); location.reload(); }); };
     } else if (step === "acct") {
       document.getElementById("su-out").onclick = function () { sb.auth.signOut().then(function () { location.reload(); }); };
     }
   }
   function close() { if (host) { host.remove(); host = null; } }
-  window.RADAR_SIGNUP = function () { var l = document.getElementById("layer"); if (l) l.innerHTML = ""; session ? afterSignIn() : ui("email"); };
+  window.RADAR_SIGNUP = function (reason) { var l = document.getElementById("layer"); if (l) l.innerHTML = ""; track("signup_open", { r: reason || "" }); session ? afterSignIn() : ui("email"); };
   window.RADAR_ACCOUNT = function () { ui("acct"); };
 
   /* ---------- boot ---------- */
   sb.auth.getSession().then(function (r) {
     session = r.data && r.data.session;
-    return Promise.all([data(), images()]);
+    var q = new URLSearchParams(location.search), ref = document.referrer ? new URL(document.referrer).hostname : "";
+    track("visit", { src: q.get("utm_source") || q.get("ref") || ref || "direct", c: (location.hash.match(/^#c=([a-z0-9-]+)/) || [])[1] || "" });
+    /* members: follows live in the account (radar_follows), so alerts work on any device */
+    var follows = session ? sb.rpc("radar_my_follows").then(function (r) { return r.error ? null : r.data; }, function () { return null; }) : Promise.resolve(null);
+    return Promise.all([data(), images(), follows]);
   }).then(function (res) {
+    if (res[0].member && res[2]) { var local = []; try { local = JSON.parse(storage.getItem("hr-follow") || "[]"); } catch (e) {}
+      local.filter(function (n) { return res[2].indexOf(n) < 0; }).forEach(function (n) { window.RADAR_FOLLOW(n, true); res[2].push(n); });
+      storage.setItem("hr-follow", JSON.stringify(res[2])); }
     window.__R = res[0]; window.__IMG = res[1];
     var s = document.createElement("script"); s.textContent = document.getElementById("radar-main").textContent; document.body.append(s);
     bootEl.remove();

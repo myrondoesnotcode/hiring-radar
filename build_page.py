@@ -38,6 +38,10 @@ db = tpl.replace("__DATA__", "null").replace("__IMAGES__", "{}").replace(MAIN, '
 db_head = ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
            '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
            '<meta name="description" content="Israeli tech companies hiring right now, one per screen, live from their job boards. Free with the Deploy Log.">'
+           '<meta property="og:title" content="Deploy Hiring Radar: who\'s hiring in Israel right now">'
+           '<meta property="og:description" content="Israeli tech companies hiring now, one per screen, live from their job boards. Updated daily.">'
+           '<meta property="og:image" content="https://myrondoesnotcode.github.io/hiring-radar/og/radar.png">'
+           '<meta name="twitter:card" content="summary_large_image">'
            '<meta name="robots" content="noindex"></head><body>')
 open(os.path.join(HERE, "site", "db-radar.html"), "w").write(db_head + db + open(os.path.join(HERE, "db_boot.html")).read() + "</body></html>")
 print(out, f"{len(html) / 1e6:.1f} MB, images for {len(imgs)} companies; site/db-radar.html for the Deploy DB")

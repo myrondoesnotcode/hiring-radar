@@ -149,6 +149,8 @@ nav.bar .post span{display:grid;place-items:center;width:44px;height:28px;border
 .sheet li b{display:block;font-size:14px}
 .sheet li small{color:var(--muted);font-size:12px}
 .sheet li.locked{filter:blur(3px);pointer-events:none;user-select:none}
+.sheet li:has(a.ja){display:block;padding:0}.sheet a.ja{display:grid;grid-template-columns:36px 1fr auto;gap:10px;align-items:center;padding:10px max(16px,env(safe-area-inset-right,0px)) 10px max(16px,env(safe-area-inset-left,0px));color:inherit;text-decoration:none}
+.sheet a.ja:active{background:var(--lock)}.sheet a.ja .go{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--orange);white-space:nowrap}
 .sheet .unlock{margin:8px 16px 14px;padding:12px;border-radius:999px;background:var(--orange);color:#11100D;font-weight:700;text-align:center}
 
 /* gate */
@@ -255,6 +257,9 @@ const C = R.companies.filter(c => c.israel > 0 && !c.locked);
 const LOCKED = R.companies.filter(c => c.locked);
 const ALL = C.concat(LOCKED);
 const FREE = MEMBER ? Infinity : 5, HARD = MEMBER ? Infinity : 10;
+const track = (ev, props) => { try { window.RADAR_TRACK && window.RADAR_TRACK(ev, props || {}); } catch (e) {} };
+const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const shareUrl = c => "https://deploytlv.com/radar/" + slug(c.name) + "/";
 const fmt = n => n == null ? "–" : n.toLocaleString("en-US");
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const hue = s => [...s].reduce((a, ch) => (a * 31 + ch.charCodeAt(0)) % 360, 7);
@@ -345,8 +350,10 @@ feed.innerHTML = `<article class="slide intro" data-i="-1" style="--h:18">
 
 const layer = document.getElementById("layer");
 function toast(msg) { const t = document.createElement("div"); t.className = "toast"; t.textContent = msg; layer.append(t); setTimeout(() => t.remove(), 1400); }
-function gate(reason) {
+function gate(reason, who) {
+  track("gate", {r: reason, c: who && who.name});
   const copy = {
+    company: who ? [`See ${who.name}'s open roles`, `${who.name} has ${fmt(who.israel)} open roles in Israel right now. Sign up free to see every company, every role and US pay.`] : null,
     limit: ["Sign up free to keep scrolling", `You've seen ${FREE} companies. Join Deploy for the full feed, US salary ranges and hiring alerts.`],
     hard: ["That's 10 companies", `Sign up free to see all ${ALL.length}, with every open role, US salary ranges and alerts.`],
     pay: ["Salaries are for members", "See the US pay ranges every company posts. It's free."],
@@ -366,13 +373,17 @@ function gate(reason) {
 }
 function sheet(c) {
   const free = MEMBER ? Infinity : 3, more = Math.min(c.locked_roles || 0, 5);
+  track("roles", {c: c.name});
+  const row = (j, k) => { const inner = `<span class="ic">${esc((j.dept || "R")[0])}</span><span><b>${esc(j.title)}</b><small>${esc(j.dept || "")}${j.dept ? " · " : ""}${esc(j.location)} · ${ago(j.published)}</small></span>`;
+    return k >= free ? `<li class="locked">${inner}</li>` : j.url ? `<li><a class="ja" href="${esc(j.url)}" target="_blank" rel="noopener" data-apply="${esc(c.name)}">${inner}<span class="go">Apply ↗</span></a></li>` : `<li>${inner}</li>`; };
   layer.innerHTML = `<div class="sheet-bg" id="s-bg"></div><div class="sheet" role="dialog" aria-modal="true" aria-label="Open roles">
     <header>${fmt(c.israel)} open roles in Israel<button id="s-x" aria-label="Close">×</button></header>
-    <ul>${c.latest_israel.map((j, k) => `<li class="${k >= free ? "locked" : ""}"><span class="ic">${esc((j.dept || "R")[0])}</span><span><b>${esc(j.title)}</b><small>${esc(j.dept || "")}${j.dept ? " · " : ""}${esc(j.location)} · ${ago(j.published)}</small></span></li>`).join("")}${Array.from({length: more}, (_, k) => `<li class="locked"><span class="ic">·</span><span><b>${["Senior Software Engineer", "Product Manager", "Data Scientist", "DevOps Engineer", "Account Executive"][k]}</b><small>Members only · Israel</small></span></li>`).join("")}</ul>
+    <ul>${c.latest_israel.map(row).join("")}${Array.from({length: more}, (_, k) => `<li class="locked"><span class="ic">·</span><span><b>${["Senior Software Engineer", "Product Manager", "Data Scientist", "DevOps Engineer", "Account Executive"][k]}</b><small>Members only · Israel</small></span></li>`).join("")}</ul>
     ${c.israel > free ? `<button class="unlock" id="s-u">Sign up to see all ${fmt(c.israel)} roles</button>` : ""}</div>`;
   const close = () => layer.innerHTML = "";
   document.getElementById("s-bg").onclick = close; document.getElementById("s-x").onclick = close;
   const u = document.getElementById("s-u"); if (u) u.onclick = () => gate("roles");
+  layer.querySelectorAll("[data-apply]").forEach(a => a.onclick = () => track("apply", {c: c.name, t: a.querySelector("b").textContent.slice(0, 80)}));
 }
 function burst(x, y, el) {
   const b = document.createElement("div"); b.className = "burst"; b.style.left = x + "px"; b.style.top = y + "px";
@@ -395,8 +406,10 @@ feed.addEventListener("click", e => {
   if (a.dataset.act === "like") setLike(s, !liked.has(name));
   if (a.dataset.act === "roles") sheet(c);
   if (a.dataset.act === "save") { saved.has(name) ? saved.delete(name) : saved.add(name); store.set("hr-saved", [...saved]); a.classList.toggle("on"); toast(saved.has(name) ? "Saved" : "Removed from saved"); }
-  if (a.dataset.act === "follow") { if (!MEMBER && followed.size >= 1 && !followed.has(name)) return gate("follow"); followed.has(name) ? followed.delete(name) : followed.add(name); store.set("hr-follow", [...followed]); a.classList.toggle("on"); a.querySelector(".plus").textContent = followed.has(name) ? "✓" : "+"; toast(followed.has(name) ? "Following " + name : "Unfollowed"); }
-  if (a.dataset.act === "share") { const txt = `${name}: +${c.israel_new30} new roles in Israel this month (Deploy Hiring Radar)`; navigator.clipboard?.writeText(txt).then(() => toast("Copied to share"), () => toast(txt)); }
+  if (a.dataset.act === "follow") { if (!MEMBER && followed.size >= 1 && !followed.has(name)) return gate("follow"); followed.has(name) ? followed.delete(name) : followed.add(name); store.set("hr-follow", [...followed]); track("follow", {c: name, on: followed.has(name)}); if (MEMBER && window.RADAR_FOLLOW) window.RADAR_FOLLOW(name, followed.has(name)); a.classList.toggle("on"); a.querySelector(".plus").textContent = followed.has(name) ? "✓" : "+"; toast(followed.has(name) ? "Following " + name : "Unfollowed"); }
+  if (a.dataset.act === "share") { const url = shareUrl(c), txt = `${name} is hiring in Israel: +${c.israel_new30} new roles this month`; track("share", {c: name});
+    if (navigator.share) navigator.share({title: name + " on the Deploy Hiring Radar", text: txt, url}).catch(() => {});
+    else navigator.clipboard?.writeText(txt + " " + url).then(() => toast("Link copied"), () => toast(url)); }
 });
 let lastTap = 0;
 feed.addEventListener("pointerup", e => {
@@ -428,10 +441,12 @@ function coach(slideEl) {
 }
 
 // count-up + gate after FREE companies
+let maxSeen = -1;
 const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
 const io = new IntersectionObserver(es => es.forEach(e => {
   if (!e.isIntersecting) return;
   const i = +e.target.dataset.i;
+  if (i > maxSeen) { maxSeen = i; if (i === 0 || i % 5 === 0) track("view", {i}); }
   if (i >= HARD) { gate("hard"); }
   else if (i >= FREE && !unlocked && !gateShown) { gateShown = true; gate("limit"); }
   if (i === 0 && !store.get("hr-coach", false)) coach(e.target);
@@ -543,7 +558,13 @@ function view(v) {
   history.replaceState(null, "", d ? "#discover" : "#feed");
 }
 document.getElementById("n-home").onclick = () => view("feed");
-document.getElementById("n-disc").onclick = () => view("discover");
+document.getElementById("n-disc").onclick = () => { view("discover"); track("discover"); };
 document.querySelectorAll("nav.bar [data-gate]").forEach(b => b.onclick = () => MEMBER && window.RADAR_ACCOUNT ? window.RADAR_ACCOUNT(b.dataset.gate) : gate(b.dataset.gate));
-if (location.hash === "#discover") view("discover");
+if (location.hash === "#discover") { view("discover"); track("discover"); }
+const deep = (location.hash.match(/^#c=([a-z0-9-]+)/) || [])[1];
+if (deep) {
+  const hit = ALL.find(c => slug(c.name) === deep); track("deeplink", {c: hit ? hit.name : deep});
+  if (hit && hit.locked) { store.set("hr-coach", true); gate("company", hit); }
+  else if (hit) { store.set("hr-coach", true); requestAnimationFrame(() => feed.querySelector(`.slide[data-name="${CSS.escape(hit.name)}"]`)?.scrollIntoView()); }
+}
 </script>

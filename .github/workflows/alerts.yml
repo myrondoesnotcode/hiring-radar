@@ -1,0 +1,24 @@
+name: Weekly alerts
+
+# Sundays 06:00 UTC (after the 04:00 daily snapshot): email subscribers the new roles at companies they follow.
+# Dry run unless the repo variable ALERTS_ON is "true" (Settings → Variables, or: gh variable set ALERTS_ON --body true).
+on:
+  schedule:
+    - cron: "0 6 * * 0"
+  workflow_dispatch:
+
+jobs:
+  alerts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Send alerts
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM: ${{ secrets.RESEND_FROM }}
+        run: python3 alerts.py ${{ vars.ALERTS_ON == 'true' && '--send' || '' }}

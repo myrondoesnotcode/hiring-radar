@@ -39,9 +39,12 @@ jobs:
 
       - name: Build page
         run: |
+          pip install -q pillow
           python3 build_page.py
+          python3 share_cards.py
           mkdir -p _site/img && cp site/index.html _site/index.html
           cp data/images/*.jpg data/images/*.png data/images/images.json _site/img/   # for deploytlv.com/db/radar/
+          cp -r site/og _site/og                                                      # share previews (deploytlv.com/radar/<slug>/)
           [ -f CNAME ] && cp CNAME _site/CNAME || true
 
       - name: Commit data
