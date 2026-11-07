@@ -1,0 +1,113 @@
+<!-- Deploy DB loader for deploytlv.com/db/radar/ (build_page.py puts this after the page; the page's own script is held as text/plain until the data is in).
+     Data: Supabase radar_public() for everyone, radar_for_me() once signed in (everything for Deploy Log subscribers).
+     Sign-up: the Deploy DB's own flow (email -> 6-digit code or link -> subscribe RPC + beehiiv function), same consent text. -->
+<div id="boot" style="position:fixed;inset:0;display:grid;place-items:center;background:#0B0A08;color:#fff;font:600 14px 'IBM Plex Mono',monospace;z-index:99">Loading the Hiring Radar…</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="/db/config.js"></script>
+<script>
+(function () {
+  var IMG_BASE = "https://myrondoesnotcode.github.io/hiring-radar/img/";
+  var CONSENT = "Yes, send me the Deploy Log weekly email. I can unsubscribe anytime, and my access ends when I do.";
+  var C = window.DDB_CONFIG || {}, bootEl = document.getElementById("boot");
+  var storage = { getItem: function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+    setItem: function (k, v) { try { localStorage.setItem(k, v); } catch (e) {} }, removeItem: function (k) { try { localStorage.removeItem(k); } catch (e) {} } };
+  if (!window.supabase || !C.url) { bootEl.textContent = "Couldn't load. Refresh the page to try again."; return; }
+  var sb = window.supabase.createClient(C.url, C.anonKey, { auth: { storage: storage, persistSession: true, autoRefreshToken: true, detectSessionInUrl: true, flowType: "implicit" } });
+  var here = location.origin + location.pathname, session = null;
+  var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+  var valid = function (e) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e); };
+
+  /* same pending-consent record the Deploy DB uses, so a magic link opened at /db/ finishes the sign-up too */
+  function savePending(email, name) { storage.setItem("ddb_pending", JSON.stringify({ email: email.toLowerCase(), name: name || "", text: CONSENT, at: Date.now() })); }
+  function takePending(email) { var p = null; try { p = JSON.parse(storage.getItem("ddb_pending") || "null"); } catch (e) {} storage.removeItem("ddb_pending");
+    return p && p.email === String(email || "").toLowerCase() && Date.now() - p.at < 864e5 ? p : null; }
+  function bee(action) { return sb.functions.invoke("beehiiv", { body: { action: action } }).then(function (r) { return r.error ? { error: r.error } : (r.data || {}); }).catch(function (e) { return { error: e }; }); }
+  function subscribe(name, text) { return sb.rpc("subscribe", { p_name: name || "", p_consent: true, p_consent_text: text || CONSENT })
+    .then(function (r) { if (r.error) return r; return bee("subscribe").then(function () { return r; }); }); }
+
+  function images() {
+    return fetch(IMG_BASE + "images.json").then(function (r) { return r.json(); }).then(function (m) {
+      var out = {}; Object.keys(m).forEach(function (n) { var e = {}; if (m[n].cover) e.cover = IMG_BASE + m[n].cover; if (m[n].logo) e.logo = IMG_BASE + m[n].logo; out[n] = e; }); return out;
+    }).catch(function () { return {}; });
+  }
+  function data() { return sb.rpc(session ? "radar_for_me" : "radar_public").then(function (r) { if (r.error) throw r.error; return r.data; }); }
+
+  /* after sign-in: member -> reload into the full feed; consent given -> subscribe first; else ask once */
+  function afterSignIn() {
+    ui("wait");
+    return bee("check").then(function () { return sb.rpc("is_member"); }).then(function (r) {
+      if (r.error) { ui("email", "We couldn't check your subscription. Try again in a minute."); return; }
+      if (r.data) return location.reload();
+      var p = takePending(session.user.email);
+      if (p) return subscribe(p.name, p.text).then(function (x) { if (x.error) return ui("sub", "Subscribing didn't work. Try again."); location.reload(); });
+      ui("sub");
+    });
+  }
+
+  /* ---------- sign-up sheet ---------- */
+  var host = null, sentTo = "";
+  function ui(step, err) {
+    if (!host) { host = document.createElement("div"); host.className = "su"; host.setAttribute("role", "dialog"); host.setAttribute("aria-modal", "true"); host.setAttribute("aria-labelledby", "su-h"); document.getElementById("app").append(host);
+      host.addEventListener("click", function (e) { if (e.target === host || e.target.closest(".x")) close(); }); }
+    var E = err ? '<div class="err" role="alert">' + esc(err) + "</div>" : "";
+    var X = '<button class="x" aria-label="Close">×</button>';
+    var html = {
+      email: '<h3 id="su-h">See the whole Radar, free</h3><p>Every company, every open role and US pay ranges. Free with the Deploy Log, Deploy\'s weekly email. Already subscribed? Just enter your email.</p>' +
+        '<form id="su-f" novalidate style="display:grid;gap:10px"><input type="email" id="su-e" placeholder="you@email.com" autocomplete="email" aria-label="Email" required>' +
+        '<input type="text" id="su-n" placeholder="First name (optional)" autocomplete="given-name" aria-label="First name">' +
+        '<label class="ck"><input type="checkbox" id="su-c"><span>' + CONSENT + '</span></label>' + E +
+        '<button class="go" id="su-go">Send my code</button></form>',
+      code: '<h3 id="su-h">Check your email</h3><p>We sent a 6-digit code to <b>' + esc(sentTo) + '</b>. Type it here, or tap the link in the email.</p>' +
+        '<form id="su-k" novalidate style="display:grid;gap:10px"><input id="su-t" inputmode="numeric" autocomplete="one-time-code" maxlength="6" aria-label="6-digit code">' + E +
+        '<button class="go" id="su-go">Sign in</button></form><button class="lnk" id="su-back">Use a different email</button>',
+      sub: '<h3 id="su-h">One step left</h3><p>You\'re signed in as <b>' + esc(session && session.user.email) + '</b>. The full Radar is free for Deploy Log subscribers.</p>' +
+        '<label class="ck"><input type="checkbox" id="su-c"><span>' + CONSENT + '</span></label>' + E + '<button class="go" id="su-go">Subscribe and open</button>',
+      wait: '<h3 id="su-h">Opening the full Radar…</h3><p>One moment.</p>',
+      acct: '<h3 id="su-h">You\'re in</h3><p>Signed in as <b>' + esc(session && session.user.email) + '</b>. Hiring alerts are coming soon.</p>' +
+        '<a class="go" href="/db/" style="text-align:center;text-decoration:none">Open the Deploy DB</a><button class="lnk" id="su-out">Sign out</button>'
+    }[step];
+    host.innerHTML = '<div class="box">' + X + html + "</div>";
+    var go = document.getElementById("su-go"), f;
+    if (step === "email") {
+      f = document.getElementById("su-f"); var em = document.getElementById("su-e"); em.value = sentTo; em.focus();
+      f.onsubmit = function (e) { e.preventDefault(); var v = em.value.trim(); if (!valid(v)) return ui("email", "Enter a valid email.");
+        var consent = document.getElementById("su-c").checked; if (consent) savePending(v, document.getElementById("su-n").value.trim());
+        go.disabled = true; go.textContent = "Sending…";
+        sb.auth.signInWithOtp({ email: v, options: { shouldCreateUser: true, emailRedirectTo: here } }).then(function (r) {
+          if (r.error) { var m = (r.error.message || "").toLowerCase(); return ui("email", r.error.status === 429 || m.indexOf("rate") > -1 ? "Too many emails sent. Wait a minute, then try again." : "We couldn't send the email: " + r.error.message); }
+          sentTo = v; ui("code");
+        }); };
+    } else if (step === "code") {
+      var t = document.getElementById("su-t"); t.focus();
+      t.oninput = function () { t.value = t.value.replace(/\D/g, ""); if (t.value.length === 6 && !go.disabled) document.getElementById("su-k").requestSubmit(); };
+      document.getElementById("su-back").onclick = function () { ui("email"); };
+      document.getElementById("su-k").onsubmit = function (e) { e.preventDefault(); if (t.value.length < 6) return ui("code", "Enter all 6 digits.");
+        go.disabled = true; go.textContent = "Checking…";
+        sb.auth.verifyOtp({ email: sentTo, token: t.value, type: "email" }).then(function (r) {
+          if (r.error || !r.data.session) return ui("code", "That code didn't work. Check it, or ask for a new one with a different email.");
+          session = r.data.session; afterSignIn(); }); };
+    } else if (step === "sub") {
+      go.onclick = function () { if (!document.getElementById("su-c").checked) return ui("sub", "Tick the box to get the Deploy Log, then try again.");
+        go.disabled = true; subscribe("", CONSENT).then(function (x) { if (x.error) return ui("sub", "Subscribing didn't work. Try again."); location.reload(); }); };
+    } else if (step === "acct") {
+      document.getElementById("su-out").onclick = function () { sb.auth.signOut().then(function () { location.reload(); }); };
+    }
+  }
+  function close() { if (host) { host.remove(); host = null; } }
+  window.RADAR_SIGNUP = function () { var l = document.getElementById("layer"); if (l) l.innerHTML = ""; session ? afterSignIn() : ui("email"); };
+  window.RADAR_ACCOUNT = function () { ui("acct"); };
+
+  /* ---------- boot ---------- */
+  sb.auth.getSession().then(function (r) {
+    session = r.data && r.data.session;
+    return Promise.all([data(), images()]);
+  }).then(function (res) {
+    window.__R = res[0]; window.__IMG = res[1];
+    var s = document.createElement("script"); s.textContent = document.getElementById("radar-main").textContent; document.body.append(s);
+    bootEl.remove();
+    /* came back from the email link, or signed in on the Deploy DB but not yet subscribed */
+    if (session && !res[0].member && takePendingPeek(session.user.email)) afterSignIn();
+  }).catch(function (e) { console.error(e); bootEl.textContent = "Couldn't load the Radar. Refresh to try again."; });
+  function takePendingPeek(email) { try { var p = JSON.parse(storage.getItem("ddb_pending") || "null"); return p && p.email === String(email).toLowerCase(); } catch (e) { return false; } }
+})();
+</script>

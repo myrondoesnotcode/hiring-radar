@@ -40,7 +40,8 @@ jobs:
       - name: Build page
         run: |
           python3 build_page.py
-          mkdir -p _site && cp site/index.html _site/index.html
+          mkdir -p _site/img && cp site/index.html _site/index.html
+          cp data/images/*.jpg data/images/*.png data/images/images.json _site/img/   # for deploytlv.com/db/radar/
           [ -f CNAME ] && cp CNAME _site/CNAME || true
 
       - name: Commit data
@@ -51,6 +52,13 @@ jobs:
           git add data/snapshots data/history.csv data/report.json
           git diff --cached --quiet || git commit -m "Snapshot $(date -u +%F)"
           git push
+
+      - name: Upload to the Deploy DB (Supabase)
+        if: github.event_name != 'push'
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: python3 push_supabase.py
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

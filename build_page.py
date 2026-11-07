@@ -29,4 +29,15 @@ head = ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
         '<meta name="robots" content="noindex"></head><body>')
 open(os.path.join(HERE, "site", "index.html"), "w").write(head + html + "</body></html>")
-print(out, f"{len(html) / 1e6:.1f} MB, images for {len(imgs)} companies")
+
+# Deploy DB copy (deploytlv.com/db/radar/index.html): no data inside. db_boot.html loads it from Supabase
+# (radar_public / radar_for_me) and the images from GitHub Pages (_site/img/), then runs the page script.
+MAIN = "<script>\nconst R = "
+assert tpl.count(MAIN) == 1
+db = tpl.replace("__DATA__", "null").replace("__IMAGES__", "{}").replace(MAIN, '<script type="text/plain" id="radar-main">\nconst R = ')
+db_head = ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
+           '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
+           '<meta name="description" content="Israeli tech companies hiring right now, one per screen, live from their job boards. Free with the Deploy Log.">'
+           '<meta name="robots" content="noindex"></head><body>')
+open(os.path.join(HERE, "site", "db-radar.html"), "w").write(db_head + db + open(os.path.join(HERE, "db_boot.html")).read() + "</body></html>")
+print(out, f"{len(html) / 1e6:.1f} MB, images for {len(imgs)} companies; site/db-radar.html for the Deploy DB")

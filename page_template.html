@@ -203,6 +203,20 @@ nav.bar .post span{display:grid;place-items:center;width:44px;height:28px;border
 .tile .meta .row{display:flex;align-items:center;gap:8px;min-width:0}
 .tile .lg{width:28px;height:28px;flex:none;font-size:12px;border:1.5px solid #fff}
 .tile b{font-size:14px;line-height:1.15;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tile.locked .cv{filter:blur(6px) saturate(.6)}.tile .lki{font-style:normal;font-size:12px;margin-left:auto}
+.locked-slide .lk{list-style:none;margin:6px 0 14px;padding:0;display:grid;gap:8px;width:min(100%,340px)}
+.locked-slide .lk li{display:flex;justify-content:space-between;gap:10px;padding:10px 12px;border-radius:12px;background:rgba(255,255,255,.08);font-size:14px}
+.locked-slide .lk li b{font-family:var(--mono);font-size:12px;font-weight:500;opacity:.8;filter:blur(3px)}
+.su{position:absolute;inset:0;z-index:60;display:grid;place-items:end center;background:rgba(0,0,0,.55)}
+.su .box{width:100%;max-width:440px;background:#F3EEDF;color:#11100D;border-radius:22px 22px 0 0;padding:22px 20px calc(22px + env(safe-area-inset-bottom));display:grid;gap:12px}
+.su h3{margin:0;font-family:"Archivo Black",var(--sans);font-size:22px;line-height:1.1}.su p{margin:0;font-size:14px;line-height:1.45;opacity:.8}
+.su input[type=email],.su input[type=text],.su input[inputmode]{width:100%;padding:13px 14px;border-radius:12px;border:1.5px solid #11100D;background:#fff;font:inherit;font-size:16px;color:#11100D}
+.su input[inputmode]{font-family:var(--mono);font-size:24px;letter-spacing:.35em;text-align:center}
+.su label.ck{display:flex;gap:10px;align-items:flex-start;font-size:13px;line-height:1.4}.su label.ck input{margin-top:2px;accent-color:#FF5A18;width:18px;height:18px;flex:none}
+.su .go{padding:14px;border-radius:999px;background:#FF5A18;color:#11100D;font-weight:700;font-size:16px}.su .go:disabled{opacity:.6}
+.su .lnk{background:none;color:#11100D;text-decoration:underline;font-size:13px;justify-self:center;padding:4px}
+.su .err{color:#B42318;font-size:13px}.su .x{position:absolute;right:14px;top:12px;font-size:26px;background:none;color:#11100D;line-height:1}
+.su .box{position:relative}.su,.su *{box-sizing:border-box}.su form{min-width:0}
 .tile .stat{font-size:12px;color:var(--on-feed-dim)}
 .tile .stat em{font-style:normal;color:#fff;font-weight:700}
 .tile .match{font-size:11px;color:#fff;background:rgba(255,255,255,.18);border-radius:6px;padding:3px 6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -232,11 +246,15 @@ nav.bar .post span{display:grid;place-items:center;width:44px;height:28px;border
 </div>
 
 <script>
-const R = __DATA__;
+const R = window.__R || __DATA__;
 const T = R.totals;
-const IMG = __IMAGES__;
-const C = R.companies.filter(c => c.israel > 0);
-const FREE = 5, HARD = 10;
+const IMG = window.__IMG || __IMAGES__;
+// Deploy DB mode (deploytlv.com/db/radar/): R.member is set; non-members get the first 10 in full + locked stubs
+const DB = "member" in R, MEMBER = R.member === true;
+const C = R.companies.filter(c => c.israel > 0 && !c.locked);
+const LOCKED = R.companies.filter(c => c.locked);
+const ALL = C.concat(LOCKED);
+const FREE = MEMBER ? Infinity : 5, HARD = MEMBER ? Infinity : 10;
 const fmt = n => n == null ? "–" : n.toLocaleString("en-US");
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const hue = s => [...s].reduce((a, ch) => (a * 31 + ch.charCodeAt(0)) % 360, 7);
@@ -265,7 +283,7 @@ function tagsOf(c) {
 
 function slide(c, i) {
   const im = IMG[c.name] || {};
-  const h = hue(c.name), pay = c.top_paid ? "$" + Math.round(c.top_paid.max / 1000) + "K" : null;
+  const h = hue(c.name), pay = c.top_paid ? "$" + Math.round(c.top_paid.max / 1000) + "K" : c.has_pay ? "$···K" : null;
   const roles = c.latest_israel.slice(0, 6).map(j => esc(j.title)).join("  ·  ");
   const bg = im.cover ? `<div class="photo" style="background-image:url(${im.cover})"></div>` : `<div class="bgfx"></div><div class="mono">${esc(c.name[0])}</div>`;
   return `<article class="slide ${im.cover ? "has-img" : ""}" data-i="${i}" data-name="${esc(c.name)}" style="--h:${h};--x1:${20 + h % 40}%;--y1:${25 + h % 30}%">
@@ -279,7 +297,7 @@ function slide(c, i) {
         <span class="st"><b>${fmt(c.israel)}</b> open in IL</span>
         <span class="st"><b>${fmt(c.jobs)}</b> worldwide</span>
         ${c.ai_israel ? `<span class="st"><b>${c.ai_israel}</b> AI/ML</span>` : ""}
-        ${pay ? `<button class="st lock" data-gate="pay">US pay <b>${pay}</b></button>` : ""}
+        ${pay ? (MEMBER ? `<span class="st"><b>${pay}</b> top US pay</span>` : `<button class="st lock" data-gate="pay">US pay <b>${pay}</b></button>`) : ""}
       </div>
     </div>
     <div class="bottom">
@@ -315,14 +333,22 @@ feed.innerHTML = `<article class="slide intro" data-i="-1" style="--h:18">
       </ol>
       <div class="swipe">↑ Swipe up to start</div>
     </div>
-  </article>` + C.map(slide).join("");
+  </article>` + C.map(slide).join("") + (LOCKED.length ? `<article class="slide intro locked-slide" data-i="${C.length}" style="--h:24">
+    <div class="bgfx"></div><div class="shade"></div>
+    <div class="center">
+      <div class="eyebrow">Members only</div>
+      <h1><em>+${LOCKED.length}</em> more companies hiring</h1>
+      <ul class="lk">${LOCKED.slice(0, 6).map(c => `<li><span>${esc(c.name)}</span><b>+${c.israel_new30} new · ${fmt(c.israel)} open</b></li>`).join("")}</ul>
+      <button class="jobs-cta" data-gate="hard">Sign up free to see them all ›</button>
+    </div>
+  </article>` : "");
 
 const layer = document.getElementById("layer");
 function toast(msg) { const t = document.createElement("div"); t.className = "toast"; t.textContent = msg; layer.append(t); setTimeout(() => t.remove(), 1400); }
 function gate(reason) {
   const copy = {
     limit: ["Sign up free to keep scrolling", `You've seen ${FREE} companies. Join Deploy for the full feed, US salary ranges and hiring alerts.`],
-    hard: ["That's 10 companies", `Sign up free to see all ${C.length}, with every open role, US salary ranges and alerts.`],
+    hard: ["That's 10 companies", `Sign up free to see all ${ALL.length}, with every open role, US salary ranges and alerts.`],
     pay: ["Salaries are for members", "See the US pay ranges every company posts. It's free."],
     roles: ["See every open role", "Members see all roles, with links to apply. It's free."],
     post: ["Post your company's roles", "Hiring in Israel? Get your jobs into the Deploy feed."],
@@ -333,16 +359,16 @@ function gate(reason) {
   layer.innerHTML = `<div class="gate" role="dialog" aria-modal="true" aria-labelledby="g-h"><div class="box">
     <div class="lockicon">[#]</div><h3 id="g-h">${copy[0]}</h3><p id="g-p">${copy[1]}</p>
     <button class="btn" id="g-yes">Sign up free</button>${reason === "hard" ? `<button class="btn ghost" id="g-no">Back to the top</button>` : `<button class="btn ghost" id="g-no">Not now</button>`}
-    <div class="note">Prototype: no account is created.</div></div></div>`;
-  document.getElementById("g-yes").onclick = () => { document.getElementById("g-p").textContent = "Prototype only: this is where the Deploy signup would open."; };
+    <div class="note">${window.RADAR_SIGNUP ? "Free with the Deploy Log, Deploy's weekly email." : "Prototype: no account is created."}</div></div></div>`;
+  document.getElementById("g-yes").onclick = () => { if (window.RADAR_SIGNUP) return window.RADAR_SIGNUP(reason); document.getElementById("g-p").textContent = "Prototype only: this is where the Deploy signup would open."; };
   document.getElementById("g-no").onclick = () => { layer.innerHTML = ""; if (reason === "limit") unlocked = true; if (reason === "hard") feed.scrollTo({top: 0, behavior: "smooth"}); };
   document.getElementById("g-yes").focus();
 }
 function sheet(c) {
-  const free = 3;
+  const free = MEMBER ? Infinity : 3, more = Math.min(c.locked_roles || 0, 5);
   layer.innerHTML = `<div class="sheet-bg" id="s-bg"></div><div class="sheet" role="dialog" aria-modal="true" aria-label="Open roles">
     <header>${fmt(c.israel)} open roles in Israel<button id="s-x" aria-label="Close">×</button></header>
-    <ul>${c.latest_israel.map((j, k) => `<li class="${k >= free ? "locked" : ""}"><span class="ic">${esc((j.dept || "R")[0])}</span><span><b>${esc(j.title)}</b><small>${esc(j.dept || "")}${j.dept ? " · " : ""}${esc(j.location)} · ${ago(j.published)}</small></span></li>`).join("")}</ul>
+    <ul>${c.latest_israel.map((j, k) => `<li class="${k >= free ? "locked" : ""}"><span class="ic">${esc((j.dept || "R")[0])}</span><span><b>${esc(j.title)}</b><small>${esc(j.dept || "")}${j.dept ? " · " : ""}${esc(j.location)} · ${ago(j.published)}</small></span></li>`).join("")}${Array.from({length: more}, (_, k) => `<li class="locked"><span class="ic">·</span><span><b>${["Senior Software Engineer", "Product Manager", "Data Scientist", "DevOps Engineer", "Account Executive"][k]}</b><small>Members only · Israel</small></span></li>`).join("")}</ul>
     ${c.israel > free ? `<button class="unlock" id="s-u">Sign up to see all ${fmt(c.israel)} roles</button>` : ""}</div>`;
   const close = () => layer.innerHTML = "";
   document.getElementById("s-bg").onclick = close; document.getElementById("s-x").onclick = close;
@@ -369,7 +395,7 @@ feed.addEventListener("click", e => {
   if (a.dataset.act === "like") setLike(s, !liked.has(name));
   if (a.dataset.act === "roles") sheet(c);
   if (a.dataset.act === "save") { saved.has(name) ? saved.delete(name) : saved.add(name); store.set("hr-saved", [...saved]); a.classList.toggle("on"); toast(saved.has(name) ? "Saved" : "Removed from saved"); }
-  if (a.dataset.act === "follow") { if (followed.size >= 1 && !followed.has(name)) return gate("follow"); followed.has(name) ? followed.delete(name) : followed.add(name); store.set("hr-follow", [...followed]); a.classList.toggle("on"); a.querySelector(".plus").textContent = followed.has(name) ? "✓" : "+"; toast(followed.has(name) ? "Following " + name : "Unfollowed"); }
+  if (a.dataset.act === "follow") { if (!MEMBER && followed.size >= 1 && !followed.has(name)) return gate("follow"); followed.has(name) ? followed.delete(name) : followed.add(name); store.set("hr-follow", [...followed]); a.classList.toggle("on"); a.querySelector(".plus").textContent = followed.has(name) ? "✓" : "+"; toast(followed.has(name) ? "Following " + name : "Unfollowed"); }
   if (a.dataset.act === "share") { const txt = `${name}: +${c.israel_new30} new roles in Israel this month (Deploy Hiring Radar)`; navigator.clipboard?.writeText(txt).then(() => toast("Copied to share"), () => toast(txt)); }
 });
 let lastTap = 0;
@@ -435,12 +461,12 @@ const app = document.getElementById("app"), rank = document.getElementById("rank
 let exQ = "", exChip = "all";
 const SEARCH_ICO = '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>';
 const logoOf = c => IMG[c.name]?.logo ? `<img src="${IMG[c.name].logo}" alt="">` : esc(c.name[0]);
-const CHIPS = [["all", "All", C.length], ["new", "🔥 Hiring fast", C.filter(c => c.israel_new30 >= 5).length], ["ai", "AI/ML", C.filter(c => c.ai_israel > 0).length]]
+const CHIPS = [["all", "All", ALL.length], ["new", "🔥 Hiring fast", ALL.filter(c => c.israel_new30 >= 5).length], ["ai", "AI/ML", ALL.filter(c => c.ai_israel > 0).length]]
   .concat(T.teams.filter(([k]) => k !== "Other").slice(0, 5).map(([k, v]) => ["team:" + k, k, v]))
   .concat(T.cities.filter(([k]) => k !== "Israel (other)").slice(0, 4).map(([k, v]) => ["city:" + k, "📍 " + k, v]));
 function exFilter() {
   const q = exQ.trim().toLowerCase();
-  let rows = C.filter(c => {
+  let rows = ALL.filter(c => {
     if (exChip === "new" && c.israel_new30 < 5) return false;
     if (exChip === "ai" && !c.ai_israel) return false;
     if (exChip.startsWith("team:") && !c.teams_israel.some(([k]) => k === exChip.slice(5))) return false;
@@ -448,7 +474,7 @@ function exFilter() {
     return true;
   }).map(c => {
     let match = null;
-    if (q && !c.name.toLowerCase().includes(q)) { match = c.latest_israel.find(j => j.title.toLowerCase().includes(q)); if (!match) return null; }
+    if (q && !c.name.toLowerCase().includes(q)) { match = (c.latest_israel || []).find(j => j.title.toLowerCase().includes(q)); if (!match) return null; }
     return {c, match};
   }).filter(Boolean);
   const key = exChip === "ai" ? "ai_israel" : exChip.startsWith("team:") || exChip.startsWith("city:") ? null : "israel_new30";
@@ -459,12 +485,12 @@ function exFilter() {
 function tileHTML({c, match}, cnt) {
   const lbl = exChip === "ai" ? "AI/ML roles" : exChip.startsWith("team:") ? exChip.slice(5) + " roles" : exChip.startsWith("city:") ? "in " + exChip.slice(5) : "jobs in Israel";
   const n = exChip === "all" || exChip === "new" ? c.israel : cnt(c);
-  return `<button class="tile" data-jump="${esc(c.name)}" style="--h:${hue(c.name)}">
+  return `<button class="tile${c.locked ? " locked" : ""}" ${c.locked ? 'data-gate="hard"' : `data-jump="${esc(c.name)}"`} style="--h:${hue(c.name)}">
     ${IMG[c.name]?.cover ? `<img class="cvb" src="${IMG[c.name].cover}" alt=""><img class="cv" src="${IMG[c.name].cover}" alt="" loading="lazy">` : ""}
     ${c.israel_new30 ? `<span class="badge">+${c.israel_new30} new</span>` : ""}
     <span class="meta">
       ${match ? `<span class="match">${esc(match.title)}</span>` : ""}
-      <span class="row"><span class="lg">${logoOf(c)}</span><b>${esc(c.name)}</b></span>
+      <span class="row"><span class="lg">${logoOf(c)}</span><b>${esc(c.name)}</b>${c.locked ? '<i class="lki" aria-label="Members only">🔒</i>' : ""}</span>
       <span class="stat"><em>${fmt(n)}</em> ${lbl}</span>
     </span></button>`;
 }
@@ -476,7 +502,7 @@ function renderGrid() {
   rank.querySelector(".top5-blk").hidden = !!exQ || exChip !== "all";
 }
 function renderRank() {
-  const top = [...C].sort((a, b) => b.israel_new30 - a.israel_new30).slice(0, 5);
+  const top = [...ALL].sort((a, b) => b.israel_new30 - a.israel_new30).slice(0, 5);
   rank.innerHTML = `<div class="ex">
     <div class="ex-head">
       <label class="search">${SEARCH_ICO}<input id="ex-q" type="search" placeholder="Search companies or roles" aria-label="Search companies or roles" autocomplete="off"></label>
@@ -489,7 +515,7 @@ function renderRank() {
       <div><b>${T.israel ? Math.round(T.ai_israel / T.israel * 100) : 0}%</b><span>AI / ML</span></div>
     </div>
     <div class="blk top5-blk"><h4>Hiring fastest <small>Last 30 days</small></h4>
-      <div class="top5">${top.map((c, i) => `<button class="t5" data-jump="${esc(c.name)}"><span class="rk">${i + 1}</span><span class="lg" style="--h:${hue(c.name)}">${logoOf(c)}</span><span><b>${esc(c.name)}</b><small>${esc((c.new_teams[0] || ["", 0])[0] ? "Mostly " + c.new_teams[0][0] : fmt(c.israel) + " open in Israel")} · ${fmt(c.israel)} open</small></span><span class="up">+${c.israel_new30}</span></button>`).join("")}</div>
+      <div class="top5">${top.map((c, i) => `<button class="t5" ${c.locked ? 'data-gate="hard"' : `data-jump="${esc(c.name)}"`}><span class="rk">${i + 1}</span><span class="lg" style="--h:${hue(c.name)}">${logoOf(c)}</span><span><b>${esc(c.name)}</b><small>${esc(((c.new_teams || [])[0] || ["", 0])[0] ? "Mostly " + c.new_teams[0][0] : fmt(c.israel) + " open in Israel")} · ${fmt(c.israel)} open</small></span><span class="up">+${c.israel_new30}</span></button>`).join("")}</div>
     </div>
     <div class="blk"><h4>Explore <small id="ex-count"></small></h4><div class="grid" id="ex-grid"></div></div>
     <p class="foot">Read directly from each company's public job board. "New this month" uses each role's first-published date. Companies on Comeet or Workday aren't included yet. Logos and images come from each company's own website. Updated ${esc(T.date)}.</p>
@@ -502,6 +528,7 @@ function renderRank() {
   });
 }
 rank.addEventListener("click", e => {
+  const g = e.target.closest("[data-gate]"); if (g) return gate(g.dataset.gate);
   const j = e.target.closest("[data-jump]"); if (!j) return;
   view("feed");
   const t = feed.querySelector(`.slide[data-name="${CSS.escape(j.dataset.jump)}"]`);
@@ -517,6 +544,6 @@ function view(v) {
 }
 document.getElementById("n-home").onclick = () => view("feed");
 document.getElementById("n-disc").onclick = () => view("discover");
-document.querySelectorAll("nav.bar [data-gate]").forEach(b => b.onclick = () => gate(b.dataset.gate));
+document.querySelectorAll("nav.bar [data-gate]").forEach(b => b.onclick = () => MEMBER && window.RADAR_ACCOUNT ? window.RADAR_ACCOUNT(b.dataset.gate) : gate(b.dataset.gate));
 if (location.hash === "#discover") view("discover");
 </script>
