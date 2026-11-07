@@ -30,6 +30,25 @@ def main():
             failed.append(name)
             continue
         all_jobs.extend(jobs)
+    # boards with no publish date (Comeet): use the day a role first showed up. On a company's first day
+    # nothing counts as new, so adding a company doesn't fake a hiring spike.
+    seen, known = {}, set()
+    snaps = sorted(f for f in os.listdir(os.path.join(DATA, "snapshots")) if f.endswith(".json.gz") and not f.startswith(today)) \
+        if os.path.isdir(os.path.join(DATA, "snapshots")) else []
+    if snaps:
+        for j in json.load(gzip.open(os.path.join(DATA, "snapshots", snaps[-1]), "rt"))["jobs"]:
+            known.add(j["company"])
+            if "first_seen" in j:
+                seen[(j["company"], j["id"])] = j
+    for j in all_jobs:
+        if j["published"]:
+            continue
+        old = seen.get((j["company"], j["id"]))
+        if old:  # carried over: same first-seen day, same (maybe empty) date
+            j["first_seen"], j["published"] = old["first_seen"], old["published"]
+        else:
+            j["first_seen"] = today
+            j["published"] = today if j["company"] in known else ""
     os.makedirs(os.path.join(DATA, "snapshots"), exist_ok=True)
     with gzip.open(os.path.join(DATA, "snapshots", f"{today}.json.gz"), "wt") as f:
         json.dump({"date": today, "failed": failed, "jobs": all_jobs}, f)

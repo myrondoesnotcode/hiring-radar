@@ -376,7 +376,7 @@ function sheet(c) {
   const free = MEMBER ? Infinity : 3, more = Math.min(c.locked_roles || 0, 5);
   track("roles", {c: c.name});
   const CV = !!window.RADAR_CONNECT;
-  const row = (j, k) => { const meta = `<b>${esc(j.title)}</b><small>${esc(j.dept || "")}${j.dept ? " · " : ""}${esc(j.location)} · ${ago(j.published)}</small>`;
+  const row = (j, k) => { const meta = `<b>${esc(j.title)}</b><small>${esc(j.dept || "")}${j.dept ? " · " : ""}${esc(j.location)}${j.published ? " · " + ago(j.published) : ""}</small>`;
     if (k >= free) return `<li class="locked"><span class="ic">${esc((j.dept || "R")[0])}</span><span>${meta}</span></li>`;
     const acts = (j.url ? `<a class="ja" href="${esc(j.url)}" target="_blank" rel="noopener" data-apply="${k}">Apply ↗</a>` : "") + (CV ? `<button class="cv" data-cv="${k}">Connect via Deploy</button>` : "");
     return `<li><span class="ic">${esc((j.dept || "R")[0])}</span><span>${meta}${acts ? `<span class="acts">${acts}</span>` : ""}</span></li>`; };

@@ -22,6 +22,19 @@ DOMAINS = {
     "HoneyBook": "honeybook.com", "Apiiro": "apiiro.com", "Orca Security": "orca.security", "Windward": "windward.ai",
     "DoorLoop": "doorloop.com", "Duda": "duda.co", "QuantHealth": "quanthealth.ai", "Salt Security": "salt.security",
     "Sisense": "sisense.com", "Lightrun": "lightrun.com", "Snyk": "snyk.io", "Torq": "torq.io", "Unit": "unit.co",
+    "NVIDIA": "nvidia.com", "Mobileye": "mobileye.com", "Check Point": "checkpoint.com", "Wix": "wix.com",
+    "VAST Data": "vastdata.com", "Cyera": "cyera.com", "Upwind": "upwind.io", "Aidoc": "aidoc.com", "AllCloud": "allcloud.io",
+    "Kaltura": "kaltura.com", "Noma Security": "noma.security", "Coralogix": "coralogix.com", "Claroty": "claroty.com",
+    "Fiverr": "fiverr.com", "Pentera": "pentera.io", "Sygnia": "sygnia.co", "Zenity": "zenity.io", "Port": "port.io",
+    "Silverfort": "silverfort.com", "Oligo": "oligo.security", "Pagaya": "pagaya.com", "Guesty": "guesty.com",
+    "Novee Security": "novee.security", "Playtika": "playtika.com", "IRONSCALES": "ironscales.com", "Lusha": "lusha.com",
+    "OX Security": "ox.security", "Papaya Global": "papayaglobal.com", "Tipalti": "tipalti.com", "Viz.ai": "viz.ai",
+    "Melio": "meliopayments.com", "Natural Intelligence": "naturalint.com", "Gloat": "gloat.com",
+    "Legit Security": "legitsecurity.com", "Onyx Security": "onyx.security", "Aqua Security": "aquasec.com",
+    "Checkmarx": "checkmarx.com", "Glassbox": "glassbox.com", "Overwolf": "overwolf.com", "Tailor Brands": "tailorbrands.com",
+    "AI21 Labs": "ai21.com", "Cycode": "cycode.com", "D-ID": "d-id.com", "Komodor": "komodor.com", "Mend": "mend.io",
+    "Qodo": "qodo.ai", "Bizzabo": "bizzabo.com", "Lasso Security": "lasso.security", "Zesty": "zesty.co",
+    "Elementor": "elementor.com", "Optibus": "optibus.com", "Zencity": "zencity.io",
 }
 
 

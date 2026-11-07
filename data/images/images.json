@@ -235,5 +235,319 @@
   "domain": "unit.co",
   "cover": "unit-cover.jpg",
   "logo": "unit-logo.png"
+ },
+ "NVIDIA": {
+  "name": "NVIDIA",
+  "domain": "nvidia.com",
+  "cover": "nvidia-cover.jpg",
+  "logo": "nvidia-logo.png"
+ },
+ "Mobileye": {
+  "name": "Mobileye",
+  "domain": "mobileye.com",
+  "cover": "mobileye-cover.jpg",
+  "logo": "mobileye-logo.png"
+ },
+ "Check Point": {
+  "name": "Check Point",
+  "domain": "checkpoint.com",
+  "cover": null,
+  "logo": "checkpoint-logo.png"
+ },
+ "Wix": {
+  "name": "Wix",
+  "domain": "wix.com",
+  "cover": "wix-cover.jpg",
+  "logo": "wix-logo.png"
+ },
+ "VAST Data": {
+  "name": "VAST Data",
+  "domain": "vastdata.com",
+  "cover": "vastdata-cover.jpg",
+  "logo": "vastdata-logo.png"
+ },
+ "Cyera": {
+  "name": "Cyera",
+  "domain": "cyera.com",
+  "cover": "cyera-cover.jpg",
+  "logo": "cyera-logo.png"
+ },
+ "Upwind": {
+  "name": "Upwind",
+  "domain": "upwind.io",
+  "cover": "upwind-cover.jpg",
+  "logo": "upwind-logo.png"
+ },
+ "Aidoc": {
+  "name": "Aidoc",
+  "domain": "aidoc.com",
+  "cover": "aidoc-cover.jpg",
+  "logo": "aidoc-logo.png"
+ },
+ "AllCloud": {
+  "name": "AllCloud",
+  "domain": "allcloud.io",
+  "cover": "allcloud-cover.jpg",
+  "logo": "allcloud-logo.png"
+ },
+ "Kaltura": {
+  "name": "Kaltura",
+  "domain": "kaltura.com",
+  "cover": "kaltura-cover.jpg",
+  "logo": "kaltura-logo.png"
+ },
+ "Noma Security": {
+  "name": "Noma Security",
+  "domain": "noma.security",
+  "cover": "nomasecurity-cover.jpg",
+  "logo": "nomasecurity-logo.png"
+ },
+ "Coralogix": {
+  "name": "Coralogix",
+  "domain": "coralogix.com",
+  "cover": null,
+  "logo": "coralogix-logo.png"
+ },
+ "Claroty": {
+  "name": "Claroty",
+  "domain": "claroty.com",
+  "cover": "claroty-cover.jpg",
+  "logo": "claroty-logo.png"
+ },
+ "Fiverr": {
+  "name": "Fiverr",
+  "domain": "fiverr.com",
+  "cover": "fiverr-cover.jpg",
+  "logo": "fiverr-logo.png"
+ },
+ "Pentera": {
+  "name": "Pentera",
+  "domain": "pentera.io",
+  "cover": "pentera-cover.jpg",
+  "logo": "pentera-logo.png"
+ },
+ "Sygnia": {
+  "name": "Sygnia",
+  "domain": "sygnia.co",
+  "cover": "sygnia-cover.jpg",
+  "logo": "sygnia-logo.png"
+ },
+ "Zenity": {
+  "name": "Zenity",
+  "domain": "zenity.io",
+  "cover": "zenity-cover.jpg",
+  "logo": "zenity-logo.png"
+ },
+ "Port": {
+  "name": "Port",
+  "domain": "port.io",
+  "cover": "port-cover.jpg",
+  "logo": "port-logo.png"
+ },
+ "Silverfort": {
+  "name": "Silverfort",
+  "domain": "silverfort.com",
+  "cover": null,
+  "logo": "silverfort-logo.png",
+  "cover_error": "'ascii' codec can't encode character '\\u2013' in position 43: ordinal not in ran"
+ },
+ "Oligo": {
+  "name": "Oligo",
+  "domain": "oligo.security",
+  "cover": "oligo-cover.jpg",
+  "logo": "oligo-logo.png"
+ },
+ "Pagaya": {
+  "name": "Pagaya",
+  "domain": "pagaya.com",
+  "cover": "pagaya-cover.jpg",
+  "logo": "pagaya-logo.png"
+ },
+ "Guesty": {
+  "name": "Guesty",
+  "domain": "guesty.com",
+  "cover": "guesty-cover.jpg",
+  "logo": "guesty-logo.png"
+ },
+ "Novee Security": {
+  "name": "Novee Security",
+  "domain": "novee.security",
+  "cover": "noveesecurity-cover.jpg",
+  "logo": "noveesecurity-logo.png"
+ },
+ "Playtika": {
+  "name": "Playtika",
+  "domain": "playtika.com",
+  "cover": null,
+  "logo": "playtika-logo.png"
+ },
+ "IRONSCALES": {
+  "name": "IRONSCALES",
+  "domain": "ironscales.com",
+  "cover": null,
+  "logo": "ironscales-logo.png"
+ },
+ "Lusha": {
+  "name": "Lusha",
+  "domain": "lusha.com",
+  "cover": "lusha-cover.jpg",
+  "logo": "lusha-logo.png"
+ },
+ "OX Security": {
+  "name": "OX Security",
+  "domain": "ox.security",
+  "cover": "oxsecurity-cover.jpg",
+  "logo": "oxsecurity-logo.png"
+ },
+ "Papaya Global": {
+  "name": "Papaya Global",
+  "domain": "papayaglobal.com",
+  "cover": "papayaglobal-cover.jpg",
+  "logo": "papayaglobal-logo.png"
+ },
+ "Tipalti": {
+  "name": "Tipalti",
+  "domain": "tipalti.com",
+  "cover": "tipalti-cover.jpg",
+  "logo": "tipalti-logo.png"
+ },
+ "Viz.ai": {
+  "name": "Viz.ai",
+  "domain": "viz.ai",
+  "cover": "vizai-cover.jpg",
+  "logo": "vizai-logo.png"
+ },
+ "Melio": {
+  "name": "Melio",
+  "domain": "meliopayments.com",
+  "cover": "melio-cover.jpg",
+  "logo": "melio-logo.png"
+ },
+ "Natural Intelligence": {
+  "name": "Natural Intelligence",
+  "domain": "naturalint.com",
+  "cover": "naturalintelligence-cover.jpg",
+  "logo": "naturalintelligence-logo.png"
+ },
+ "Gloat": {
+  "name": "Gloat",
+  "domain": "gloat.com",
+  "cover": "gloat-cover.jpg",
+  "logo": "gloat-logo.png"
+ },
+ "Legit Security": {
+  "name": "Legit Security",
+  "domain": "legitsecurity.com",
+  "cover": "legitsecurity-cover.jpg",
+  "logo": "legitsecurity-logo.png"
+ },
+ "Onyx Security": {
+  "name": "Onyx Security",
+  "domain": "onyx.security",
+  "cover": "onyxsecurity-cover.jpg",
+  "logo": "onyxsecurity-logo.png"
+ },
+ "Aqua Security": {
+  "name": "Aqua Security",
+  "domain": "aquasec.com",
+  "cover": "aquasecurity-cover.jpg",
+  "logo": "aquasecurity-logo.png"
+ },
+ "Checkmarx": {
+  "name": "Checkmarx",
+  "domain": "checkmarx.com",
+  "cover": "checkmarx-cover.jpg",
+  "logo": "checkmarx-logo.png"
+ },
+ "Glassbox": {
+  "name": "Glassbox",
+  "domain": "glassbox.com",
+  "cover": "glassbox-cover.jpg",
+  "logo": "glassbox-logo.png"
+ },
+ "Overwolf": {
+  "name": "Overwolf",
+  "domain": "overwolf.com",
+  "cover": "overwolf-cover.jpg",
+  "logo": "overwolf-logo.png"
+ },
+ "Tailor Brands": {
+  "name": "Tailor Brands",
+  "domain": "tailorbrands.com",
+  "cover": "tailorbrands-cover.jpg",
+  "logo": "tailorbrands-logo.png"
+ },
+ "AI21 Labs": {
+  "name": "AI21 Labs",
+  "domain": "ai21.com",
+  "cover": "ai21labs-cover.jpg",
+  "logo": "ai21labs-logo.png"
+ },
+ "Cycode": {
+  "name": "Cycode",
+  "domain": "cycode.com",
+  "cover": "cycode-cover.jpg",
+  "logo": "cycode-logo.png"
+ },
+ "D-ID": {
+  "name": "D-ID",
+  "domain": "d-id.com",
+  "cover": "did-cover.jpg",
+  "logo": "did-logo.png"
+ },
+ "Komodor": {
+  "name": "Komodor",
+  "domain": "komodor.com",
+  "cover": null,
+  "logo": "komodor-logo.png",
+  "cover_error": "'ascii' codec can't encode character '\\xb7' in position 35: ordinal not in range"
+ },
+ "Mend": {
+  "name": "Mend",
+  "domain": "mend.io",
+  "cover": "mend-cover.jpg",
+  "logo": "mend-logo.png"
+ },
+ "Qodo": {
+  "name": "Qodo",
+  "domain": "qodo.ai",
+  "cover": "qodo-cover.jpg",
+  "logo": "qodo-logo.png"
+ },
+ "Bizzabo": {
+  "name": "Bizzabo",
+  "domain": "bizzabo.com",
+  "cover": "bizzabo-cover.jpg",
+  "logo": "bizzabo-logo.png"
+ },
+ "Lasso Security": {
+  "name": "Lasso Security",
+  "domain": "lasso.security",
+  "cover": "lassosecurity-cover.jpg",
+  "logo": "lassosecurity-logo.png"
+ },
+ "Zesty": {
+  "name": "Zesty",
+  "domain": "zesty.co",
+  "cover": "zesty-cover.jpg",
+  "logo": "zesty-logo.png"
+ },
+ "Elementor": {
+  "name": "Elementor",
+  "domain": "elementor.com",
+  "cover": "elementor-cover.jpg",
+  "logo": "elementor-logo.png"
+ },
+ "Optibus": {
+  "name": "Optibus",
+  "domain": "optibus.com",
+  "cover": "optibus-cover.jpg",
+  "logo": "optibus-logo.png"
+ },
+ "Zencity": {
+  "name": "Zencity",
+  "domain": "zencity.io",
+  "cover": "zencity-cover.jpg",
+  "logo": "zencity-logo.png"
  }
 }

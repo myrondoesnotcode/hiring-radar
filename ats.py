@@ -58,7 +58,9 @@ def greenhouse(slug, company):
 
 
 def lever(slug, company):
-    d = get(f"https://api.lever.co/v0/postings/{slug}?mode=json")
+    # "eu/<slug>" = Lever's EU instance (e.g. Mobileye)
+    host, slug = ("api.eu.lever.co", slug[3:]) if slug.startswith("eu/") else ("api.lever.co", slug)
+    d = get(f"https://{host}/v0/postings/{slug}?mode=json")
     if not isinstance(d, list):
         return None
     out = []
@@ -132,5 +134,103 @@ def smartrecruiters(slug, company):
     return out
 
 
+def page(url, timeout=20):
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (deploy-hiring-tracker)"})
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return r.read().decode("utf-8", "replace")
+    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, ConnectionError, OSError, ValueError):
+        return None
+
+
+def comeet(slug, company):
+    """slug = "<company-slug>/<company-uid>", e.g. "zenity/19.000". Reads Comeet's public hosted careers page.
+    Comeet gives no publish date, so published stays empty; snapshot.py fills it with the day the role first showed up."""
+    s = page(f"https://www.comeet.com/jobs/{slug}")
+    m = re.search(r"COMPANY_POSITIONS_DATA\s*=\s*\[", s or "")
+    if not m:
+        return None
+    try:
+        d, _ = json.JSONDecoder().raw_decode(s[m.end() - 1:])
+    except ValueError:
+        return None
+    out = []
+    for j in d:
+        if j.get("is_internal"):
+            continue
+        l = j.get("location") or {}
+        loc = l.get("name") or ", ".join(x for x in [l.get("city"), l.get("country")] if x)
+        out.append(job(company, "comeet", j.get("uid"), j.get("name"), loc, is_israel(loc, l.get("country") == "IL" and "israel"),
+                       j.get("department"), j.get("url_active_page") or j.get("url_comeet_hosted_page"), "", None,
+                       l.get("is_remote") or j.get("workplace_type") == "Remote"))
+    return out
+
+
+def post(url, body, timeout=20):
+    req = urllib.request.Request(url, data=json.dumps(body).encode(), method="POST",
+                                 headers={**UA, "Content-Type": "application/json", "Accept": "application/json"})
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return json.load(r)
+    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, json.JSONDecodeError, ConnectionError, OSError):
+        return None
+
+
+def workday(slug, company):
+    """slug = "<tenant>/<wdN>/<site>", e.g. "nvidia/wd5/NVIDIAExternalCareerSite". Public Workday job search.
+    Big Workday boards hold thousands of roles, so only the Israel roles are listed; the board's total is kept
+    as extra placeholder rows (israel=False, no title) so the worldwide count stays right."""
+    try:
+        tenant, wd, site = slug.split("/")
+    except ValueError:
+        return None
+    base = f"https://{tenant}.{wd}.myworkdayjobs.com"
+    api = f"{base}/wday/cxs/{tenant}/{site}/jobs"
+    first = post(api, {"appliedFacets": {}, "limit": 20, "offset": 0, "searchText": ""})
+    if not first or "jobPostings" not in first:
+        return None
+    total = first.get("total") or 0
+    facet = None
+    def walk(fs):
+        nonlocal facet
+        for f in fs or []:
+            for v in f.get("values") or []:
+                if "values" in v:
+                    walk([v])
+                elif (v.get("descriptor") or "").strip().lower() == "israel" and facet is None:
+                    facet = (f.get("facetParameter"), v.get("id"))
+    walk(first.get("facets"))
+    il = []
+    if facet:
+        off, n = 0, None
+        while off < 1000:
+            d = post(api, {"appliedFacets": {facet[0]: [facet[1]]}, "limit": 20, "offset": off, "searchText": ""})
+            if not d or not d.get("jobPostings"):
+                break
+            il += d["jobPostings"]
+            n = n or d.get("total") or 0  # Workday only sends the total on the first page
+            off += 20
+            if off >= n:
+                break
+    import datetime
+    today = datetime.date.today()
+    def posted(t):
+        t = (t or "").lower()
+        if "today" in t: return today.isoformat()
+        if "yesterday" in t: return (today - datetime.timedelta(1)).isoformat()
+        m = re.search(r"(\d+)\+? days? ago", t)
+        return (today - datetime.timedelta(int(m.group(1)))).isoformat() if m and "+" not in t else ""
+    out = []
+    for j in il:
+        loc = j.get("locationsText") or ""
+        loc = loc if is_israel(loc) else (loc + " · Israel").strip(" ·")
+        jid = (j.get("bulletFields") or [j.get("externalPath")])[0]
+        out.append(job(company, "workday", jid, j.get("title"), loc, True, "", base + "/" + site + (j.get("externalPath") or ""),
+                       posted(j.get("postedOn")), None, "remote" in loc.lower()))
+    for k in range(max(0, total - len(out))):
+        out.append(job(company, "workday", f"_other{k}", "", "", False, "", "", ""))
+    return out
+
+
 FETCHERS = {"greenhouse": greenhouse, "lever": lever, "ashby": ashby, "workable": workable,
-            "smartrecruiters": smartrecruiters}
+            "smartrecruiters": smartrecruiters, "comeet": comeet, "workday": workday}
