@@ -1,31 +1,31 @@
 {
  "totals": {
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "companies": 88,
-  "jobs": 6105,
-  "israel": 1426,
-  "israel_new30": 449,
-  "ai_israel": 207,
+  "jobs": 6093,
+  "israel": 1419,
+  "israel_new30": 458,
+  "ai_israel": 205,
   "cities": [
    [
     "Tel Aviv",
-    725
+    718
    ],
    [
     "Israel (other)",
-    326
+    327
    ],
    [
     "Yokneam",
-    133
+    135
    ],
    [
     "Jerusalem",
-    60
+    59
    ],
    [
     "Ramat Gan",
-    56
+    57
    ],
    [
     "Haifa",
@@ -33,41 +33,37 @@
    ],
    [
     "Herzliya",
-    36
+    33
    ],
    [
     "Ra'anana",
-    27
+    26
    ]
   ],
   "teams": [
    [
     "Other",
-    466
+    468
    ],
    [
     "Engineering",
-    145
+    141
    ],
    [
     "R&D",
-    97
+    98
    ],
    [
     "Product",
-    61
+    58
    ],
    [
     "Algorithms",
-    38
+    39
    ],
    [
     "Finance",
-    32
-   ],
-   [
-    "Software",
-    31
+    33
    ],
    [
     "Hardware",
@@ -78,13 +74,17 @@
     31
    ],
    [
+    "Software",
+    30
+   ],
+   [
     "IT",
-    18
+    17
    ]
   ],
-  "us_pay_roles": 355,
+  "us_pay_roles": 353,
   "has_previous": true,
-  "previous_date": "2026-11-24",
+  "previous_date": "2026-11-25",
   "failed": [
    "Tavily"
   ]
@@ -96,10 +96,10 @@
    "jobs": 2000,
    "israel": 382,
    "israel_share": 0.19,
-   "new30": 159,
-   "israel_new30": 138,
-   "ai": 46,
-   "ai_israel": 46,
+   "new30": 163,
+   "israel_new30": 142,
+   "ai": 47,
+   "ai_israel": 47,
    "ai_share_israel": 0.12,
    "teams_israel": [
     [
@@ -110,17 +110,17 @@
    "new_teams": [
     [
      "Other",
-     159
+     163
     ]
    ],
    "cities": [
     [
      "Israel (other)",
-     178
+     176
     ],
     [
      "Yokneam",
-     133
+     135
     ],
     [
      "Tel Aviv",
@@ -130,9 +130,86 @@
    "us_pay_roles": 0,
    "us_pay_median_mid": null,
    "top_paid": null,
-   "opened": 8,
-   "closed": 8,
+   "opened": 6,
+   "closed": 6,
    "latest_israel": [
+    {
+     "title": "Senior DevOps & Software Engineer",
+     "location": "Israel, Yokneam",
+     "dept": "",
+     "published": "2026-11-26",
+     "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-DevOps-Engineer_JR2029070"
+    },
+    {
+     "title": "Senior SRE Engineer",
+     "location": "2 Locations \u00b7 Israel",
+     "dept": "",
+     "published": "2026-11-26",
+     "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Senior-SRE-Engineer_JR2029097"
+    },
+    {
+     "title": "Software Verification Engineer",
+     "location": "Israel, Yokneam",
+     "dept": "",
+     "published": "2026-11-26",
+     "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Software-Performance-Engineer_JR2024413"
+    },
+    {
+     "title": "Software Engineer - AI Solutions",
+     "location": "Israel, Yokneam",
+     "dept": "",
+     "published": "2026-11-26",
+     "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Software-Engineer---AI-Solutions_JR2028393-1"
+    },
+    {
+     "title": "Principal Engineer, Package Integration and Manufacturability",
+     "location": "2 Locations \u00b7 Israel",
+     "dept": "",
+     "published": "2026-11-26",
+     "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Principal-Engineer--Package-Integration-and-Manufacturability_JR2028378"
+    },
+    {
+     "title": "Senior Chip Design Verification Engineer",
+     "location": "Israel, Tel Aviv",
+     "dept": "",
+     "published": "2026-11-26",
+     "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Senior-Chip-Design-Verification-Engineer_JR2028398"
+    },
+    {
+     "title": "Senior Program Manager, Networking Clusters",
+     "location": "3 Locations \u00b7 Israel",
+     "dept": "",
+     "published": "2026-11-25",
+     "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Program-Manager--Networking-Clusters_JR2030406"
+    },
+    {
+     "title": "Senior Security Lead, DOCA",
+     "location": "Israel, Yokneam",
+     "dept": "",
+     "published": "2026-11-25",
+     "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Security-Lead--DOCA_JR2030555"
+    },
+    {
+     "title": "Software Technical Lead - BlueField Platform",
+     "location": "2 Locations \u00b7 Israel",
+     "dept": "",
+     "published": "2026-11-25",
+     "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/BlueField-Platform-Technical-Lead_JR2029293"
+    },
+    {
+     "title": "Senior System Software Architect, AI Networking",
+     "location": "3 Locations \u00b7 Israel",
+     "dept": "",
+     "published": "2026-11-25",
+     "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-System-Software-Architect--AI-Networking_JR2029495"
+    },
+    {
+     "title": "Hardware Failure Analysis Engineer \u2013 Physical Failure Analysis",
+     "location": "Israel, Yokneam",
+     "dept": "",
+     "published": "2026-11-25",
+     "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Hardware-Failure-Analysis-Engineer---Physical-Failure-Analysis_JR2021383"
+    },
     {
      "title": "Chip Design Engineer",
      "location": "Israel, Tel Aviv",
@@ -146,13 +223,6 @@
      "dept": "",
      "published": "2026-11-25",
      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-AI-and-LLM-Solutions-Software-Engineer_JR2029870"
-    },
-    {
-     "title": "BlueField Platform Technical Lead",
-     "location": "2 Locations \u00b7 Israel",
-     "dept": "",
-     "published": "2026-11-25",
-     "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/BlueField-Platform-Technical-Lead_JR2029293"
     },
     {
      "title": "Mechanical Engineer",
@@ -316,13 +386,6 @@
      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Senior-Physical-Verification-Engineer_JR2028106-1"
     },
     {
-     "title": "Physical Verification Engineer",
-     "location": "2 Locations \u00b7 Israel",
-     "dept": "",
-     "published": "2026-11-20",
-     "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Physical-Verification-Engineer_JR2028105"
-    },
-    {
      "title": "Senior Software Engineer, DOCA Verification",
      "location": "2 Locations \u00b7 Israel",
      "dept": "",
@@ -400,13 +463,6 @@
      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/SoC-Clocks-Design-Automation-Engineer_JR2029866"
     },
     {
-     "title": "Software Engineer - Python, C++, Video Algorithms",
-     "location": "2 Locations \u00b7 Israel",
-     "dept": "",
-     "published": "2026-11-19",
-     "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Software-Engineer---Python--C----Video-Algorithms_JR2026084-9"
-    },
-    {
      "title": "Senior PCB Design Layout Engineer",
      "location": "2 Locations \u00b7 Israel",
      "dept": "",
@@ -426,86 +482,30 @@
      "dept": "",
      "published": "2026-11-19",
      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Raanana/Senior-Hardware-Validation-Engineer_JR2027906"
-    },
-    {
-     "title": "Lab Infrastructure and Integrated Systems Engineer",
-     "location": "Israel, Yokneam",
-     "dept": "",
-     "published": "2026-11-19",
-     "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Lab-Infrastructure-and-Integrated-Systems-Engineer_JR2028031"
-    },
-    {
-     "title": "Hardware Architect, Deep Learning GPU and System",
-     "location": "Israel, Yokneam",
-     "dept": "",
-     "published": "2026-11-18",
-     "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Hardware-Architect--Deep-Learning-GPU-and-System_JR2029852"
-    },
-    {
-     "title": "Senior ASIC Low-Power Integration and AI Engineer",
-     "location": "4 Locations \u00b7 Israel",
-     "dept": "",
-     "published": "2026-11-18",
-     "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Senior-ASIC-Low-Power-Integration-and-AI-Engineer_JR2029715"
-    },
-    {
-     "title": "Senior VLSI CAD and AI Automation Engineer",
-     "location": "2 Locations \u00b7 Israel",
-     "dept": "",
-     "published": "2026-11-18",
-     "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-VLSI-CAD-and-AI-Automation-Engineer_JR2029800"
-    },
-    {
-     "title": "Physical Design Backend Engineer",
-     "location": "2 Locations \u00b7 Israel",
-     "dept": "",
-     "published": "2026-11-18",
-     "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Tel-Aviv/Physical-Design-Backend-Engineer_JR2026772"
-    },
-    {
-     "title": "Senior Software Engineer",
-     "location": "2 Locations \u00b7 Israel",
-     "dept": "",
-     "published": "2026-11-18",
-     "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Raanana/Senior-Software-Engineer_JR2016506"
-    },
-    {
-     "title": "Software Engineer, NVLink",
-     "location": "2 Locations \u00b7 Israel",
-     "dept": "",
-     "published": "2026-11-18",
-     "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Raanana/Software-Engineer--NVLink_JR2025935"
-    },
-    {
-     "title": "Senior Software Technical Program Manager",
-     "location": "3 Locations \u00b7 Israel",
-     "dept": "",
-     "published": "2026-11-18",
-     "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Software-Technical-Program-Manager_JR2026898"
     }
    ],
    "hooks": [
-    "NVIDIA posted 138 new roles in Israel in the last 30 days",
-    "46 of NVIDIA's 382 Israel roles are AI/ML",
-    "Biggest new push: Other (159 roles posted this month)",
-    "8 roles opened, 8 closed since last snapshot"
+    "NVIDIA posted 142 new roles in Israel in the last 30 days",
+    "47 of NVIDIA's 382 Israel roles are AI/ML",
+    "Biggest new push: Other (163 roles posted this month)",
+    "6 roles opened, 6 closed since last snapshot"
    ]
   },
   {
    "name": "Mobileye",
    "ats": "lever",
-   "jobs": 175,
+   "jobs": 180,
    "israel": 150,
-   "israel_share": 0.86,
-   "new30": 39,
-   "israel_new30": 35,
+   "israel_share": 0.83,
+   "new30": 43,
+   "israel_new30": 36,
    "ai": 25,
    "ai_israel": 25,
    "ai_share_israel": 0.17,
    "teams_israel": [
     [
      "Algorithms",
-     36
+     37
     ],
     [
      "Hardware",
@@ -513,7 +513,7 @@
     ],
     [
      "Software",
-     30
+     29
     ],
     [
      "Architects",
@@ -527,21 +527,21 @@
     ],
     [
      "Software",
-     6
+     7
     ],
     [
      "Algorithms",
-     4
+     5
     ]
    ],
    "cities": [
     [
      "Jerusalem",
-     60
+     59
     ],
     [
      "Ramat Gan",
-     40
+     41
     ],
     [
      "Haifa",
@@ -552,14 +552,28 @@
    "us_pay_median_mid": null,
    "top_paid": null,
    "opened": 9,
-   "closed": 6,
+   "closed": 4,
    "latest_israel": [
+    {
+     "title": "Senior Signal Processing Algorithm Developer",
+     "location": "Petah Tikva, Israel",
+     "dept": "Algorithms",
+     "published": "2026-11-26",
+     "url": "https://jobs.eu.lever.co/mobileye/b5f72105-89cb-49a4-ac8a-2422a6142db1"
+    },
     {
      "title": "C++ Embedded Software Team Leader",
      "location": "Jerusalem, Israel",
      "dept": "Software",
      "published": "2026-11-24",
      "url": "https://jobs.eu.lever.co/mobileye/fb6ae5c4-6bcc-46a9-8107-ac537b8a546e"
+    },
+    {
+     "title": "Experienced Bookkeeper",
+     "location": "Jerusalem, Israel",
+     "dept": "Bookkeeping",
+     "published": "2026-11-24",
+     "url": "https://jobs.eu.lever.co/mobileye/abe9ac0a-0991-47fb-a7c4-633ce93b1e55"
     },
     {
      "title": "IT & Multimedia Support Specialist",
@@ -602,13 +616,6 @@
      "dept": "Algorithms",
      "published": "2026-11-22",
      "url": "https://jobs.eu.lever.co/mobileye/7aa00e13-3ae1-4dd7-a853-cb5b2a535c6a"
-    },
-    {
-     "title": "Image Quality Verification and Validation Engineer",
-     "location": "Jerusalem, Israel",
-     "dept": "Software",
-     "published": "2026-11-22",
-     "url": "https://jobs.eu.lever.co/mobileye/4e512957-1993-4606-bd4e-4f271c38943b"
     },
     {
      "title": "IT Support Specialist",
@@ -688,6 +695,13 @@
      "url": "https://jobs.eu.lever.co/mobileye/0dfdcb44-5d96-4700-bd9a-c89eeeef1061"
     },
     {
+     "title": "Business Operations Coordinator",
+     "location": "Jerusalem, Israel",
+     "dept": "Administration",
+     "published": "2026-11-10",
+     "url": "https://jobs.eu.lever.co/mobileye/3598731b-e2b3-4bd2-8bce-7a17aecf7421"
+    },
+    {
      "title": "Integration and Validation Architect",
      "location": "Haifa, Israel",
      "dept": "Hardware",
@@ -742,13 +756,6 @@
      "dept": "Hardware",
      "published": "2026-11-05",
      "url": "https://jobs.eu.lever.co/mobileye/32b2bae5-bb30-49fa-b7df-41387fcdc5c9"
-    },
-    {
-     "title": "Data Engineering Team Leader",
-     "location": "Jerusalem, Israel",
-     "dept": "Data & Analytics",
-     "published": "2026-11-04",
-     "url": "https://jobs.eu.lever.co/mobileye/9ef5fd2f-54b4-4ddd-b7ac-2139d91abd88"
     },
     {
      "title": "Experienced Technical Project Manager",
@@ -896,58 +903,381 @@
      "dept": "Algorithms",
      "published": "2026-10-14",
      "url": "https://jobs.eu.lever.co/mobileye/0786ba33-80e3-4c34-a25f-44b4c5d49723"
-    },
-    {
-     "title": "Senior Deep Learning Researcher",
-     "location": "Ramat Gan, Israel",
-     "dept": "Algorithms",
-     "published": "2026-10-11",
-     "url": "https://jobs.eu.lever.co/mobileye/aed812a3-0f66-4ec1-baf9-a0bbb4e9c8d2"
     }
    ],
    "hooks": [
-    "Mobileye posted 35 new roles in Israel in the last 30 days",
+    "Mobileye posted 36 new roles in Israel in the last 30 days",
     "25 of Mobileye's 150 Israel roles are AI/ML",
     "Biggest new push: Hardware (9 roles posted this month)",
-    "86% of open roles are in Israel",
-    "9 roles opened, 6 closed since last snapshot"
+    "83% of open roles are in Israel",
+    "9 roles opened, 4 closed since last snapshot"
    ]
   },
   {
-   "name": "Check Point",
+   "name": "Wix",
    "ats": "smartrecruiters",
-   "jobs": 233,
-   "israel": 41,
-   "israel_share": 0.18,
-   "new30": 120,
-   "israel_new30": 27,
-   "ai": 14,
-   "ai_israel": 7,
-   "ai_share_israel": 0.17,
+   "jobs": 94,
+   "israel": 40,
+   "israel_share": 0.43,
+   "new30": 64,
+   "israel_new30": 29,
+   "ai": 6,
+   "ai_israel": 5,
+   "ai_share_israel": 0.12,
    "teams_israel": [
     [
      "Other",
-     41
+     40
     ]
    ],
    "new_teams": [
     [
      "Other",
-     120
+     64
     ]
    ],
    "cities": [
     [
      "Tel Aviv",
-     41
+     40
     ]
    ],
    "us_pay_roles": 0,
    "us_pay_median_mid": null,
    "top_paid": null,
    "opened": 6,
-   "closed": 9,
+   "closed": 4,
    "latest_israel": [
+    {
+     "title": "Infra Security Architect",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-11-26",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000163861429"
+    },
+    {
+     "title": "Solution Engineer - Base44",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-11-26",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000163856678"
+    },
+    {
+     "title": "IT Engineer",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-11-26",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000163823190"
+    },
+    {
+     "title": "System Administrator",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-11-26",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000163823249"
+    },
+    {
+     "title": "Senior Applied Researcher - Base44",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-11-25",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000163704673"
+    },
+    {
+     "title": "xEngineer - DevEx",
+     "location": "Tel Aviv-Yafo, il",
+     "dept": "",
+     "published": "2026-11-25",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000163632152"
+    },
+    {
+     "title": "Brand Designer",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-11-24",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000163409922"
+    },
+    {
+     "title": "Full stack organic growth marketer",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-11-24",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000163407916"
+    },
+    {
+     "title": "Product Manager - Base44",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-11-24",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000163397859"
+    },
+    {
+     "title": "Data Scientist",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-11-22",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000163100839"
+    },
+    {
+     "title": "Travel Coordinator (Student)",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-11-22",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000163091929"
+    },
+    {
+     "title": "Visual and Web designer - DesignDev team",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-11-21",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000162961849"
+    },
+    {
+     "title": "Social Media Manager",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-11-18",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000162304759"
+    },
+    {
+     "title": "AI Analyst",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-11-18",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000162246079"
+    },
+    {
+     "title": "Procurement Business Partner - Base44",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-11-17",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000162118675"
+    },
+    {
+     "title": "Talent Acquisition Partner - Sourcing Expert (Temp Position)",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-11-17",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000162060209"
+    },
+    {
+     "title": "Developer Relations Expert",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-11-17",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000162021416"
+    },
+    {
+     "title": "Enterprise Account Executive - Base44",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-11-16",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000161860850"
+    },
+    {
+     "title": "FP&A analyst",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-11-12",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000161298399"
+    },
+    {
+     "title": "Senior AI Engineer - Marketing AI Transformation",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-11-09",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000160559549"
+    },
+    {
+     "title": "Infrastructure Engineer \u2013 DevOps & Core Systems",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-11-04",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000159588879"
+    },
+    {
+     "title": "Microsoft Dynamics 365 \u2013 Technical Lead & Solution Architect",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-11-03",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000159377632"
+    },
+    {
+     "title": "Experienced Motion Designer",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-11-03",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000159329929"
+    },
+    {
+     "title": "IL Benefits Expert",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-11-03",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000159308349"
+    },
+    {
+     "title": "Senior Full Stack Engineer - Data Services",
+     "location": "Tel Aviv-Yafo, il",
+     "dept": "",
+     "published": "2026-11-02",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000159080790"
+    },
+    {
+     "title": "Business Analyst - Wix Marketing",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-10-29",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000158476089"
+    },
+    {
+     "title": "Performance Marketing Analyst",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-10-29",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000158469850"
+    },
+    {
+     "title": "Product Designer (UX/UI) - Base44",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-10-28",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000158256099"
+    },
+    {
+     "title": "Partnership Manager - Base44",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-10-27",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000157982409"
+    },
+    {
+     "title": "DevOps Tech Lead",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-10-26",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000157745247"
+    },
+    {
+     "title": "Full Stack Engineer - Wix Code",
+     "location": "Tel Aviv-Yafo, il",
+     "dept": "",
+     "published": "2026-10-21",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000156782609"
+    },
+    {
+     "title": "DevOps Engineer - Cloud Infra Team",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-10-18",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000156182419"
+    },
+    {
+     "title": "AI Engineer - Base44",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-10-13",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000155273100"
+    },
+    {
+     "title": "DevOps Engineer - Base44",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-10-01",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000152930574"
+    },
+    {
+     "title": "AI Marketing Builder - Base44",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-10-01",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000152864758"
+    },
+    {
+     "title": "xEngineer (Backend oriented), Premium Billing Platform",
+     "location": "Tel Aviv-Yafo, il",
+     "dept": "",
+     "published": "2026-09-27",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000152028049"
+    },
+    {
+     "title": "Forward Deployed Engineer - Base44",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-09-23",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000151318039"
+    },
+    {
+     "title": "Motion Designer - Base44",
+     "location": "Tel Aviv, il",
+     "dept": "",
+     "published": "2026-09-23",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000151316848"
+    },
+    {
+     "title": "xEngineer for Wix Headless",
+     "location": "Tel Aviv-Yafo, il",
+     "dept": "",
+     "published": "2026-09-14",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000149304000"
+    },
+    {
+     "title": "xEngineer (Backend Oriented) for Wix Code Infrastructure",
+     "location": "Tel Aviv-Yafo, il",
+     "dept": "",
+     "published": "2026-08-19",
+     "url": "https://jobs.smartrecruiters.com/Wix2/744000144261939"
+    }
+   ],
+   "hooks": [
+    "Wix posted 29 new roles in Israel in the last 30 days",
+    "5 of Wix's 40 Israel roles are AI/ML",
+    "Biggest new push: Other (64 roles posted this month)",
+    "6 roles opened, 4 closed since last snapshot"
+   ]
+  },
+  {
+   "name": "Check Point",
+   "ats": "smartrecruiters",
+   "jobs": 230,
+   "israel": 40,
+   "israel_share": 0.17,
+   "new30": 118,
+   "israel_new30": 26,
+   "ai": 14,
+   "ai_israel": 7,
+   "ai_share_israel": 0.17,
+   "teams_israel": [
+    [
+     "Other",
+     40
+    ]
+   ],
+   "new_teams": [
+    [
+     "Other",
+     118
+    ]
+   ],
+   "cities": [
+    [
+     "Tel Aviv",
+     40
+    ]
+   ],
+   "us_pay_roles": 0,
+   "us_pay_median_mid": null,
+   "top_paid": null,
+   "opened": 10,
+   "closed": 13,
+   "latest_israel": [
+    {
+     "title": "AI Engineer",
+     "location": "Tel Aviv-Yafo, il",
+     "dept": "",
+     "published": "2026-11-25",
+     "url": "https://jobs.smartrecruiters.com/CheckPointSoftwareTechnologies2/744000163771979"
+    },
     {
      "title": "Treasury Analyst",
      "location": "Tel Aviv-Yafo, il",
@@ -963,25 +1293,11 @@
      "url": "https://jobs.smartrecruiters.com/CheckPointSoftwareTechnologies2/744000163673902"
     },
     {
-     "title": "AI Test Automation Engineer",
-     "location": "Tel Aviv-Yafo, il",
-     "dept": "",
-     "published": "2026-11-25",
-     "url": "https://jobs.smartrecruiters.com/CheckPointSoftwareTechnologies2/744000163623809"
-    },
-    {
      "title": "Cyber Threat Intelligence Analyst - Italian Speaker",
      "location": "Tel Aviv-Yafo, il",
      "dept": "",
      "published": "2026-11-23",
      "url": "https://jobs.smartrecruiters.com/CheckPointSoftwareTechnologies2/744000163171382"
-    },
-    {
-     "title": "Cyber Threat Intelligence Analyst",
-     "location": "Tel Aviv-Yafo, il",
-     "dept": "",
-     "published": "2026-11-23",
-     "url": "https://jobs.smartrecruiters.com/CheckPointSoftwareTechnologies2/744000163168779"
     },
     {
      "title": "Credit & Collection Team Lead",
@@ -1237,325 +1553,23 @@
     }
    ],
    "hooks": [
-    "Check Point posted 27 new roles in Israel in the last 30 days",
-    "7 of Check Point's 41 Israel roles are AI/ML",
-    "Biggest new push: Other (120 roles posted this month)",
-    "6 roles opened, 9 closed since last snapshot"
-   ]
-  },
-  {
-   "name": "Wix",
-   "ats": "smartrecruiters",
-   "jobs": 92,
-   "israel": 37,
-   "israel_share": 0.4,
-   "new30": 62,
-   "israel_new30": 26,
-   "ai": 6,
-   "ai_israel": 5,
-   "ai_share_israel": 0.14,
-   "teams_israel": [
-    [
-     "Other",
-     37
-    ]
-   ],
-   "new_teams": [
-    [
-     "Other",
-     62
-    ]
-   ],
-   "cities": [
-    [
-     "Tel Aviv",
-     37
-    ]
-   ],
-   "us_pay_roles": 0,
-   "us_pay_median_mid": null,
-   "top_paid": null,
-   "opened": 5,
-   "closed": 1,
-   "latest_israel": [
-    {
-     "title": "xEngineer - DevEx",
-     "location": "Tel Aviv-Yafo, il",
-     "dept": "",
-     "published": "2026-11-25",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000163632152"
-    },
-    {
-     "title": "Senior Applied Researcher",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-11-24",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000163531530"
-    },
-    {
-     "title": "Brand Designer",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-11-24",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000163409922"
-    },
-    {
-     "title": "Full stack organic growth marketer",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-11-24",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000163407916"
-    },
-    {
-     "title": "Product Manager - Base44",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-11-24",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000163397859"
-    },
-    {
-     "title": "Data Scientist",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-11-22",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000163100839"
-    },
-    {
-     "title": "Travel Coordinator (Student)",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-11-22",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000163091929"
-    },
-    {
-     "title": "Visual and Web designer - DesignDev team",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-11-21",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000162961849"
-    },
-    {
-     "title": "Social Media Manager",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-11-18",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000162304759"
-    },
-    {
-     "title": "AI Analyst",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-11-18",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000162246079"
-    },
-    {
-     "title": "Procurement Business Partner - Base44",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-11-17",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000162118675"
-    },
-    {
-     "title": "Talent Acquisition Partner - Sourcing Expert (Temp Position)",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-11-17",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000162060209"
-    },
-    {
-     "title": "Developer Relations Expert",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-11-17",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000162021416"
-    },
-    {
-     "title": "Enterprise Account Executive - Base44",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-11-16",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000161860850"
-    },
-    {
-     "title": "FP&A analyst",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-11-12",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000161298399"
-    },
-    {
-     "title": "Senior AI Engineer - Marketing AI Transformation",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-11-09",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000160559549"
-    },
-    {
-     "title": "Infrastructure Engineer \u2013 DevOps & Core Systems",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-11-04",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000159588879"
-    },
-    {
-     "title": "Microsoft Dynamics 365 \u2013 Technical Lead & Solution Architect",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-11-03",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000159377632"
-    },
-    {
-     "title": "Experienced Motion Designer",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-11-03",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000159329929"
-    },
-    {
-     "title": "IL Benefits Expert",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-11-03",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000159308349"
-    },
-    {
-     "title": "Senior Full Stack Engineer - Data Services",
-     "location": "Tel Aviv-Yafo, il",
-     "dept": "",
-     "published": "2026-11-02",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000159080790"
-    },
-    {
-     "title": "Business Analyst - Wix Marketing",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-10-29",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000158476089"
-    },
-    {
-     "title": "Performance Marketing Analyst",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-10-29",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000158469850"
-    },
-    {
-     "title": "Product Designer (UX/UI) - Base44",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-10-28",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000158256099"
-    },
-    {
-     "title": "Partnership Manager - Base44",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-10-27",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000157982409"
-    },
-    {
-     "title": "DevOps Tech Lead",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-10-26",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000157745247"
-    },
-    {
-     "title": "Full Stack Engineer - Wix Code",
-     "location": "Tel Aviv-Yafo, il",
-     "dept": "",
-     "published": "2026-10-21",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000156782609"
-    },
-    {
-     "title": "DevOps Engineer - Cloud Infra Team",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-10-18",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000156182419"
-    },
-    {
-     "title": "IT Professional Services",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-10-15",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000155710054"
-    },
-    {
-     "title": "AI Engineer - Base44",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-10-13",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000155273100"
-    },
-    {
-     "title": "DevOps Engineer - Base44",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-10-01",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000152930574"
-    },
-    {
-     "title": "AI Marketing Builder - Base44",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-10-01",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000152864758"
-    },
-    {
-     "title": "xEngineer (Backend oriented), Premium Billing Platform",
-     "location": "Tel Aviv-Yafo, il",
-     "dept": "",
-     "published": "2026-09-27",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000152028049"
-    },
-    {
-     "title": "Forward Deployed Engineer - Base44",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-09-23",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000151318039"
-    },
-    {
-     "title": "Motion Designer - Base44",
-     "location": "Tel Aviv, il",
-     "dept": "",
-     "published": "2026-09-23",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000151316848"
-    },
-    {
-     "title": "xEngineer for Wix Headless",
-     "location": "Tel Aviv-Yafo, il",
-     "dept": "",
-     "published": "2026-09-14",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000149304000"
-    },
-    {
-     "title": "xEngineer (Backend Oriented) for Wix Code Infrastructure",
-     "location": "Tel Aviv-Yafo, il",
-     "dept": "",
-     "published": "2026-08-19",
-     "url": "https://jobs.smartrecruiters.com/Wix2/744000144261939"
-    }
-   ],
-   "hooks": [
-    "Wix posted 26 new roles in Israel in the last 30 days",
-    "5 of Wix's 37 Israel roles are AI/ML",
-    "Biggest new push: Other (62 roles posted this month)",
-    "5 roles opened, 1 closed since last snapshot"
+    "Check Point posted 26 new roles in Israel in the last 30 days",
+    "7 of Check Point's 40 Israel roles are AI/ML",
+    "Biggest new push: Other (118 roles posted this month)",
+    "10 roles opened, 13 closed since last snapshot"
    ]
   },
   {
    "name": "Cato Networks",
    "ats": "greenhouse",
-   "jobs": 120,
-   "israel": 40,
-   "israel_share": 0.33,
-   "new30": 59,
-   "israel_new30": 17,
+   "jobs": 117,
+   "israel": 37,
+   "israel_share": 0.32,
+   "new30": 56,
+   "israel_new30": 14,
    "ai": 8,
    "ai_israel": 7,
-   "ai_share_israel": 0.17,
+   "ai_share_israel": 0.19,
    "teams_israel": [
     [
      "Engineering - SSE",
@@ -1580,25 +1594,25 @@
      5
     ],
     [
-     "Marketing - Corporate Marketing",
+     "Sales - Regional Sales Director",
      4
     ],
     [
-     "Sales - Regional Sales Director",
+     "Engineering - SSE",
      4
     ]
    ],
    "cities": [
     [
      "Tel Aviv",
-     40
+     37
     ]
    ],
    "us_pay_roles": 0,
    "us_pay_median_mid": null,
    "top_paid": null,
-   "opened": 2,
-   "closed": 1,
+   "opened": 1,
+   "closed": 4,
    "latest_israel": [
     {
      "title": "DevOps Engineer",
@@ -1629,25 +1643,11 @@
      "url": "https://www.catonetworks.com/careers/careers-post/5041073101?gh_jid=5041073101"
     },
     {
-     "title": "Senior Video Creator & Producer",
-     "location": "Tel Aviv District, Israel",
-     "dept": "Marketing",
-     "published": "2026-11-22",
-     "url": "https://www.catonetworks.com/careers/careers-post/5007077101?gh_jid=5007077101"
-    },
-    {
      "title": "DevOps Engineer",
      "location": "Tel Aviv District, Israel",
      "dept": "DevOps & SRE",
      "published": "2026-11-19",
      "url": "https://www.catonetworks.com/careers/careers-post/5041536101?gh_jid=5041536101"
-    },
-    {
-     "title": "Web Marketing Manager \u2014 Contract",
-     "location": "Tel Aviv District, Israel",
-     "dept": "Marketing - Corporate Marketing",
-     "published": "2026-11-18",
-     "url": "https://www.catonetworks.com/careers/careers-post/5035117101?gh_jid=5035117101"
     },
     {
      "title": "Software Engineer",
@@ -1661,14 +1661,14 @@
      "location": "Tel Aviv District, Israel",
      "dept": "Engineering - SSE",
      "published": "2026-11-10",
-     "url": "https://www.catonetworks.com/careers/careers-post/5030362101?gh_jid=5030362101"
+     "url": "https://www.catonetworks.com/careers/careers-post/5030360101?gh_jid=5030360101"
     },
     {
      "title": "Software Engineer",
      "location": "Tel Aviv District, Israel",
      "dept": "Engineering - SSE",
      "published": "2026-11-10",
-     "url": "https://www.catonetworks.com/careers/careers-post/5030360101?gh_jid=5030360101"
+     "url": "https://www.catonetworks.com/careers/careers-post/5030362101?gh_jid=5030362101"
     },
     {
      "title": "Staff Software Engineer \u2014 AI Enablement Group",
@@ -1683,13 +1683,6 @@
      "dept": "Engineering - Management",
      "published": "2026-11-09",
      "url": "https://www.catonetworks.com/careers/careers-post/5028381101?gh_jid=5028381101"
-    },
-    {
-     "title": "Web Operations Manager - Contractor Position",
-     "location": "Tel Aviv District, Israel",
-     "dept": "Marketing - Corporate Marketing",
-     "published": "2026-11-08",
-     "url": "https://www.catonetworks.com/careers/careers-post/5024509101?gh_jid=5024509101"
     },
     {
      "title": "Software Engineer",
@@ -1882,19 +1875,19 @@
     }
    ],
    "hooks": [
-    "Cato Networks posted 17 new roles in Israel in the last 30 days",
-    "7 of Cato Networks's 40 Israel roles are AI/ML",
+    "Cato Networks posted 14 new roles in Israel in the last 30 days",
+    "7 of Cato Networks's 37 Israel roles are AI/ML",
     "Biggest new push: Channel Sales NA (5 roles posted this month)",
-    "2 roles opened, 1 closed since last snapshot"
+    "1 roles opened, 4 closed since last snapshot"
    ]
   },
   {
    "name": "JFrog",
    "ats": "greenhouse",
-   "jobs": 80,
-   "israel": 20,
-   "israel_share": 0.25,
-   "new30": 30,
+   "jobs": 81,
+   "israel": 21,
+   "israel_share": 0.26,
+   "new30": 31,
    "israel_new30": 11,
    "ai": 2,
    "ai_israel": 1,
@@ -1910,7 +1903,7 @@
     ],
     [
      "Marketing",
-     2
+     3
     ],
     [
      "R&D",
@@ -1927,14 +1920,14 @@
      5
     ],
     [
-     "Customer Success",
+     "Marketing",
      4
     ]
    ],
    "cities": [
     [
      "Tel Aviv",
-     19
+     20
     ],
     [
      "Israel (other)",
@@ -1947,6 +1940,13 @@
    "opened": 2,
    "closed": 1,
    "latest_israel": [
+    {
+     "title": "Director of Product Marketing, Governance",
+     "location": "Tel Aviv/ Netanya, Israel",
+     "dept": "Marketing",
+     "published": "2026-11-26",
+     "url": "https://join.jfrog.com/job/?job=8419108&gh_jid=8419108"
+    },
     {
      "title": "Senior Product Marketing Manager, Governance",
      "location": "Tel Aviv/ Netanya, Israel",
@@ -2095,16 +2095,384 @@
    ]
   },
   {
+   "name": "Claroty",
+   "ats": "comeet",
+   "jobs": 40,
+   "israel": 15,
+   "israel_share": 0.38,
+   "new30": 26,
+   "israel_new30": 10,
+   "ai": 1,
+   "ai_israel": 1,
+   "ai_share_israel": 0.07,
+   "teams_israel": [
+    [
+     "Software Engineering",
+     5
+    ],
+    [
+     "Product Management",
+     3
+    ],
+    [
+     "IT",
+     2
+    ],
+    [
+     "Finance",
+     1
+    ]
+   ],
+   "new_teams": [
+    [
+     "Sales",
+     3
+    ],
+    [
+     "Product Management",
+     3
+    ],
+    [
+     "Channel Sales",
+     2
+    ]
+   ],
+   "cities": [
+    [
+     "Israel (other)",
+     15
+    ]
+   ],
+   "us_pay_roles": 0,
+   "us_pay_median_mid": null,
+   "top_paid": null,
+   "opened": 1,
+   "closed": 1,
+   "latest_israel": [
+    {
+     "title": "Product Analyst",
+     "location": "Israel",
+     "dept": "Product Management",
+     "published": "2026-11-26",
+     "url": "https://claroty.com/open-positions/7C.27C"
+    },
+    {
+     "title": "BI Team Leader",
+     "location": "Israel",
+     "dept": "IT",
+     "published": "2026-11-25",
+     "url": "https://claroty.com/open-positions/37.573"
+    },
+    {
+     "title": "Senior Product Manager",
+     "location": "Israel",
+     "dept": "Product Management",
+     "published": "2026-11-24",
+     "url": "https://claroty.com/open-positions/0A.57D"
+    },
+    {
+     "title": "Software Architect",
+     "location": "Israel",
+     "dept": "Software Engineering",
+     "published": "2026-11-23",
+     "url": "https://claroty.com/open-positions/3D.473"
+    },
+    {
+     "title": "DevOps Engineer",
+     "location": "Israel",
+     "dept": "Devops",
+     "published": "2026-11-19",
+     "url": "https://claroty.com/open-positions/D5.076"
+    },
+    {
+     "title": "Tech Lead Software Engineer",
+     "location": "Israel",
+     "dept": "Software Engineering",
+     "published": "2026-11-19",
+     "url": "https://claroty.com/open-positions/E7.577"
+    },
+    {
+     "title": "Vulnerability Research Team Lead",
+     "location": "Israel",
+     "dept": "Team82",
+     "published": "2026-11-19",
+     "url": "https://claroty.com/open-positions/94.A63"
+    },
+    {
+     "title": "Product Manager",
+     "location": "Israel",
+     "dept": "Product Management",
+     "published": "2026-11-18",
+     "url": "https://claroty.com/open-positions/43.57D?-updates"
+    },
+    {
+     "title": "QA Automation Engineer",
+     "location": "Israel",
+     "dept": "Automation",
+     "published": "2026-11-16",
+     "url": "https://claroty.com/open-positions/3C.374"
+    },
+    {
+     "title": "Bookkeeper (Temporary \u2013 Maternity Leave Cover)",
+     "location": "Israel",
+     "dept": "Finance",
+     "published": "2026-11-10",
+     "url": "https://claroty.com/open-positions/EE.471"
+    },
+    {
+     "title": "AI Platform- Software Engineer Team Leader",
+     "location": "Israel",
+     "dept": "Software Engineering",
+     "published": "",
+     "url": "https://claroty.com/open-positions/CE.079"
+    },
+    {
+     "title": "Backend Software Engineer",
+     "location": "Israel",
+     "dept": "Software Engineering",
+     "published": "",
+     "url": "https://claroty.com/open-positions/0A.374"
+    },
+    {
+     "title": "Data Platform Engineer",
+     "location": "Israel",
+     "dept": "Software Engineering",
+     "published": "",
+     "url": "https://claroty.com/open-positions/CA.471"
+    },
+    {
+     "title": "Security Data Analyst",
+     "location": "Israel",
+     "dept": "Data",
+     "published": "",
+     "url": "https://claroty.com/open-positions/EA.471"
+    },
+    {
+     "title": "Senior Security Operations Engineer",
+     "location": "Israel",
+     "dept": "IT",
+     "published": "",
+     "url": "https://claroty.com/open-positions/E0.E67?t=1792508928770"
+    }
+   ],
+   "hooks": [
+    "Claroty posted 10 new roles in Israel in the last 30 days",
+    "1 roles opened, 1 closed since last snapshot"
+   ]
+  },
+  {
+   "name": "Riskified",
+   "ats": "greenhouse",
+   "jobs": 46,
+   "israel": 20,
+   "israel_share": 0.43,
+   "new30": 19,
+   "israel_new30": 9,
+   "ai": 5,
+   "ai_israel": 2,
+   "ai_share_israel": 0.1,
+   "teams_israel": [
+    [
+     "Sales",
+     7
+    ],
+    [
+     "Product",
+     3
+    ],
+    [
+     "Business Technologies",
+     2
+    ],
+    [
+     "Research",
+     2
+    ]
+   ],
+   "new_teams": [
+    [
+     "Sales",
+     10
+    ],
+    [
+     "Development",
+     3
+    ],
+    [
+     "Research",
+     2
+    ]
+   ],
+   "cities": [
+    [
+     "Tel Aviv",
+     20
+    ]
+   ],
+   "us_pay_roles": 0,
+   "us_pay_median_mid": null,
+   "top_paid": null,
+   "opened": 2,
+   "closed": 3,
+   "latest_israel": [
+    {
+     "title": "Account Executive - Emerging Products",
+     "location": "Tel Aviv",
+     "dept": "Sales",
+     "published": "2026-11-25",
+     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8961954002"
+    },
+    {
+     "title": "Commercial Channel Partnership Manager",
+     "location": "Tel Aviv",
+     "dept": "Sales",
+     "published": "2026-11-25",
+     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8961781002"
+    },
+    {
+     "title": "Sales Engineer",
+     "location": "Tel Aviv",
+     "dept": "Sales",
+     "published": "2026-11-25",
+     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8962309002"
+    },
+    {
+     "title": "Partner Enablement & Operations Manager",
+     "location": "Tel Aviv",
+     "dept": "Sales",
+     "published": "2026-11-24",
+     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8938980002"
+    },
+    {
+     "title": "Staff Data Scientist- Foundation Models",
+     "location": "Tel Aviv",
+     "dept": "Research",
+     "published": "2026-11-16",
+     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8944628002"
+    },
+    {
+     "title": "Legal Counsel (Employment)",
+     "location": "Tel Aviv",
+     "dept": "Finance and Administration",
+     "published": "2026-11-11",
+     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8934490002"
+    },
+    {
+     "title": "Enterprise Product Sales Consultant",
+     "location": "Tel Aviv",
+     "dept": "Sales",
+     "published": "2026-11-09",
+     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8935217002"
+    },
+    {
+     "title": "Talent Acquisition Partner (Maternity Leave cover for 8 months)",
+     "location": "Tel Aviv",
+     "dept": "Human Resources",
+     "published": "2026-11-08",
+     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8934488002"
+    },
+    {
+     "title": "Software Engineering Manager",
+     "location": "Tel Aviv",
+     "dept": "Development",
+     "published": "2026-10-28",
+     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8885153002"
+    },
+    {
+     "title": "Staff Growth Product Manager",
+     "location": "Tel Aviv",
+     "dept": "Product",
+     "published": "2026-10-21",
+     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8905019002"
+    },
+    {
+     "title": "Application Security Architect",
+     "location": "Tel Aviv",
+     "dept": "Business Technologies",
+     "published": "2026-10-19",
+     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8891146002"
+    },
+    {
+     "title": "Payments Product Manager",
+     "location": "Tel Aviv",
+     "dept": "Product",
+     "published": "2026-10-19",
+     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8874141002"
+    },
+    {
+     "title": "Partnership Manager",
+     "location": "Tel Aviv",
+     "dept": "Sales",
+     "published": "2026-10-15",
+     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8882911002"
+    },
+    {
+     "title": "Growth Marketing Manager",
+     "location": "Tel Aviv",
+     "dept": "Marketing",
+     "published": "2026-10-14",
+     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8878439002"
+    },
+    {
+     "title": "Product Marketing Manager",
+     "location": "Tel Aviv",
+     "dept": "Marketing",
+     "published": "2026-10-13",
+     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8878437002"
+    },
+    {
+     "title": "Product Sales Specialist",
+     "location": "Tel Aviv",
+     "dept": "Sales",
+     "published": "2026-10-13",
+     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8882899002"
+    },
+    {
+     "title": "Security Engineer",
+     "location": "Tel Aviv",
+     "dept": "Business Technologies",
+     "published": "2026-09-17",
+     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8805509002"
+    },
+    {
+     "title": "Full-Stack Engineer",
+     "location": "Tel Aviv",
+     "dept": "Development",
+     "published": "2026-09-15",
+     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8785367002"
+    },
+    {
+     "title": "Data Scientist",
+     "location": "Tel Aviv",
+     "dept": "Research",
+     "published": "2026-08-19",
+     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8653104002"
+    },
+    {
+     "title": "Payment Fraud Product Manager",
+     "location": "Tel Aviv",
+     "dept": "Product",
+     "published": "2026-06-25",
+     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8591838002"
+    }
+   ],
+   "hooks": [
+    "Riskified posted 9 new roles in Israel in the last 30 days",
+    "Biggest new push: Sales (10 roles posted this month)",
+    "2 roles opened, 3 closed since last snapshot"
+   ]
+  },
+  {
    "name": "SentinelOne",
    "ats": "greenhouse",
-   "jobs": 250,
-   "israel": 20,
+   "jobs": 249,
+   "israel": 19,
    "israel_share": 0.08,
-   "new30": 98,
-   "israel_new30": 10,
-   "ai": 28,
-   "ai_israel": 8,
-   "ai_share_israel": 0.4,
+   "new30": 89,
+   "israel_new30": 9,
+   "ai": 27,
+   "ai_israel": 7,
+   "ai_share_israel": 0.37,
    "teams_israel": [
     [
      "20100 Prompt Product and R&D",
@@ -2125,22 +2493,22 @@
    ],
    "new_teams": [
     [
-     "12500 Professional Services",
+     "11100 Customer Success",
      15
     ],
     [
-     "11100 Customer Success",
-     13
+     "28000 Platform",
+     15
     ],
     [
-     "12200 Technical Support",
-     11
+     "12500 Professional Services",
+     15
     ]
    ],
    "cities": [
     [
      "Israel (other)",
-     11
+     10
     ],
     [
      "Tel Aviv",
@@ -2151,11 +2519,11 @@
    "us_pay_median_mid": 192500,
    "top_paid": {
     "title": "Enterprise Account Executive",
-    "location": "Florida",
+    "location": "Maryland",
     "min": 248000,
     "max": 341000
    },
-   "opened": 2,
+   "opened": 9,
    "closed": 10,
    "latest_israel": [
     {
@@ -2285,13 +2653,6 @@
      "url": "https://www.sentinelone.com/jobs/?gh_jid=7843276003"
     },
     {
-     "title": "Staff Product Manager - AI SIEM, Detection and Response",
-     "location": "Israel",
-     "dept": "23000 Product Management",
-     "published": "2026-08-21",
-     "url": "https://www.sentinelone.com/jobs/?gh_jid=7831318003"
-    },
-    {
      "title": "Engineering Manager - Windows Endpoint",
      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
      "dept": "26000 Runtime Protection",
@@ -2300,395 +2661,20 @@
     }
    ],
    "hooks": [
-    "SentinelOne posted 10 new roles in Israel in the last 30 days",
-    "8 of SentinelOne's 20 Israel roles are AI/ML",
-    "Biggest new push: 12500 Professional Services (15 roles posted this month)",
-    "Top US pay posted: Enterprise Account Executive in Florida, $248,000-$341,000 base",
-    "2 roles opened, 10 closed since last snapshot"
-   ]
-  },
-  {
-   "name": "Payoneer",
-   "ats": "greenhouse",
-   "jobs": 95,
-   "israel": 21,
-   "israel_share": 0.22,
-   "new30": 30,
-   "israel_new30": 9,
-   "ai": 8,
-   "ai_israel": 5,
-   "ai_share_israel": 0.24,
-   "teams_israel": [
-    [
-     "Product Compliance",
-     7
-    ],
-    [
-     "Core AI & AI Transformation",
-     2
-    ],
-    [
-     "Platform Management",
-     2
-    ],
-    [
-     "Business Applications",
-     2
-    ]
-   ],
-   "new_teams": [
-    [
-     "GTM EMEA",
-     5
-    ],
-    [
-     "WFM",
-     4
-    ],
-    [
-     "Product Compliance",
-     3
-    ]
-   ],
-   "cities": [
-    [
-     "Tel Aviv",
-     21
-    ]
-   ],
-   "us_pay_roles": 4,
-   "us_pay_median_mid": 235500,
-   "top_paid": {
-    "title": "Head of Product, PAYO Digital Bank - Stablecoin",
-    "location": "Remote, US",
-    "min": 220000,
-    "max": 320000
-   },
-   "opened": 1,
-   "closed": 6,
-   "latest_israel": [
-    {
-     "title": "Principal Product Strategy & Operations Manager",
-     "location": "Herzliya, Tel Aviv District, Israel",
-     "dept": "Platform Management",
-     "published": "2026-11-23",
-     "url": "https://www.payoneer.com/careers/position/8395540/?gh_jid=8395540"
-    },
-    {
-     "title": "Director, AI Governance & Responsible AI",
-     "location": "Herzliya, Tel Aviv District, Israel",
-     "dept": "Platform Management",
-     "published": "2026-11-17",
-     "url": "https://www.payoneer.com/careers/position/8364230/?gh_jid=8364230"
-    },
-    {
-     "title": "Mid-Market Sales Specialist",
-     "location": "Herzliya, Tel Aviv District, Israel",
-     "dept": "GTM EMEA",
-     "published": "2026-11-17",
-     "url": "https://www.payoneer.com/careers/position/8392384/?gh_jid=8392384"
-    },
-    {
-     "title": "Senior Product Manager - Security (replacement)",
-     "location": "Herzliya, Tel Aviv District, Israel",
-     "dept": "Product Compliance",
-     "published": "2026-11-16",
-     "url": "https://www.payoneer.com/careers/position/8382958/?gh_jid=8382958"
-    },
-    {
-     "title": "Senior Fullstack Engineer (AI Fluent)",
-     "location": "Herzliya, Tel Aviv District, Israel",
-     "dept": "Product Compliance",
-     "published": "2026-11-15",
-     "url": "https://www.payoneer.com/careers/position/8344470/?gh_jid=8344470"
-    },
-    {
-     "title": "Senior Product Marketing Manager",
-     "location": "Herzliya, Tel Aviv District, Israel",
-     "dept": "Product Guild & Design",
-     "published": "2026-11-12",
-     "url": "https://www.payoneer.com/careers/position/8380403/?gh_jid=8380403"
-    },
-    {
-     "title": "Director of Product Management - MIS",
-     "location": "Herzliya, Tel Aviv District, Israel",
-     "dept": "Product Compliance",
-     "published": "2026-11-10",
-     "url": "https://www.payoneer.com/careers/position/8355118/?gh_jid=8355118"
-    },
-    {
-     "title": "AI Platform Engineer, VibeOps",
-     "location": "Herzliya, Tel Aviv District, Israel",
-     "dept": "Core AI & AI Transformation",
-     "published": "2026-11-09",
-     "url": "https://www.payoneer.com/careers/position/8355124/?gh_jid=8355124"
-    },
-    {
-     "title": "Application Security Engineer",
-     "location": "Herzliya, Tel Aviv District, Israel",
-     "dept": "IT & Security",
-     "published": "2026-10-26",
-     "url": "https://www.payoneer.com/careers/position/8261034/?gh_jid=8261034"
-    },
-    {
-     "title": "Senior Applications & Integrations Engineer",
-     "location": "Herzliya, Tel Aviv District, Israel",
-     "dept": "Product Compliance",
-     "published": "2026-10-25",
-     "url": "https://www.payoneer.com/careers/position/8303989/?gh_jid=8303989"
-    },
-    {
-     "title": "Principal Software Engineer \u2014 Customer Lifecycle Management (CLM)",
-     "location": "Herzliya, Tel Aviv District, Israel",
-     "dept": "CLM",
-     "published": "2026-10-22",
-     "url": "https://www.payoneer.com/careers/position/8305409/?gh_jid=8305409"
-    },
-    {
-     "title": "Senior Data Scientist",
-     "location": "Herzliya, Tel Aviv District, Israel",
-     "dept": "Core Platforms & Data",
-     "published": "2026-10-06",
-     "url": "https://www.payoneer.com/careers/position/8211149/?gh_jid=8211149"
-    },
-    {
-     "title": "Principal Product Manager - AI Agent Platform",
-     "location": "Herzliya, Tel Aviv District, Israel",
-     "dept": "Core AI & AI Transformation",
-     "published": "2026-09-29",
-     "url": "https://www.payoneer.com/careers/position/8211169/?gh_jid=8211169"
-    },
-    {
-     "title": "Reconciliation Infrastructure Associate",
-     "location": "Herzliya, Tel Aviv District, Israel",
-     "dept": "Reconciliation",
-     "published": "2026-09-29",
-     "url": "https://www.payoneer.com/careers/position/8208199/?gh_jid=8208199"
-    },
-    {
-     "title": "Salesforce Engineer",
-     "location": "Herzliya, Tel Aviv District, Israel",
-     "dept": "Product Compliance",
-     "published": "2026-09-09",
-     "url": "https://www.payoneer.com/careers/position/8166030/?gh_jid=8166030"
-    },
-    {
-     "title": "Senior Technical Salesforce Project Manager",
-     "location": "Herzliya, Tel Aviv District, Israel",
-     "dept": "Product Compliance",
-     "published": "2026-09-09",
-     "url": "https://www.payoneer.com/careers/position/8188579/?gh_jid=8188579"
-    },
-    {
-     "title": "Technical Salesforce Project Manager",
-     "location": "Herzliya, Tel Aviv District, Israel",
-     "dept": "Product Compliance",
-     "published": "2026-08-31",
-     "url": "https://www.payoneer.com/careers/position/8156115/?gh_jid=8156115"
-    },
-    {
-     "title": "Senior Product Manager - Mobile App",
-     "location": "Herzliya, Tel Aviv District, Israel",
-     "dept": "Business Applications",
-     "published": "2026-07-24",
-     "url": "https://www.payoneer.com/careers/position/7361831/?gh_jid=7361831"
-    },
-    {
-     "title": "Team Lead R&D, Monetization",
-     "location": "Herzliya, Tel Aviv District, Israel",
-     "dept": "Business Applications",
-     "published": "2026-06-16",
-     "url": "https://www.payoneer.com/careers/position/7709761/?gh_jid=7709761"
-    },
-    {
-     "title": "Senior Backend Developer (C# or Java)",
-     "location": "Herzliya, Tel Aviv District, Israel",
-     "dept": "R&D",
-     "published": "2025-04-03",
-     "url": "https://www.payoneer.com/careers/position/6769427/?gh_jid=6769427"
-    },
-    {
-     "title": "Senior Product Manager",
-     "location": "Herzliya, Tel Aviv District, Israel",
-     "dept": "Product",
-     "published": "2022-03-03",
-     "url": "https://www.payoneer.com/careers/position/3999096/?gh_jid=3999096"
-    }
-   ],
-   "hooks": [
-    "Payoneer posted 9 new roles in Israel in the last 30 days",
-    "5 of Payoneer's 21 Israel roles are AI/ML",
-    "Biggest new push: GTM EMEA (5 roles posted this month)",
-    "Top US pay posted: Head of Product, PAYO Digital Bank - Stablecoin in Remote, US, $220,000-$320,000 base",
-    "1 roles opened, 6 closed since last snapshot"
-   ]
-  },
-  {
-   "name": "Claroty",
-   "ats": "comeet",
-   "jobs": 40,
-   "israel": 14,
-   "israel_share": 0.35,
-   "new30": 25,
-   "israel_new30": 9,
-   "ai": 1,
-   "ai_israel": 1,
-   "ai_share_israel": 0.07,
-   "teams_israel": [
-    [
-     "Software Engineering",
-     5
-    ],
-    [
-     "IT",
-     2
-    ],
-    [
-     "Product Management",
-     2
-    ],
-    [
-     "Finance",
-     1
-    ]
-   ],
-   "new_teams": [
-    [
-     "Sales",
-     3
-    ],
-    [
-     "Channel Sales",
-     2
-    ],
-    [
-     "Marketing",
-     2
-    ]
-   ],
-   "cities": [
-    [
-     "Israel (other)",
-     14
-    ]
-   ],
-   "us_pay_roles": 0,
-   "us_pay_median_mid": null,
-   "top_paid": null,
-   "opened": 2,
-   "closed": 1,
-   "latest_israel": [
-    {
-     "title": "BI Team Leader",
-     "location": "Israel",
-     "dept": "IT",
-     "published": "2026-11-25",
-     "url": "https://claroty.com/open-positions/37.573"
-    },
-    {
-     "title": "Senior Product Manager",
-     "location": "Israel",
-     "dept": "Product Management",
-     "published": "2026-11-24",
-     "url": "https://claroty.com/open-positions/0A.57D"
-    },
-    {
-     "title": "Software Architect",
-     "location": "Israel",
-     "dept": "Software Engineering",
-     "published": "2026-11-23",
-     "url": "https://claroty.com/open-positions/3D.473"
-    },
-    {
-     "title": "DevOps Engineer",
-     "location": "Israel",
-     "dept": "Devops",
-     "published": "2026-11-19",
-     "url": "https://claroty.com/open-positions/D5.076"
-    },
-    {
-     "title": "Tech Lead Software Engineer",
-     "location": "Israel",
-     "dept": "Software Engineering",
-     "published": "2026-11-19",
-     "url": "https://claroty.com/open-positions/E7.577?pms_record_id=CAND_20260729_114713_f9faf2d6&pms_email=paddyvish01%40gmail.com&pms_log_id=a1a86c46-e179-4c91-aa45-d07ff5993063"
-    },
-    {
-     "title": "Vulnerability Research Team Lead",
-     "location": "Israel",
-     "dept": "Team82",
-     "published": "2026-11-19",
-     "url": "https://claroty.com/open-positions/94.A63"
-    },
-    {
-     "title": "Product Manager",
-     "location": "Israel",
-     "dept": "Product Management",
-     "published": "2026-11-18",
-     "url": "https://claroty.com/open-positions/43.57D"
-    },
-    {
-     "title": "QA Automation Engineer",
-     "location": "Israel",
-     "dept": "Automation",
-     "published": "2026-11-16",
-     "url": "https://claroty.com/open-positions/3C.374"
-    },
-    {
-     "title": "Bookkeeper (Temporary \u2013 Maternity Leave Cover)",
-     "location": "Israel",
-     "dept": "Finance",
-     "published": "2026-11-10",
-     "url": "https://claroty.com/open-positions/EE.471"
-    },
-    {
-     "title": "AI Platform- Software Engineer Team Leader",
-     "location": "Israel",
-     "dept": "Software Engineering",
-     "published": "",
-     "url": "https://claroty.com/open-positions/CE.079"
-    },
-    {
-     "title": "Backend Software Engineer",
-     "location": "Israel",
-     "dept": "Software Engineering",
-     "published": "",
-     "url": "https://claroty.com/open-positions/0A.374"
-    },
-    {
-     "title": "Data Platform Engineer",
-     "location": "Israel",
-     "dept": "Software Engineering",
-     "published": "",
-     "url": "https://claroty.com/open-positions/CA.471"
-    },
-    {
-     "title": "Security Data Analyst",
-     "location": "Israel",
-     "dept": "Data",
-     "published": "",
-     "url": "https://claroty.com/open-positions/EA.471"
-    },
-    {
-     "title": "Senior Security Operations Engineer",
-     "location": "Israel",
-     "dept": "IT",
-     "published": "",
-     "url": "https://claroty.com/open-positions/E0.E67"
-    }
-   ],
-   "hooks": [
-    "Claroty posted 9 new roles in Israel in the last 30 days",
-    "2 roles opened, 1 closed since last snapshot"
+    "SentinelOne posted 9 new roles in Israel in the last 30 days",
+    "7 of SentinelOne's 19 Israel roles are AI/ML",
+    "Biggest new push: 11100 Customer Success (15 roles posted this month)",
+    "Top US pay posted: Enterprise Account Executive in Maryland, $248,000-$341,000 base",
+    "9 roles opened, 10 closed since last snapshot"
    ]
   },
   {
    "name": "Aidoc",
    "ats": "greenhouse",
-   "jobs": 36,
+   "jobs": 37,
    "israel": 28,
-   "israel_share": 0.78,
-   "new30": 9,
+   "israel_share": 0.76,
+   "new30": 10,
    "israel_new30": 8,
    "ai": 8,
    "ai_israel": 8,
@@ -2721,8 +2707,8 @@
      3
     ],
     [
-     "Regulation and Legal",
-     1
+     "Product",
+     2
     ]
    ],
    "cities": [
@@ -2734,8 +2720,8 @@
    "us_pay_roles": 0,
    "us_pay_median_mid": null,
    "top_paid": null,
-   "opened": 2,
-   "closed": 1,
+   "opened": 1,
+   "closed": 0,
    "latest_israel": [
     {
      "title": "Staff Security Engineer",
@@ -2937,21 +2923,237 @@
    "hooks": [
     "Aidoc posted 8 new roles in Israel in the last 30 days",
     "8 of Aidoc's 28 Israel roles are AI/ML",
-    "78% of open roles are in Israel",
-    "2 roles opened, 1 closed since last snapshot"
+    "76% of open roles are in Israel",
+    "1 roles opened, 0 closed since last snapshot"
+   ]
+  },
+  {
+   "name": "Payoneer",
+   "ats": "greenhouse",
+   "jobs": 95,
+   "israel": 21,
+   "israel_share": 0.22,
+   "new30": 28,
+   "israel_new30": 8,
+   "ai": 8,
+   "ai_israel": 5,
+   "ai_share_israel": 0.24,
+   "teams_israel": [
+    [
+     "Product Compliance",
+     7
+    ],
+    [
+     "Core AI & AI Transformation",
+     2
+    ],
+    [
+     "Platform Management",
+     2
+    ],
+    [
+     "Business Applications",
+     2
+    ]
+   ],
+   "new_teams": [
+    [
+     "GTM EMEA",
+     5
+    ],
+    [
+     "Product Compliance",
+     5
+    ],
+    [
+     "WFM",
+     3
+    ]
+   ],
+   "cities": [
+    [
+     "Tel Aviv",
+     21
+    ]
+   ],
+   "us_pay_roles": 4,
+   "us_pay_median_mid": 235500,
+   "top_paid": {
+    "title": "Head of Product, PAYO Digital Bank - Stablecoin",
+    "location": "Remote, US",
+    "min": 220000,
+    "max": 320000
+   },
+   "opened": 3,
+   "closed": 3,
+   "latest_israel": [
+    {
+     "title": "Principal Product Strategy & Operations Manager",
+     "location": "Herzliya, Tel Aviv District, Israel",
+     "dept": "Platform Management",
+     "published": "2026-11-23",
+     "url": "https://www.payoneer.com/careers/position/8395540/?gh_jid=8395540"
+    },
+    {
+     "title": "Director, AI Governance & Responsible AI",
+     "location": "Herzliya, Tel Aviv District, Israel",
+     "dept": "Platform Management",
+     "published": "2026-11-17",
+     "url": "https://www.payoneer.com/careers/position/8364230/?gh_jid=8364230"
+    },
+    {
+     "title": "Mid-Market Sales Specialist",
+     "location": "Herzliya, Tel Aviv District, Israel",
+     "dept": "GTM EMEA",
+     "published": "2026-11-17",
+     "url": "https://www.payoneer.com/careers/position/8392384/?gh_jid=8392384"
+    },
+    {
+     "title": "Senior Product Manager - Security (replacement)",
+     "location": "Herzliya, Tel Aviv District, Israel",
+     "dept": "Product Compliance",
+     "published": "2026-11-16",
+     "url": "https://www.payoneer.com/careers/position/8382958/?gh_jid=8382958"
+    },
+    {
+     "title": "Senior Fullstack Engineer (AI Fluent)",
+     "location": "Herzliya, Tel Aviv District, Israel",
+     "dept": "Product Compliance",
+     "published": "2026-11-15",
+     "url": "https://www.payoneer.com/careers/position/8344470/?gh_jid=8344470"
+    },
+    {
+     "title": "Senior Product Marketing Manager",
+     "location": "Herzliya, Tel Aviv District, Israel",
+     "dept": "Product Guild & Design",
+     "published": "2026-11-12",
+     "url": "https://www.payoneer.com/careers/position/8380403/?gh_jid=8380403"
+    },
+    {
+     "title": "Director of Product Management - MIS",
+     "location": "Herzliya, Tel Aviv District, Israel",
+     "dept": "Product Compliance",
+     "published": "2026-11-10",
+     "url": "https://www.payoneer.com/careers/position/8355118/?gh_jid=8355118"
+    },
+    {
+     "title": "AI Platform Engineer, VibeOps",
+     "location": "Herzliya, Tel Aviv District, Israel",
+     "dept": "Core AI & AI Transformation",
+     "published": "2026-11-09",
+     "url": "https://www.payoneer.com/careers/position/8355124/?gh_jid=8355124"
+    },
+    {
+     "title": "Application Security Engineer",
+     "location": "Herzliya, Tel Aviv District, Israel",
+     "dept": "IT & Security",
+     "published": "2026-10-26",
+     "url": "https://www.payoneer.com/careers/position/8261034/?gh_jid=8261034"
+    },
+    {
+     "title": "Senior Applications & Integrations Engineer",
+     "location": "Herzliya, Tel Aviv District, Israel",
+     "dept": "Product Compliance",
+     "published": "2026-10-25",
+     "url": "https://www.payoneer.com/careers/position/8303989/?gh_jid=8303989"
+    },
+    {
+     "title": "Principal Software Engineer \u2014 Customer Lifecycle Management (CLM)",
+     "location": "Herzliya, Tel Aviv District, Israel",
+     "dept": "CLM",
+     "published": "2026-10-22",
+     "url": "https://www.payoneer.com/careers/position/8305409/?gh_jid=8305409"
+    },
+    {
+     "title": "Senior Data Scientist",
+     "location": "Herzliya, Tel Aviv District, Israel",
+     "dept": "Core Platforms & Data",
+     "published": "2026-10-06",
+     "url": "https://www.payoneer.com/careers/position/8211149/?gh_jid=8211149"
+    },
+    {
+     "title": "Principal Product Manager - AI Agent Platform",
+     "location": "Herzliya, Tel Aviv District, Israel",
+     "dept": "Core AI & AI Transformation",
+     "published": "2026-09-29",
+     "url": "https://www.payoneer.com/careers/position/8211169/?gh_jid=8211169"
+    },
+    {
+     "title": "Reconciliation Infrastructure Associate",
+     "location": "Herzliya, Tel Aviv District, Israel",
+     "dept": "Reconciliation",
+     "published": "2026-09-29",
+     "url": "https://www.payoneer.com/careers/position/8208199/?gh_jid=8208199"
+    },
+    {
+     "title": "Salesforce Engineer",
+     "location": "Herzliya, Tel Aviv District, Israel",
+     "dept": "Product Compliance",
+     "published": "2026-09-09",
+     "url": "https://www.payoneer.com/careers/position/8166030/?gh_jid=8166030"
+    },
+    {
+     "title": "Senior Technical Salesforce Project Manager",
+     "location": "Herzliya, Tel Aviv District, Israel",
+     "dept": "Product Compliance",
+     "published": "2026-09-09",
+     "url": "https://www.payoneer.com/careers/position/8188579/?gh_jid=8188579"
+    },
+    {
+     "title": "Technical Salesforce Project Manager",
+     "location": "Herzliya, Tel Aviv District, Israel",
+     "dept": "Product Compliance",
+     "published": "2026-08-31",
+     "url": "https://www.payoneer.com/careers/position/8156115/?gh_jid=8156115"
+    },
+    {
+     "title": "Senior Product Manager - Mobile App",
+     "location": "Herzliya, Tel Aviv District, Israel",
+     "dept": "Business Applications",
+     "published": "2026-07-24",
+     "url": "https://www.payoneer.com/careers/position/7361831/?gh_jid=7361831"
+    },
+    {
+     "title": "Team Lead R&D, Monetization",
+     "location": "Herzliya, Tel Aviv District, Israel",
+     "dept": "Business Applications",
+     "published": "2026-06-16",
+     "url": "https://www.payoneer.com/careers/position/7709761/?gh_jid=7709761"
+    },
+    {
+     "title": "Senior Backend Developer (C# or Java)",
+     "location": "Herzliya, Tel Aviv District, Israel",
+     "dept": "R&D",
+     "published": "2025-04-03",
+     "url": "https://www.payoneer.com/careers/position/6769427/?gh_jid=6769427"
+    },
+    {
+     "title": "Senior Product Manager",
+     "location": "Herzliya, Tel Aviv District, Israel",
+     "dept": "Product",
+     "published": "2022-03-03",
+     "url": "https://www.payoneer.com/careers/position/3999096/?gh_jid=3999096"
+    }
+   ],
+   "hooks": [
+    "Payoneer posted 8 new roles in Israel in the last 30 days",
+    "5 of Payoneer's 21 Israel roles are AI/ML",
+    "Biggest new push: GTM EMEA (5 roles posted this month)",
+    "Top US pay posted: Head of Product, PAYO Digital Bank - Stablecoin in Remote, US, $220,000-$320,000 base",
+    "3 roles opened, 3 closed since last snapshot"
    ]
   },
   {
    "name": "AppsFlyer",
    "ats": "greenhouse",
-   "jobs": 55,
-   "israel": 27,
-   "israel_share": 0.49,
-   "new30": 16,
+   "jobs": 52,
+   "israel": 25,
+   "israel_share": 0.48,
+   "new30": 15,
    "israel_new30": 7,
    "ai": 2,
    "ai_israel": 2,
-   "ai_share_israel": 0.07,
+   "ai_share_israel": 0.08,
    "teams_israel": [
     [
      "R&D",
@@ -2962,18 +3164,18 @@
      4
     ],
     [
-     "Product",
-     3
+     "Sales",
+     2
     ],
     [
-     "Sales",
+     "Security",
      2
     ]
    ],
    "new_teams": [
     [
      "Sales",
-     7
+     6
     ],
     [
      "R&D",
@@ -2987,14 +3189,14 @@
    "cities": [
     [
      "Herzliya",
-     27
+     25
     ]
    ],
    "us_pay_roles": 0,
    "us_pay_median_mid": null,
    "top_paid": null,
-   "opened": 1,
-   "closed": 0,
+   "opened": 0,
+   "closed": 3,
    "latest_israel": [
     {
      "title": "Software Engineer (Agent Hub)",
@@ -3067,25 +3269,11 @@
      "url": "https://careers.appsflyer.com/jobs/position/8882917002?gh_jid=8882917002"
     },
     {
-     "title": "Senior IT Infrastructure Operations",
-     "location": "Herzliya",
-     "dept": "IT",
-     "published": "2026-10-11",
-     "url": "https://careers.appsflyer.com/jobs/position/8882905002?gh_jid=8882905002"
-    },
-    {
      "title": "IT Service Desk Team Leader",
      "location": "Herzliya",
      "dept": "IT",
      "published": "2026-10-07",
      "url": "https://careers.appsflyer.com/jobs/position/8874236002?gh_jid=8874236002"
-    },
-    {
-     "title": "Senior Product Manager",
-     "location": "Herzliya",
-     "dept": "Product",
-     "published": "2026-10-07",
-     "url": "https://careers.appsflyer.com/jobs/position/8874566002?gh_jid=8874566002"
     },
     {
      "title": "Software Team Leader- Domain Team",
@@ -3188,374 +3376,365 @@
    ],
    "hooks": [
     "AppsFlyer posted 7 new roles in Israel in the last 30 days",
-    "Biggest new push: Sales (7 roles posted this month)",
-    "1 roles opened, 0 closed since last snapshot"
+    "Biggest new push: Sales (6 roles posted this month)"
    ]
   },
   {
-   "name": "Riskified",
-   "ats": "greenhouse",
-   "jobs": 47,
-   "israel": 20,
-   "israel_share": 0.43,
-   "new30": 17,
+   "name": "Wonderful",
+   "ats": "ashby",
+   "jobs": 130,
+   "israel": 18,
+   "israel_share": 0.14,
+   "new30": 26,
    "israel_new30": 7,
-   "ai": 6,
-   "ai_israel": 3,
-   "ai_share_israel": 0.15,
+   "ai": 9,
+   "ai_israel": 0,
+   "ai_share_israel": 0.0,
    "teams_israel": [
     [
-     "Sales",
+     "R&D",
+     11
+    ],
+    [
+     "S&M",
      6
     ],
     [
-     "Research",
-     3
-    ],
-    [
-     "Product",
-     3
-    ],
-    [
-     "Business Technologies",
-     2
+     "G&A",
+     1
     ]
    ],
    "new_teams": [
     [
-     "Sales",
-     8
+     "S&M",
+     16
     ],
     [
-     "Development",
+     "R&D",
+     5
+    ],
+    [
+     "G&A",
      3
-    ],
-    [
-     "Research",
-     2
     ]
    ],
    "cities": [
     [
      "Tel Aviv",
-     20
+     18
     ]
    ],
    "us_pay_roles": 0,
    "us_pay_median_mid": null,
    "top_paid": null,
-   "opened": 3,
-   "closed": 2,
+   "opened": 6,
+   "closed": 7,
    "latest_israel": [
     {
-     "title": "Commercial Channel Partnership Manager",
-     "location": "Tel Aviv",
-     "dept": "Sales",
+     "title": "Product Marketing Operations",
+     "location": "Tel Aviv, HQ",
+     "dept": "S&M",
      "published": "2026-11-25",
-     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8961781002"
+     "url": "https://jobs.ashbyhq.com/wonderful/7be01aac-cf54-4a86-b00e-39a26099ad38"
     },
     {
-     "title": "Partner Enablement & Operations Manager",
-     "location": "Tel Aviv",
-     "dept": "Sales",
-     "published": "2026-11-24",
-     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8938980002"
+     "title": "Global Communications Manager",
+     "location": "Tel Aviv, HQ",
+     "dept": "S&M",
+     "published": "2026-11-17",
+     "url": "https://jobs.ashbyhq.com/wonderful/ad00df9a-b2b9-4bb7-b3d7-3220fa0731a3"
     },
     {
-     "title": "Staff Data Scientist- Foundation Models",
-     "location": "Tel Aviv",
-     "dept": "Research",
-     "published": "2026-11-16",
-     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8944628002"
-    },
-    {
-     "title": "Legal Counsel (Employment)",
-     "location": "Tel Aviv",
-     "dept": "Finance and Administration",
+     "title": "Vertical PM - Travel, Transportation and Hospitality",
+     "location": "Tel Aviv, HQ",
+     "dept": "R&D",
      "published": "2026-11-11",
-     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8934490002"
+     "url": "https://jobs.ashbyhq.com/wonderful/dc876ca1-a0e2-4164-b310-a9b2a31ae0b3"
     },
     {
-     "title": "Enterprise Product Sales Consultant",
-     "location": "Tel Aviv",
-     "dept": "Sales",
-     "published": "2026-11-09",
-     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8935217002"
+     "title": "Vertical PM - Financial Services",
+     "location": "Tel Aviv, HQ",
+     "dept": "R&D",
+     "published": "2026-11-11",
+     "url": "https://jobs.ashbyhq.com/wonderful/2c358fd7-3b41-4afb-adc5-712c2bdeb824"
     },
     {
-     "title": "Talent Acquisition Partner (Maternity Leave cover for 8 months)",
-     "location": "Tel Aviv",
-     "dept": "Human Resources",
-     "published": "2026-11-08",
-     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8934488002"
+     "title": "Vertical PM - Retail",
+     "location": "Tel Aviv, HQ",
+     "dept": "R&D",
+     "published": "2026-11-11",
+     "url": "https://jobs.ashbyhq.com/wonderful/196053c6-5317-4655-ab83-3ab8f8d07a83"
     },
     {
-     "title": "Software Engineering Manager",
-     "location": "Tel Aviv",
-     "dept": "Development",
-     "published": "2026-10-28",
-     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8885153002"
+     "title": "Vertical PM - Telco, Media and Tech",
+     "location": "Tel Aviv, HQ",
+     "dept": "R&D",
+     "published": "2026-11-11",
+     "url": "https://jobs.ashbyhq.com/wonderful/d09c15ad-d0e2-42cb-b1e3-44dc8bea94a6"
     },
     {
-     "title": "Staff Growth Product Manager",
-     "location": "Tel Aviv",
-     "dept": "Product",
+     "title": "Technical Product Manager",
+     "location": "Tel Aviv, HQ",
+     "dept": "R&D",
+     "published": "2026-10-27",
+     "url": "https://jobs.ashbyhq.com/wonderful/2bcdf568-896d-454a-bbf8-6ce1899eb3bc"
+    },
+    {
+     "title": "Global Partner Marketing Lead, Hyperscalers",
+     "location": "United Kingdom / Germany / Italy / Italy / Tel Aviv, HQ / France / United Arab Emirates / Switzerland - Zurich",
+     "dept": "S&M",
      "published": "2026-10-21",
-     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8905019002"
+     "url": "https://jobs.ashbyhq.com/wonderful/9f7c7329-5cb3-491a-9a7b-54dbb6722e96"
     },
     {
-     "title": "Application Security Architect",
-     "location": "Tel Aviv",
-     "dept": "Business Technologies",
-     "published": "2026-10-19",
-     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8891146002"
-    },
-    {
-     "title": "Payments Product Manager",
-     "location": "Tel Aviv",
-     "dept": "Product",
-     "published": "2026-10-19",
-     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8874141002"
-    },
-    {
-     "title": "Partnership Manager",
-     "location": "Tel Aviv",
-     "dept": "Sales",
+     "title": "Product Commercial Lead",
+     "location": "Tel Aviv, HQ",
+     "dept": "R&D",
      "published": "2026-10-15",
-     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8882911002"
+     "url": "https://jobs.ashbyhq.com/wonderful/212ab30d-1874-456c-8432-33b26e70d211"
     },
     {
-     "title": "Growth Marketing Manager",
-     "location": "Tel Aviv",
-     "dept": "Marketing",
-     "published": "2026-10-14",
-     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8878439002"
-    },
-    {
-     "title": "Sales Engineer",
-     "location": "Tel Aviv",
-     "dept": "Sales",
-     "published": "2026-10-14",
-     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8888283002"
+     "title": "Vertical PM - Healthcare",
+     "location": "Tel Aviv, HQ",
+     "dept": "R&D",
+     "published": "2026-10-08",
+     "url": "https://jobs.ashbyhq.com/wonderful/efed903e-57f7-4f11-a9ab-34166bd25817"
     },
     {
      "title": "Product Marketing Manager",
-     "location": "Tel Aviv",
-     "dept": "Marketing",
-     "published": "2026-10-13",
-     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8878437002"
+     "location": "Tel Aviv, HQ",
+     "dept": "S&M",
+     "published": "2026-09-02",
+     "url": "https://jobs.ashbyhq.com/wonderful/ce1f6789-8944-4e30-9f56-32c831cf4398"
     },
     {
-     "title": "Product Sales Specialist",
-     "location": "Tel Aviv",
-     "dept": "Sales",
-     "published": "2026-10-13",
-     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8882899002"
+     "title": "Senior Product Manager",
+     "location": "Tel Aviv, HQ",
+     "dept": "R&D",
+     "published": "2026-09-02",
+     "url": "https://jobs.ashbyhq.com/wonderful/0792a60a-562a-432c-a2ac-1430f385b0af"
     },
     {
-     "title": "Staff Data Scientist",
-     "location": "Tel Aviv",
-     "dept": "Research",
-     "published": "2026-09-18",
-     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8786543002"
+     "title": "Senior Product Engineer",
+     "location": "Tel Aviv, HQ",
+     "dept": "R&D",
+     "published": "2026-09-01",
+     "url": "https://jobs.ashbyhq.com/wonderful/b1a20896-72e3-4c89-a64f-be9a8a86d178"
     },
     {
-     "title": "Security Engineer",
-     "location": "Tel Aviv",
-     "dept": "Business Technologies",
-     "published": "2026-09-17",
-     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8805509002"
+     "title": "Strategic Designer",
+     "location": "Tel Aviv, HQ",
+     "dept": "R&D",
+     "published": "2026-08-06",
+     "url": "https://jobs.ashbyhq.com/wonderful/3f22ba3a-36fd-41fc-b8c3-a13217edff22"
     },
     {
-     "title": "Full-Stack Engineer",
-     "location": "Tel Aviv",
-     "dept": "Development",
-     "published": "2026-09-15",
-     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8785367002"
+     "title": "Senior FP&A Analyst",
+     "location": "Tel Aviv, HQ",
+     "dept": "G&A",
+     "published": "2026-03-30",
+     "url": "https://jobs.ashbyhq.com/wonderful/ab145688-b313-40bc-b09a-0284c2f13719"
     },
     {
-     "title": "Data Scientist",
-     "location": "Tel Aviv",
-     "dept": "Research",
-     "published": "2026-08-19",
-     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8653104002"
+     "title": "Data Lead",
+     "location": "Tel Aviv, HQ",
+     "dept": "R&D",
+     "published": "2026-03-22",
+     "url": "https://jobs.ashbyhq.com/wonderful/7d79a5ca-431d-4674-a418-450ac2c5301f"
     },
     {
-     "title": "Payment Fraud Product Manager",
+     "title": "Forward Deployed Engineer",
      "location": "Tel Aviv",
-     "dept": "Product",
-     "published": "2026-06-25",
-     "url": "https://www.riskified.com/careers/job-description/?gh_jid=8591838002"
+     "dept": "S&M",
+     "published": "2026-01-20",
+     "url": "https://jobs.ashbyhq.com/wonderful/96753546-bd56-4081-a02b-0ad5d2aac01e"
+    },
+    {
+     "title": "Solution Architect",
+     "location": "Tel Aviv, HQ",
+     "dept": "S&M",
+     "published": "2026-01-20",
+     "url": "https://jobs.ashbyhq.com/wonderful/153b9253-c13f-4b0e-afe2-ac08b60501e9"
     }
    ],
    "hooks": [
-    "Riskified posted 7 new roles in Israel in the last 30 days",
-    "3 of Riskified's 20 Israel roles are AI/ML",
-    "Biggest new push: Sales (8 roles posted this month)",
-    "3 roles opened, 2 closed since last snapshot"
+    "Wonderful posted 7 new roles in Israel in the last 30 days",
+    "Biggest new push: S&M (16 roles posted this month)",
+    "6 roles opened, 7 closed since last snapshot"
    ]
   },
   {
-   "name": "Navan",
+   "name": "Via",
    "ats": "greenhouse",
-   "jobs": 235,
-   "israel": 12,
-   "israel_share": 0.05,
-   "new30": 79,
-   "israel_new30": 7,
-   "ai": 12,
-   "ai_israel": 3,
-   "ai_share_israel": 0.25,
+   "jobs": 181,
+   "israel": 14,
+   "israel_share": 0.08,
+   "new30": 32,
+   "israel_new30": 6,
+   "ai": 19,
+   "ai_israel": 2,
+   "ai_share_israel": 0.14,
    "teams_israel": [
     [
      "Engineering",
-     7
+     9
     ],
     [
-     "Global Operations and Service (GOS)",
+     "Algorithm Research and Data Science",
      2
     ],
     [
-     "Marketing",
+     "Security",
      1
     ],
     [
-     "Security, Risk & Fraud",
+     "Delivery",
      1
     ]
    ],
    "new_teams": [
     [
+     "Field Operations",
+     10
+    ],
+    [
+     "Operations",
+     6
+    ],
+    [
      "Engineering",
-     19
-    ],
-    [
-     "Marketing",
-     16
-    ],
-    [
-     "Sales",
-     14
+     3
     ]
    ],
    "cities": [
     [
      "Tel Aviv",
-     12
+     13
+    ],
+    [
+     "Israel (other)",
+     1
     ]
    ],
-   "us_pay_roles": 100,
-   "us_pay_median_mid": 170625,
-   "top_paid": {
-    "title": "Regional Director, Enterprise Sales",
-    "location": "New York, NY",
-    "min": 318750,
-    "max": 425000
-   },
-   "opened": 3,
-   "closed": 7,
+   "us_pay_roles": 0,
+   "us_pay_median_mid": null,
+   "top_paid": null,
+   "opened": 7,
+   "closed": 0,
    "latest_israel": [
     {
-     "title": "Senior Software Engineer - Z2O",
-     "location": "Tel-Aviv, Israel",
-     "dept": "Engineering",
+     "title": "Senior Algorithms Researcher",
+     "location": "Tel Aviv",
+     "dept": "Algorithm Research and Data Science",
+     "published": "2026-11-26",
+     "url": "https://job-boards.greenhouse.io/via/jobs/8963005002"
+    },
+    {
+     "title": "Staff ML Research Scientist",
+     "location": "Tel Aviv",
+     "dept": "Algorithm Research and Data Science",
+     "published": "2026-11-26",
+     "url": "https://job-boards.greenhouse.io/via/jobs/8962985002"
+    },
+    {
+     "title": "Senior General Manager",
+     "location": "Chicago, IL",
+     "dept": "Operations",
      "published": "2026-11-24",
-     "url": "https://navan.com/careers/openings?gh_jid=8311606"
+     "url": "https://job-boards.greenhouse.io/via/jobs/8960037002"
     },
     {
-     "title": "Workplace Operations Coordinator",
-     "location": "Tel-Aviv, Israel",
-     "dept": "Workplace & Procurement",
-     "published": "2026-11-19",
-     "url": "https://navan.com/careers/openings?gh_jid=8386989"
-    },
-    {
-     "title": "Business Travel Consultant II",
-     "location": "Tel-Aviv, Israel",
-     "dept": "Global Operations and Service (GOS)",
-     "published": "2026-11-02",
-     "url": "https://navan.com/careers/openings?gh_jid=8330532"
-    },
-    {
-     "title": "Senior Product Marketing Manager, Navan Expense",
-     "location": "Tel-Aviv, Israel",
-     "dept": "Marketing",
-     "published": "2026-11-02",
-     "url": "https://navan.com/careers/openings?gh_jid=8282576"
-    },
-    {
-     "title": "AI Engineer",
-     "location": "Tel-Aviv, Israel",
+     "title": "Technical Project Manager",
+     "location": "Tel Aviv",
      "dept": "Engineering",
+     "published": "2026-11-06",
+     "url": "https://job-boards.greenhouse.io/via/jobs/8931528002"
+    },
+    {
+     "title": "Senior Algorithms Developer",
+     "location": "Tel Aviv",
+     "dept": "Engineering",
+     "published": "2026-11-03",
+     "url": "https://job-boards.greenhouse.io/via/jobs/8927980002"
+    },
+    {
+     "title": "Partner Delivery Engineer",
+     "location": "Tel Aviv",
+     "dept": "Delivery",
      "published": "2026-10-29",
-     "url": "https://navan.com/careers/openings?gh_jid=8314100"
+     "url": "https://job-boards.greenhouse.io/via/jobs/8923130002"
     },
     {
-     "title": "Staff Full Stack Engineer - Edge",
-     "location": "Tel-Aviv, Israel",
+     "title": "Application Security Engineer",
+     "location": "Tel Aviv",
+     "dept": "Security",
+     "published": "2026-10-07",
+     "url": "https://job-boards.greenhouse.io/via/jobs/8875777002"
+    },
+    {
+     "title": "Senior Backend Engineer, Voice AI",
+     "location": "Tel Aviv",
      "dept": "Engineering",
-     "published": "2026-10-27",
-     "url": "https://navan.com/careers/openings?gh_jid=8314105"
+     "published": "2026-07-22",
+     "url": "https://job-boards.greenhouse.io/via/jobs/8644613002"
     },
     {
-     "title": "Senior Product Manager, Traveler Support & Trip Management",
-     "location": "Tel-Aviv, Israel",
+     "title": "Front-End Engineer",
+     "location": "Tel Aviv",
      "dept": "Engineering",
-     "published": "2026-10-26",
-     "url": "https://navan.com/careers/openings?gh_jid=8314104"
+     "published": "2026-07-12",
+     "url": "https://job-boards.greenhouse.io/via/jobs/8627735002"
     },
     {
-     "title": "Senior  Security Engineer",
-     "location": "Tel-Aviv, Israel",
-     "dept": "Security, Risk & Fraud",
-     "published": "2026-10-08",
-     "url": "https://navan.com/careers/openings?gh_jid=8257467"
-    },
-    {
-     "title": "Manager, Travel Services",
-     "location": "Tel-Aviv, Israel",
-     "dept": "Global Operations and Service (GOS)",
-     "published": "2026-09-30",
-     "url": "https://navan.com/careers/openings?gh_jid=8239274"
-    },
-    {
-     "title": "Senior IOS Developer",
-     "location": "Tel-Aviv, Israel",
+     "title": "Mobile Team Lead",
+     "location": "Tel Aviv",
      "dept": "Engineering",
-     "published": "2026-09-10",
-     "url": "https://navan.com/careers/openings?gh_jid=8188569"
+     "published": "2026-07-09",
+     "url": "https://job-boards.greenhouse.io/via/jobs/8625905002"
     },
     {
-     "title": "Product Manager - Book with AI",
-     "location": "Tel-Aviv, Israel",
+     "title": "Software & Data Engineer",
+     "location": "Tel Aviv",
      "dept": "Engineering",
-     "published": "2026-08-31",
-     "url": "https://navan.com/careers/openings?gh_jid=8160539"
+     "published": "2026-05-21",
+     "url": "https://job-boards.greenhouse.io/via/jobs/8557879002"
     },
     {
-     "title": "Senior Site Reliability / DevOps Engineer\u2013 AI Products",
-     "location": "Tel-Aviv, Israel",
+     "title": "Senior DevOps Engineer",
+     "location": "Tel Aviv",
      "dept": "Engineering",
-     "published": "2026-07-07",
-     "url": "https://navan.com/careers/openings?gh_jid=8044449"
+     "published": "2025-12-31",
+     "url": "https://job-boards.greenhouse.io/via/jobs/8356511002"
+    },
+    {
+     "title": "Senior Platform Engineer",
+     "location": "Tel Aviv",
+     "dept": "Engineering",
+     "published": "2025-09-16",
+     "url": "https://job-boards.greenhouse.io/via/jobs/8171972002"
+    },
+    {
+     "title": "Senior Backend Engineer",
+     "location": "Tel Aviv",
+     "dept": "Engineering",
+     "published": "2025-05-11",
+     "url": "https://job-boards.greenhouse.io/via/jobs/7992214002"
     }
    ],
    "hooks": [
-    "Navan posted 7 new roles in Israel in the last 30 days",
-    "3 of Navan's 12 Israel roles are AI/ML",
-    "Biggest new push: Engineering (19 roles posted this month)",
-    "Top US pay posted: Regional Director, Enterprise Sales in New York, NY, $318,750-$425,000 base",
-    "3 roles opened, 7 closed since last snapshot"
+    "Via posted 6 new roles in Israel in the last 30 days",
+    "Biggest new push: Field Operations (10 roles posted this month)",
+    "7 roles opened, 0 closed since last snapshot"
    ]
   },
   {
    "name": "NICE",
    "ats": "greenhouse",
-   "jobs": 132,
-   "israel": 11,
+   "jobs": 131,
+   "israel": 10,
    "israel_share": 0.08,
-   "new30": 67,
-   "israel_new30": 7,
+   "new30": 65,
+   "israel_new30": 6,
    "ai": 21,
    "ai_israel": 0,
    "ai_share_israel": 0.0,
@@ -3565,11 +3744,11 @@
      4
     ],
     [
-     "Corp Services - Corporate Finance",
-     3
+     "HR - C&B and HR Ops",
+     2
     ],
     [
-     "HR - C&B and HR Ops",
+     "Corp Services - Corporate Finance",
      2
     ],
     [
@@ -3594,21 +3773,21 @@
    "cities": [
     [
      "Ra'anana",
-     11
+     10
     ]
    ],
    "us_pay_roles": 0,
    "us_pay_median_mid": null,
    "top_paid": null,
-   "opened": 8,
-   "closed": 0,
+   "opened": 1,
+   "closed": 2,
    "latest_israel": [
     {
-     "title": "FP&A Manager",
+     "title": "Engineering Group Lead",
      "location": "Israel - Raanana",
-     "dept": "Corp Services - Corporate Finance",
-     "published": "2026-11-24",
-     "url": "https://boards.eu.greenhouse.io/nice/jobs/5044848101?gh_jid=5044848101"
+     "dept": "CX - R&D Engineering",
+     "published": "2026-11-25",
+     "url": "https://boards.eu.greenhouse.io/nice/jobs/5044085101?gh_jid=5044085101"
     },
     {
      "title": "Senior Product Manager",
@@ -3616,13 +3795,6 @@
      "dept": "CX - Platform",
      "published": "2026-11-24",
      "url": "https://boards.eu.greenhouse.io/nice/jobs/5043955101?gh_jid=5043955101"
-    },
-    {
-     "title": "Software Engineer",
-     "location": "Israel - Raanana",
-     "dept": "CX - R&D Engineering",
-     "published": "2026-11-23",
-     "url": "https://boards.eu.greenhouse.io/nice/jobs/5040105101?gh_jid=5040105101"
     },
     {
      "title": "Telephony Network Engineer, Tech Lead",
@@ -3682,207 +3854,9 @@
     }
    ],
    "hooks": [
-    "NICE posted 7 new roles in Israel in the last 30 days",
+    "NICE posted 6 new roles in Israel in the last 30 days",
     "Biggest new push: CX - R&D Engineering (10 roles posted this month)",
-    "8 roles opened, 0 closed since last snapshot"
-   ]
-  },
-  {
-   "name": "Wonderful",
-   "ats": "ashby",
-   "jobs": 131,
-   "israel": 20,
-   "israel_share": 0.15,
-   "new30": 26,
-   "israel_new30": 6,
-   "ai": 9,
-   "ai_israel": 0,
-   "ai_share_israel": 0.0,
-   "teams_israel": [
-    [
-     "R&D",
-     11
-    ],
-    [
-     "S&M",
-     8
-    ],
-    [
-     "G&A",
-     1
-    ]
-   ],
-   "new_teams": [
-    [
-     "S&M",
-     16
-    ],
-    [
-     "R&D",
-     5
-    ],
-    [
-     "G&A",
-     4
-    ]
-   ],
-   "cities": [
-    [
-     "Tel Aviv",
-     20
-    ]
-   ],
-   "us_pay_roles": 0,
-   "us_pay_median_mid": null,
-   "top_paid": null,
-   "opened": 1,
-   "closed": 3,
-   "latest_israel": [
-    {
-     "title": "Global Communications Manager",
-     "location": "Tel Aviv, HQ",
-     "dept": "S&M",
-     "published": "2026-11-17",
-     "url": "https://jobs.ashbyhq.com/wonderful/ad00df9a-b2b9-4bb7-b3d7-3220fa0731a3"
-    },
-    {
-     "title": "Vertical PM - Travel, Transportation and Hospitality",
-     "location": "Tel Aviv, HQ",
-     "dept": "R&D",
-     "published": "2026-11-11",
-     "url": "https://jobs.ashbyhq.com/wonderful/dc876ca1-a0e2-4164-b310-a9b2a31ae0b3"
-    },
-    {
-     "title": "Vertical PM - Financial Services",
-     "location": "Tel Aviv, HQ",
-     "dept": "R&D",
-     "published": "2026-11-11",
-     "url": "https://jobs.ashbyhq.com/wonderful/2c358fd7-3b41-4afb-adc5-712c2bdeb824"
-    },
-    {
-     "title": "Vertical PM - Retail",
-     "location": "Tel Aviv, HQ",
-     "dept": "R&D",
-     "published": "2026-11-11",
-     "url": "https://jobs.ashbyhq.com/wonderful/196053c6-5317-4655-ab83-3ab8f8d07a83"
-    },
-    {
-     "title": "Vertical PM - Telco, Media and Tech",
-     "location": "Tel Aviv, HQ",
-     "dept": "R&D",
-     "published": "2026-11-11",
-     "url": "https://jobs.ashbyhq.com/wonderful/d09c15ad-d0e2-42cb-b1e3-44dc8bea94a6"
-    },
-    {
-     "title": "Technical Product Manager",
-     "location": "Tel Aviv, HQ",
-     "dept": "R&D",
-     "published": "2026-10-27",
-     "url": "https://jobs.ashbyhq.com/wonderful/2bcdf568-896d-454a-bbf8-6ce1899eb3bc"
-    },
-    {
-     "title": "Global Partner Marketing Lead, Hyperscalers",
-     "location": "United Kingdom / Germany / Italy / Italy / Tel Aviv, HQ / France / United Arab Emirates / Switzerland - Zurich",
-     "dept": "S&M",
-     "published": "2026-10-21",
-     "url": "https://jobs.ashbyhq.com/wonderful/9f7c7329-5cb3-491a-9a7b-54dbb6722e96"
-    },
-    {
-     "title": "Product Commercial Lead",
-     "location": "Tel Aviv, HQ",
-     "dept": "R&D",
-     "published": "2026-10-15",
-     "url": "https://jobs.ashbyhq.com/wonderful/212ab30d-1874-456c-8432-33b26e70d211"
-    },
-    {
-     "title": "Academy Lead",
-     "location": "Tel Aviv, Global",
-     "dept": "S&M",
-     "published": "2026-10-08",
-     "url": "https://jobs.ashbyhq.com/wonderful/7441eb78-0002-444b-bab4-3873f3f0e1e2"
-    },
-    {
-     "title": "Vertical PM - Healthcare",
-     "location": "Tel Aviv, HQ",
-     "dept": "R&D",
-     "published": "2026-10-08",
-     "url": "https://jobs.ashbyhq.com/wonderful/efed903e-57f7-4f11-a9ab-34166bd25817"
-    },
-    {
-     "title": "Product Marketing Manager",
-     "location": "Tel Aviv, HQ",
-     "dept": "S&M",
-     "published": "2026-09-02",
-     "url": "https://jobs.ashbyhq.com/wonderful/ce1f6789-8944-4e30-9f56-32c831cf4398"
-    },
-    {
-     "title": "Senior Product Manager",
-     "location": "Tel Aviv, HQ",
-     "dept": "R&D",
-     "published": "2026-09-02",
-     "url": "https://jobs.ashbyhq.com/wonderful/0792a60a-562a-432c-a2ac-1430f385b0af"
-    },
-    {
-     "title": "Senior Product Engineer",
-     "location": "Tel Aviv, HQ",
-     "dept": "R&D",
-     "published": "2026-09-01",
-     "url": "https://jobs.ashbyhq.com/wonderful/b1a20896-72e3-4c89-a64f-be9a8a86d178"
-    },
-    {
-     "title": "Strategic Designer",
-     "location": "Tel Aviv, HQ",
-     "dept": "R&D",
-     "published": "2026-08-06",
-     "url": "https://jobs.ashbyhq.com/wonderful/3f22ba3a-36fd-41fc-b8c3-a13217edff22"
-    },
-    {
-     "title": "Senior FP&A Analyst",
-     "location": "Tel Aviv, HQ",
-     "dept": "G&A",
-     "published": "2026-03-30",
-     "url": "https://jobs.ashbyhq.com/wonderful/ab145688-b313-40bc-b09a-0284c2f13719"
-    },
-    {
-     "title": "Data Lead",
-     "location": "Tel Aviv, HQ",
-     "dept": "R&D",
-     "published": "2026-03-22",
-     "url": "https://jobs.ashbyhq.com/wonderful/7d79a5ca-431d-4674-a418-450ac2c5301f"
-    },
-    {
-     "title": "Forward Deployed Engineer",
-     "location": "Tel Aviv",
-     "dept": "S&M",
-     "published": "2026-01-20",
-     "url": "https://jobs.ashbyhq.com/wonderful/96753546-bd56-4081-a02b-0ad5d2aac01e"
-    },
-    {
-     "title": "Deployment Strategist, Global",
-     "location": "Tel Aviv, Global",
-     "dept": "S&M",
-     "published": "2026-01-20",
-     "url": "https://jobs.ashbyhq.com/wonderful/2cecde98-50f2-4675-8533-61ac9d4eae4e"
-    },
-    {
-     "title": "Solution Architect",
-     "location": "Tel Aviv, HQ",
-     "dept": "S&M",
-     "published": "2026-01-20",
-     "url": "https://jobs.ashbyhq.com/wonderful/153b9253-c13f-4b0e-afe2-ac08b60501e9"
-    },
-    {
-     "title": "Forward Deployed Engineer",
-     "location": "Tel Aviv, Global",
-     "dept": "S&M",
-     "published": "2026-01-20",
-     "url": "https://jobs.ashbyhq.com/wonderful/86ecca8f-eb3b-4082-b64d-e1cf98d25666"
-    }
-   ],
-   "hooks": [
-    "Wonderful posted 6 new roles in Israel in the last 30 days",
-    "Biggest new push: S&M (16 roles posted this month)",
-    "1 roles opened, 3 closed since last snapshot"
+    "1 roles opened, 2 closed since last snapshot"
    ]
   },
   {
@@ -3902,15 +3876,15 @@
      3
     ],
     [
-     "Design",
-     1
-    ],
-    [
      "Product",
      1
     ],
     [
      "Data, AI & Machine Learning",
+     1
+    ],
+    [
+     "Finance",
      1
     ]
    ],
@@ -3924,8 +3898,8 @@
      5
     ],
     [
-     "Strategy & Operations",
-     1
+     "Finance",
+     2
     ]
    ],
    "cities": [
@@ -3942,9 +3916,16 @@
     "min": 140000,
     "max": 165000
    },
-   "opened": 0,
-   "closed": 0,
+   "opened": 1,
+   "closed": 1,
    "latest_israel": [
+    {
+     "title": "Bookkeeper \u2013 Temporary Position (Maternity Leave Replacement)",
+     "location": "IL: Tel Aviv (HaArba'a St 28)",
+     "dept": "Finance",
+     "published": "2026-11-26",
+     "url": "https://jobs.ashbyhq.com/Melio-payments/7fe543c0-1361-4ee0-a483-a52fdda2879e"
+    },
     {
      "title": "Senior Full Stack Engineer",
      "location": "IL: Tel Aviv (HaArba'a St 28)",
@@ -3979,28 +3960,22 @@
      "dept": "Engineering",
      "published": "2026-10-28",
      "url": "https://jobs.ashbyhq.com/Melio-payments/1203e6eb-5467-445e-a766-efacc11543b8"
-    },
-    {
-     "title": "Senior Product Designer",
-     "location": "IL: Tel Aviv (HaArba'a St 28)",
-     "dept": "Design",
-     "published": "2026-10-28",
-     "url": "https://jobs.ashbyhq.com/Melio-payments/6a8a0f65-5443-41fd-a464-d484026883dd"
     }
    ],
    "hooks": [
     "Melio posted 6 new roles in Israel in the last 30 days",
     "Biggest new push: Revenue (6 roles posted this month)",
-    "Top US pay posted: Senior Talent Acquisition Partner (Contract) in US: New York (124 E 14th St) / US: San Mateo (1875 South Grant Street), $140,000-$165,000 base"
+    "Top US pay posted: Senior Talent Acquisition Partner (Contract) in US: New York (124 E 14th St) / US: San Mateo (1875 South Grant Street), $140,000-$165,000 base",
+    "1 roles opened, 1 closed since last snapshot"
    ]
   },
   {
    "name": "Nebius",
    "ats": "greenhouse",
-   "jobs": 349,
+   "jobs": 343,
    "israel": 37,
    "israel_share": 0.11,
-   "new30": 72,
+   "new30": 73,
    "israel_new30": 5,
    "ai": 53,
    "ai_israel": 8,
@@ -4026,15 +4001,15 @@
    "new_teams": [
     [
      "Product & Infrastructure",
-     14
-    ],
-    [
-     "Infrastructure",
-     10
+     17
     ],
     [
      "Finance",
      9
+    ],
+    [
+     "Infrastructure",
+     8
     ]
    ],
    "cities": [
@@ -4055,8 +4030,8 @@
     "min": 300000,
     "max": 377000
    },
-   "opened": 4,
-   "closed": 10,
+   "opened": 5,
+   "closed": 11,
    "latest_israel": [
     {
      "title": "Senior Site Reliability Engineer (Data Platform)",
@@ -4321,22 +4296,22 @@
    "hooks": [
     "Nebius posted 5 new roles in Israel in the last 30 days",
     "8 of Nebius's 37 Israel roles are AI/ML",
-    "Biggest new push: Product & Infrastructure (14 roles posted this month)",
+    "Biggest new push: Product & Infrastructure (17 roles posted this month)",
     "Top US pay posted: Head of Strategic Partnerships, Tavily in United States, $300,000-$377,000 base",
-    "4 roles opened, 10 closed since last snapshot"
+    "5 roles opened, 11 closed since last snapshot"
    ]
   },
   {
    "name": "Cyera",
    "ats": "comeet",
-   "jobs": 236,
-   "israel": 29,
+   "jobs": 234,
+   "israel": 27,
    "israel_share": 0.12,
    "new30": 19,
    "israel_new30": 5,
    "ai": 5,
    "ai_israel": 4,
-   "ai_share_israel": 0.14,
+   "ai_share_israel": 0.15,
    "teams_israel": [
     [
      "R&D",
@@ -4344,7 +4319,7 @@
     ],
     [
      "Product Management",
-     6
+     4
     ],
     [
      "Solutions",
@@ -4372,14 +4347,14 @@
    "cities": [
     [
      "Tel Aviv",
-     29
+     27
     ]
    ],
    "us_pay_roles": 0,
    "us_pay_median_mid": null,
    "top_paid": null,
    "opened": 0,
-   "closed": 3,
+   "closed": 2,
    "latest_israel": [
     {
      "title": "Full Stack Engineer - CTO Office",
@@ -4569,35 +4544,21 @@
      "dept": "Solutions",
      "published": "",
      "url": "https://www.comeet.com/jobs/cyera/17.008/solution-architect--emerging-products/80.E63"
-    },
-    {
-     "title": "Technical Competitive Intelligence Analyst",
-     "location": "Tel Aviv",
-     "dept": "Product Management",
-     "published": "",
-     "url": "https://www.comeet.com/jobs/cyera/17.008/technical-competitive-intelligence-analyst/75.279"
-    },
-    {
-     "title": "Technical Competitive Intelligence Analyst - Cyera Identity",
-     "location": "Tel Aviv",
-     "dept": "Product Management",
-     "published": "",
-     "url": "https://www.comeet.com/jobs/cyera/17.008/technical-competitive-intelligence-analyst---cyera-identity/94.47E"
     }
    ],
    "hooks": [
     "Cyera posted 5 new roles in Israel in the last 30 days",
-    "4 of Cyera's 29 Israel roles are AI/ML",
+    "4 of Cyera's 27 Israel roles are AI/ML",
     "Biggest new push: Sales (7 roles posted this month)"
    ]
   },
   {
    "name": "Wiz",
    "ats": "greenhouse",
-   "jobs": 102,
+   "jobs": 99,
    "israel": 27,
-   "israel_share": 0.26,
-   "new30": 17,
+   "israel_share": 0.27,
+   "new30": 15,
    "israel_new30": 5,
    "ai": 4,
    "ai_israel": 3,
@@ -4626,11 +4587,11 @@
      2
     ],
     [
-     "Channels",
+     "SE",
      2
     ],
     [
-     "SE",
+     "Technical Solutions Management",
      2
     ]
    ],
@@ -4640,7 +4601,7 @@
      27
     ]
    ],
-   "us_pay_roles": 28,
+   "us_pay_roles": 27,
    "us_pay_median_mid": 178000,
    "top_paid": {
     "title": "Global Head of Field Ops",
@@ -4648,8 +4609,8 @@
     "min": 234000,
     "max": 300000
    },
-   "opened": 3,
-   "closed": 5,
+   "opened": 0,
+   "closed": 3,
    "latest_israel": [
     {
      "title": "Executive Assistant, CTO & Product",
@@ -4844,17 +4805,16 @@
    "hooks": [
     "Wiz posted 5 new roles in Israel in the last 30 days",
     "3 of Wiz's 27 Israel roles are AI/ML",
-    "Top US pay posted: Global Head of Field Ops in Remote - USA, $234,000-$300,000 base",
-    "3 roles opened, 5 closed since last snapshot"
+    "Top US pay posted: Global Head of Field Ops in Remote - USA, $234,000-$300,000 base"
    ]
   },
   {
    "name": "Upwind",
    "ats": "comeet",
-   "jobs": 93,
+   "jobs": 94,
    "israel": 24,
    "israel_share": 0.26,
-   "new30": 12,
+   "new30": 14,
    "israel_new30": 5,
    "ai": 1,
    "ai_israel": 1,
@@ -4880,7 +4840,7 @@
    "new_teams": [
     [
      "Sales",
-     5
+     6
     ],
     [
      "Product",
@@ -4900,8 +4860,8 @@
    "us_pay_roles": 0,
    "us_pay_median_mid": null,
    "top_paid": null,
-   "opened": 1,
-   "closed": 0,
+   "opened": 2,
+   "closed": 1,
    "latest_israel": [
     {
      "title": "Legal Counsel",
@@ -4943,7 +4903,7 @@
      "location": "Tel Aviv",
      "dept": "Engineering",
      "published": "",
-     "url": "https://www.upwind.io/careers/co/tel-aviv/BA.04A/backend-software-engineer/all"
+     "url": "https://www.upwind.io/careers/co/tel-aviv/BA.04A/backend-software-engineer/all?ref=trueup"
     },
     {
      "title": "Backend Team Lead",
@@ -4992,7 +4952,7 @@
      "location": "Tel Aviv",
      "dept": "Engineering",
      "published": "",
-     "url": "https://www.upwind.io/careers/co/tel-aviv/CA.042/frontend-software-engineer/all#brxe-rkmjgc"
+     "url": "https://www.upwind.io/careers/co/tel-aviv/CA.042/frontend-software-engineer/all"
     },
     {
      "title": "Marketing Operations Manager",
@@ -5006,7 +4966,7 @@
      "location": "Tel Aviv",
      "dept": "Solutions Architecture",
      "published": "",
-     "url": "https://www.upwind.io/careers/co/tel-aviv/52.375/pre-sales-engineer-tlv/all"
+     "url": "https://www.upwind.io/careers/co/tel-aviv/52.375/pre-sales-engineer-tlv/all#brxe-rkmjgc"
     },
     {
      "title": "Product Manager",
@@ -5074,17 +5034,17 @@
    ],
    "hooks": [
     "Upwind posted 5 new roles in Israel in the last 30 days",
-    "Biggest new push: Sales (5 roles posted this month)",
-    "1 roles opened, 0 closed since last snapshot"
+    "Biggest new push: Sales (6 roles posted this month)",
+    "2 roles opened, 1 closed since last snapshot"
    ]
   },
   {
    "name": "Kaltura",
    "ats": "comeet",
-   "jobs": 35,
+   "jobs": 36,
    "israel": 17,
-   "israel_share": 0.49,
-   "new30": 8,
+   "israel_share": 0.47,
+   "new30": 9,
    "israel_new30": 5,
    "ai": 7,
    "ai_israel": 6,
@@ -5110,7 +5070,7 @@
    "new_teams": [
     [
      "Sales",
-     2
+     3
     ],
     [
      "G&A",
@@ -5130,7 +5090,7 @@
    "us_pay_roles": 0,
    "us_pay_median_mid": null,
    "top_paid": null,
-   "opened": 0,
+   "opened": 1,
    "closed": 0,
    "latest_israel": [
     {
@@ -5215,14 +5175,14 @@
      "location": "Israel",
      "dept": "G&A",
      "published": "",
-     "url": "https://corp.kaltura.com/careers/netsuite-administrator/4D.17C/?_gl=1*1wwwu5w*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiAiJXYBhD_ARIsAAx2AHm2BGY5M96uiel7B-kPiUKbV77F5ww9hWDpA1RmnG3EMYoEk6Qha_8aAnuWEALw_wcB&gbraid=0AAAAAD6n3prPAWhQ8PIc7B_XlkHA8h9Nm"
+     "url": "https://corp.kaltura.com/careers/netsuite-administrator/4D.17C/"
     },
     {
      "title": "Product Manager, Product-Led Growth",
      "location": "Israel",
      "dept": "Product Managment",
      "published": "",
-     "url": "https://corp.kaltura.com/careers/product-manager-product-led-growth/63.D6B/"
+     "url": "https://corp.kaltura.com/careers/product-manager-product-led-growth/63.D6B/?_gl=1*ncu1ii*_up*MQ..*_gs*MQ..&gclid=CjwKCAiAzp_YBhAJEiwASf8kHSGMOC28GFoGVsMdQuaVNtXgAf3iiUiepuOZbiQe5XayD-MmK8Qa2RoChZIQAvD_BwE&gbraid=0AAAAAD6n3ppno4QhCzn87pA-RtGSD4P5v"
     },
     {
      "title": "Senior AI Engineer",
@@ -5255,7 +5215,8 @@
    ],
    "hooks": [
     "Kaltura posted 5 new roles in Israel in the last 30 days",
-    "6 of Kaltura's 17 Israel roles are AI/ML"
+    "6 of Kaltura's 17 Israel roles are AI/ML",
+    "1 roles opened, 0 closed since last snapshot"
    ]
   },
   {
@@ -5310,7 +5271,7 @@
    "us_pay_roles": 0,
    "us_pay_median_mid": null,
    "top_paid": null,
-   "opened": 1,
+   "opened": 0,
    "closed": 0,
    "latest_israel": [
     {
@@ -5400,8 +5361,138 @@
    ],
    "hooks": [
     "Lusha posted 5 new roles in Israel in the last 30 days",
-    "86% of open roles are in Israel",
-    "1 roles opened, 0 closed since last snapshot"
+    "86% of open roles are in Israel"
+   ]
+  },
+  {
+   "name": "Navan",
+   "ats": "greenhouse",
+   "jobs": 233,
+   "israel": 9,
+   "israel_share": 0.04,
+   "new30": 77,
+   "israel_new30": 5,
+   "ai": 10,
+   "ai_israel": 1,
+   "ai_share_israel": 0.11,
+   "teams_israel": [
+    [
+     "Engineering",
+     4
+    ],
+    [
+     "Global Operations and Service (GOS)",
+     2
+    ],
+    [
+     "Marketing",
+     1
+    ],
+    [
+     "Security, Risk & Fraud",
+     1
+    ]
+   ],
+   "new_teams": [
+    [
+     "Engineering",
+     17
+    ],
+    [
+     "Sales",
+     15
+    ],
+    [
+     "Marketing",
+     15
+    ]
+   ],
+   "cities": [
+    [
+     "Tel Aviv",
+     9
+    ]
+   ],
+   "us_pay_roles": 100,
+   "us_pay_median_mid": 170625,
+   "top_paid": {
+    "title": "Regional Director, Enterprise Sales",
+    "location": "New York, NY",
+    "min": 318750,
+    "max": 425000
+   },
+   "opened": 2,
+   "closed": 4,
+   "latest_israel": [
+    {
+     "title": "Workplace Operations Coordinator",
+     "location": "Tel-Aviv, Israel",
+     "dept": "Workplace & Procurement",
+     "published": "2026-11-19",
+     "url": "https://navan.com/careers/openings?gh_jid=8386989"
+    },
+    {
+     "title": "Business Travel Consultant II",
+     "location": "Tel-Aviv, Israel",
+     "dept": "Global Operations and Service (GOS)",
+     "published": "2026-11-02",
+     "url": "https://navan.com/careers/openings?gh_jid=8330532"
+    },
+    {
+     "title": "Senior Product Marketing Manager, Navan Expense",
+     "location": "Tel-Aviv, Israel",
+     "dept": "Marketing",
+     "published": "2026-11-02",
+     "url": "https://navan.com/careers/openings?gh_jid=8282576"
+    },
+    {
+     "title": "AI Engineer",
+     "location": "Tel-Aviv, Israel",
+     "dept": "Engineering",
+     "published": "2026-10-29",
+     "url": "https://navan.com/careers/openings?gh_jid=8314100"
+    },
+    {
+     "title": "Staff Full Stack Engineer - Edge",
+     "location": "Tel-Aviv, Israel",
+     "dept": "Engineering",
+     "published": "2026-10-27",
+     "url": "https://navan.com/careers/openings?gh_jid=8314105"
+    },
+    {
+     "title": "Senior Product Manager, Traveler Support & Trip Management",
+     "location": "Tel-Aviv, Israel",
+     "dept": "Engineering",
+     "published": "2026-10-26",
+     "url": "https://navan.com/careers/openings?gh_jid=8314104"
+    },
+    {
+     "title": "Senior  Security Engineer",
+     "location": "Tel-Aviv, Israel",
+     "dept": "Security, Risk & Fraud",
+     "published": "2026-10-08",
+     "url": "https://navan.com/careers/openings?gh_jid=8257467"
+    },
+    {
+     "title": "Manager, Travel Services",
+     "location": "Tel-Aviv, Israel",
+     "dept": "Global Operations and Service (GOS)",
+     "published": "2026-09-30",
+     "url": "https://navan.com/careers/openings?gh_jid=8239274"
+    },
+    {
+     "title": "Senior IOS Developer",
+     "location": "Tel-Aviv, Israel",
+     "dept": "Engineering",
+     "published": "2026-09-10",
+     "url": "https://navan.com/careers/openings?gh_jid=8188569"
+    }
+   ],
+   "hooks": [
+    "Navan posted 5 new roles in Israel in the last 30 days",
+    "Biggest new push: Engineering (17 roles posted this month)",
+    "Top US pay posted: Regional Director, Enterprise Sales in New York, NY, $318,750-$425,000 base",
+    "2 roles opened, 4 closed since last snapshot"
    ]
   },
   {
@@ -5460,7 +5551,7 @@
    "us_pay_roles": 0,
    "us_pay_median_mid": null,
    "top_paid": null,
-   "opened": 1,
+   "opened": 0,
    "closed": 0,
    "latest_israel": [
     {
@@ -5760,21 +5851,20 @@
    ],
    "hooks": [
     "3 of VAST Data's 42 Israel roles are AI/ML",
-    "Biggest new push: Finance (5 roles posted this month)",
-    "1 roles opened, 0 closed since last snapshot"
+    "Biggest new push: Finance (5 roles posted this month)"
    ]
   },
   {
    "name": "Similarweb",
    "ats": "greenhouse",
-   "jobs": 58,
-   "israel": 20,
-   "israel_share": 0.34,
+   "jobs": 57,
+   "israel": 19,
+   "israel_share": 0.33,
    "new30": 16,
    "israel_new30": 4,
    "ai": 7,
    "ai_israel": 4,
-   "ai_share_israel": 0.2,
+   "ai_share_israel": 0.21,
    "teams_israel": [
     [
      "R&D",
@@ -5785,11 +5875,11 @@
      3
     ],
     [
-     "Product",
-     3
+     "Finance",
+     2
     ],
     [
-     "Finance",
+     "Product",
      2
     ]
    ],
@@ -5810,14 +5900,14 @@
    "cities": [
     [
      "Tel Aviv",
-     20
+     19
     ]
    ],
    "us_pay_roles": 0,
    "us_pay_median_mid": null,
    "top_paid": null,
    "opened": 0,
-   "closed": 2,
+   "closed": 1,
    "latest_israel": [
     {
      "title": "Program Manager, Engineering Operations",
@@ -5890,13 +5980,6 @@
      "url": "https://job-boards.greenhouse.io/similarweb/jobs/8273657"
     },
     {
-     "title": "Product Designer - Maternity Leave",
-     "location": "Tel Aviv-Yafo, Israel",
-     "dept": "Product",
-     "published": "2026-10-07",
-     "url": "https://job-boards.greenhouse.io/similarweb/jobs/8260908"
-    },
-    {
      "title": "Director of Product Management -Sales Intelligence",
      "location": "Tel Aviv, Israel",
      "dept": "Product",
@@ -5961,7 +6044,7 @@
     }
    ],
    "hooks": [
-    "4 of Similarweb's 20 Israel roles are AI/ML",
+    "4 of Similarweb's 19 Israel roles are AI/ML",
     "Biggest new push: R&D (6 roles posted this month)"
    ]
   },
@@ -6132,155 +6215,6 @@
    ]
   },
   {
-   "name": "Via",
-   "ats": "greenhouse",
-   "jobs": 174,
-   "israel": 12,
-   "israel_share": 0.07,
-   "new30": 27,
-   "israel_new30": 4,
-   "ai": 17,
-   "ai_israel": 1,
-   "ai_share_israel": 0.08,
-   "teams_israel": [
-    [
-     "Engineering",
-     9
-    ],
-    [
-     "Security",
-     1
-    ],
-    [
-     "Delivery",
-     1
-    ],
-    [
-     "Operations",
-     1
-    ]
-   ],
-   "new_teams": [
-    [
-     "Field Operations",
-     8
-    ],
-    [
-     "Operations",
-     6
-    ],
-    [
-     "People Operations",
-     3
-    ]
-   ],
-   "cities": [
-    [
-     "Tel Aviv",
-     11
-    ],
-    [
-     "Israel (other)",
-     1
-    ]
-   ],
-   "us_pay_roles": 0,
-   "us_pay_median_mid": null,
-   "top_paid": null,
-   "opened": 3,
-   "closed": 0,
-   "latest_israel": [
-    {
-     "title": "Senior General Manager",
-     "location": "Chicago, IL",
-     "dept": "Operations",
-     "published": "2026-11-24",
-     "url": "https://job-boards.greenhouse.io/via/jobs/8960037002"
-    },
-    {
-     "title": "Technical Project Manager",
-     "location": "Tel Aviv",
-     "dept": "Engineering",
-     "published": "2026-11-06",
-     "url": "https://job-boards.greenhouse.io/via/jobs/8931528002"
-    },
-    {
-     "title": "Senior Algorithms Developer",
-     "location": "Tel Aviv",
-     "dept": "Engineering",
-     "published": "2026-11-03",
-     "url": "https://job-boards.greenhouse.io/via/jobs/8927980002"
-    },
-    {
-     "title": "Partner Delivery Engineer",
-     "location": "Tel Aviv",
-     "dept": "Delivery",
-     "published": "2026-10-29",
-     "url": "https://job-boards.greenhouse.io/via/jobs/8923130002"
-    },
-    {
-     "title": "Application Security Engineer",
-     "location": "Tel Aviv",
-     "dept": "Security",
-     "published": "2026-10-07",
-     "url": "https://job-boards.greenhouse.io/via/jobs/8875777002"
-    },
-    {
-     "title": "Senior Backend Engineer, Voice AI",
-     "location": "Tel Aviv",
-     "dept": "Engineering",
-     "published": "2026-07-22",
-     "url": "https://job-boards.greenhouse.io/via/jobs/8644613002"
-    },
-    {
-     "title": "Front-End Engineer",
-     "location": "Tel Aviv",
-     "dept": "Engineering",
-     "published": "2026-07-12",
-     "url": "https://job-boards.greenhouse.io/via/jobs/8627735002"
-    },
-    {
-     "title": "Mobile Team Lead",
-     "location": "Tel Aviv",
-     "dept": "Engineering",
-     "published": "2026-07-09",
-     "url": "https://job-boards.greenhouse.io/via/jobs/8625905002"
-    },
-    {
-     "title": "Software & Data Engineer",
-     "location": "Tel Aviv",
-     "dept": "Engineering",
-     "published": "2026-05-21",
-     "url": "https://job-boards.greenhouse.io/via/jobs/8557879002"
-    },
-    {
-     "title": "Senior DevOps Engineer",
-     "location": "Tel Aviv",
-     "dept": "Engineering",
-     "published": "2025-12-31",
-     "url": "https://job-boards.greenhouse.io/via/jobs/8356511002"
-    },
-    {
-     "title": "Senior Platform Engineer",
-     "location": "Tel Aviv",
-     "dept": "Engineering",
-     "published": "2025-09-16",
-     "url": "https://job-boards.greenhouse.io/via/jobs/8171972002"
-    },
-    {
-     "title": "Senior Backend Engineer",
-     "location": "Tel Aviv",
-     "dept": "Engineering",
-     "published": "2025-05-11",
-     "url": "https://job-boards.greenhouse.io/via/jobs/7992214002"
-    }
-   ],
-   "hooks": [
-    "Biggest new push: Field Operations (8 roles posted this month)",
-    "3 roles opened, 0 closed since last snapshot"
-   ]
-  },
-  {
    "name": "WalkMe",
    "ats": "lever",
    "jobs": 27,
@@ -6338,7 +6272,7 @@
     "max": 220000
    },
    "opened": 0,
-   "closed": 1,
+   "closed": 0,
    "latest_israel": [
     {
      "title": "Digital Adoption Solutions Engineer",
@@ -6410,121 +6344,12 @@
    ]
   },
   {
-   "name": "Transmit Security",
-   "ats": "greenhouse",
-   "jobs": 11,
-   "israel": 8,
-   "israel_share": 0.73,
-   "new30": 6,
-   "israel_new30": 4,
-   "ai": 0,
-   "ai_israel": 0,
-   "ai_share_israel": 0.0,
-   "teams_israel": [
-    [
-     "Engineering",
-     7
-    ],
-    [
-     "IT",
-     1
-    ]
-   ],
-   "new_teams": [
-    [
-     "Engineering",
-     4
-    ],
-    [
-     "Marketing",
-     1
-    ],
-    [
-     "Sales",
-     1
-    ]
-   ],
-   "cities": [
-    [
-     "Tel Aviv",
-     8
-    ]
-   ],
-   "us_pay_roles": 0,
-   "us_pay_median_mid": null,
-   "top_paid": null,
-   "opened": 1,
-   "closed": 0,
-   "latest_israel": [
-    {
-     "title": "Senior Full Stack Engineer",
-     "location": "Tel Aviv-Yafo, Gush Dan, Israel",
-     "dept": "Engineering",
-     "published": "2026-11-25",
-     "url": "https://www.transmitsecurity.com/about/careers/job?gh_jid=8957962002"
-    },
-    {
-     "title": "Senior Devops Engineer",
-     "location": "Tel Aviv-Yafo, Gush Dan, Israel",
-     "dept": "Engineering",
-     "published": "2026-11-12",
-     "url": "https://www.transmitsecurity.com/about/careers/job?gh_jid=8934498002"
-    },
-    {
-     "title": "Engineering Team Lead",
-     "location": "Tel Aviv-Yafo, Gush Dan, Israel",
-     "dept": "Engineering",
-     "published": "2026-11-11",
-     "url": "https://www.transmitsecurity.com/about/careers/job?gh_jid=8916714002"
-    },
-    {
-     "title": "Senior Backend Engineer",
-     "location": "Tel Aviv-Yafo, Gush Dan, Israel",
-     "dept": "Engineering",
-     "published": "2026-11-01",
-     "url": "https://www.transmitsecurity.com/about/careers/job?gh_jid=8915139002"
-    },
-    {
-     "title": "Security Research",
-     "location": "Tel Aviv-Yafo, Gush Dan, Israel",
-     "dept": "Engineering",
-     "published": "2026-10-02",
-     "url": "https://www.transmitsecurity.com/about/careers/job?gh_jid=8857693002"
-    },
-    {
-     "title": "Senior Backend Engineer- Data Platform",
-     "location": "Tel Aviv-Yafo, Gush Dan, Israel",
-     "dept": "Engineering",
-     "published": "2026-05-06",
-     "url": "https://www.transmitsecurity.com/about/careers/job?gh_jid=8533933002"
-    },
-    {
-     "title": "IT Manager",
-     "location": "Tel Aviv-Yafo, Gush Dan, Israel",
-     "dept": "IT",
-     "published": "2026-05-03",
-     "url": "https://www.transmitsecurity.com/about/careers/job?gh_jid=8533931002"
-    },
-    {
-     "title": "Senior Mobile SDK Engineer",
-     "location": "Tel Aviv-Yafo, Gush Dan, Israel",
-     "dept": "Engineering",
-     "published": "2024-07-25",
-     "url": "https://www.transmitsecurity.com/about/careers/job?gh_jid=7565350002"
-    }
-   ],
-   "hooks": [
-    "Biggest new push: Engineering (4 roles posted this month)",
-    "1 roles opened, 0 closed since last snapshot"
-   ]
-  },
-  {
    "name": "Forter",
    "ats": "greenhouse",
    "jobs": 19,
    "israel": 6,
    "israel_share": 0.32,
-   "new30": 8,
+   "new30": 7,
    "israel_new30": 4,
    "ai": 0,
    "ai_israel": 0,
@@ -6619,6 +6444,287 @@
    "hooks": []
   },
   {
+   "name": "Axonius",
+   "ats": "greenhouse",
+   "jobs": 19,
+   "israel": 6,
+   "israel_share": 0.32,
+   "new30": 8,
+   "israel_new30": 4,
+   "ai": 1,
+   "ai_israel": 1,
+   "ai_share_israel": 0.17,
+   "teams_israel": [
+    [
+     "Security",
+     3
+    ],
+    [
+     "Product Management",
+     1
+    ],
+    [
+     "Cyber Research",
+     1
+    ],
+    [
+     "Technical Account Management",
+     1
+    ]
+   ],
+   "new_teams": [
+    [
+     "Security",
+     2
+    ],
+    [
+     "Sales Management",
+     2
+    ],
+    [
+     "Product Marketing",
+     1
+    ]
+   ],
+   "cities": [
+    [
+     "Tel Aviv",
+     6
+    ]
+   ],
+   "us_pay_roles": 8,
+   "us_pay_median_mid": 279875,
+   "top_paid": {
+    "title": "Area Sales Director, Southwest",
+    "location": "Remote US",
+    "min": 415000,
+    "max": 435000
+   },
+   "opened": 1,
+   "closed": 0,
+   "latest_israel": [
+    {
+     "title": "Senior Product Security Architect",
+     "location": "Tel Aviv, Israel",
+     "dept": "Security",
+     "published": "2026-11-26",
+     "url": "https://www.axonius.com/company/careers/open-jobs?gh_jid=8217221003"
+    },
+    {
+     "title": "Senior Technical Account Manager",
+     "location": "Tel Aviv, Israel",
+     "dept": "Technical Account Management",
+     "published": "2026-11-09",
+     "url": "https://www.axonius.com/company/careers/open-jobs?gh_jid=8197333003"
+    },
+    {
+     "title": "Director of Product Security",
+     "location": "Tel Aviv, Israel",
+     "dept": "Security",
+     "published": "2026-11-04",
+     "url": "https://www.axonius.com/company/careers/open-jobs?gh_jid=8181415003"
+    },
+    {
+     "title": "Senior AI Product Manager",
+     "location": "Tel Aviv, Israel",
+     "dept": "Product Management",
+     "published": "2026-10-28",
+     "url": "https://www.axonius.com/company/careers/open-jobs?gh_jid=8044523003"
+    },
+    {
+     "title": "Product Security Architect- 9-month temp position",
+     "location": "Tel Aviv, Israel",
+     "dept": "Security",
+     "published": "2026-08-18",
+     "url": "https://www.axonius.com/company/careers/open-jobs?gh_jid=7886132003"
+    },
+    {
+     "title": "Senior Security Researcher",
+     "location": "Tel Aviv, Israel",
+     "dept": "Cyber Research",
+     "published": "2026-07-21",
+     "url": "https://www.axonius.com/company/careers/open-jobs?gh_jid=7809799003"
+    }
+   ],
+   "hooks": [
+    "Top US pay posted: Area Sales Director, Southwest in Remote US, $415,000-$435,000 base",
+    "1 roles opened, 0 closed since last snapshot"
+   ]
+  },
+  {
+   "name": "AllCloud",
+   "ats": "comeet",
+   "jobs": 30,
+   "israel": 16,
+   "israel_share": 0.53,
+   "new30": 13,
+   "israel_new30": 3,
+   "ai": 2,
+   "ai_israel": 1,
+   "ai_share_israel": 0.06,
+   "teams_israel": [
+    [
+     "Professional Services",
+     8
+    ],
+    [
+     "Sales",
+     3
+    ],
+    [
+     "Finance",
+     1
+    ],
+    [
+     "IT/IS",
+     1
+    ]
+   ],
+   "new_teams": [
+    [
+     "Other",
+     5
+    ],
+    [
+     "Professional Services",
+     4
+    ],
+    [
+     "Sales",
+     3
+    ]
+   ],
+   "cities": [
+    [
+     "Israel (other)",
+     16
+    ]
+   ],
+   "us_pay_roles": 0,
+   "us_pay_median_mid": null,
+   "top_paid": null,
+   "opened": 3,
+   "closed": 2,
+   "latest_israel": [
+    {
+     "title": "Project Management Operations",
+     "location": "Israel",
+     "dept": "Management & Operations",
+     "published": "2026-11-26",
+     "url": "https://allcloud.io/careers/co/israel/CD.57E/project-management-operations/all/"
+    },
+    {
+     "title": "AWS Cloud Presale Solution Architect",
+     "location": "Israel",
+     "dept": "Sales",
+     "published": "2026-11-23",
+     "url": "https://allcloud.io/careers/co/israel/ae.474/aws-cloud-presale-solution-architect/all/"
+    },
+    {
+     "title": "Backend Developer",
+     "location": "Israel",
+     "dept": "Professional Services",
+     "published": "2026-11-11",
+     "url": "https://allcloud.io/careers/co/israel/72.376/backend-developer/all/"
+    },
+    {
+     "title": "Cloud DevOps Engineer",
+     "location": "Israel",
+     "dept": "Professional Services",
+     "published": "",
+     "url": "https://allcloud.io/careers/co/israel/08.470/cloud-devops-engineer/all/"
+    },
+    {
+     "title": "D&A - Senior Data Engineer",
+     "location": "Israel",
+     "dept": "Professional Services",
+     "published": "",
+     "url": "https://allcloud.io/careers/co/israel/F2.F6D/da-senior-data-engineer/all/"
+    },
+    {
+     "title": "D&A - Senior Software Engineer GenAI",
+     "location": "Israel",
+     "dept": "Professional Services",
+     "published": "",
+     "url": "https://allcloud.io/careers/co/israel/CC.271/da-senior-software-engineer-genai/all/"
+    },
+    {
+     "title": "Data Architect",
+     "location": "Israel",
+     "dept": "Professional Services",
+     "published": "",
+     "url": "https://allcloud.io/careers/co/israel/EC.370/data-architect/all/"
+    },
+    {
+     "title": "Data Presale Solution Architect",
+     "location": "Israel",
+     "dept": "Sales",
+     "published": "",
+     "url": "https://allcloud.io/careers/co/israel/9B.473/data-presale-solution-architect/all/"
+    },
+    {
+     "title": "DevOps Engineer",
+     "location": "Israel",
+     "dept": "Professional Services",
+     "published": "",
+     "url": "https://allcloud.io/careers/co/israel/09.E62/devops-engineer/all/"
+    },
+    {
+     "title": "G&A - Assistant Financial Controller (Maternity Cover)",
+     "location": "Israel",
+     "dept": "Finance",
+     "published": "",
+     "url": "https://allcloud.io/careers/co/israel/1B.472/assistant-financial-controller-maternity-cover/all/"
+    },
+    {
+     "title": "G&A - IT Specialist",
+     "location": "Israel",
+     "dept": "IT/IS",
+     "published": "",
+     "url": "https://allcloud.io/careers/co/israel/3B.47E/ga-it-specialist/all/"
+    },
+    {
+     "title": "G&A - Junior Office & Operations Assistant",
+     "location": "Israel",
+     "dept": "Employee Success",
+     "published": "",
+     "url": "https://allcloud.io/careers/co/israel/1F.27B/ga-junior-office-operations-assistant/all/"
+    },
+    {
+     "title": "G&A - Paralegal Law Student",
+     "location": "Israel",
+     "dept": "Legal",
+     "published": "",
+     "url": "https://allcloud.io/careers/co/israel/D4.476/ga-paralegal-law-student/all/"
+    },
+    {
+     "title": "Marketing Cloud Consultant",
+     "location": "Israel",
+     "dept": "Professional Services",
+     "published": "",
+     "url": "https://allcloud.io/careers/co/israel/7A.474/marketing-cloud-consultant/all/"
+    },
+    {
+     "title": "Sales - Account Executive - Enterprise Sector",
+     "location": "Israel",
+     "dept": "Sales",
+     "published": "",
+     "url": "https://allcloud.io/careers/co/israel/E0.47A/sales-account-executive-enterprise-sector/all/"
+    },
+    {
+     "title": "Technical Project Manager",
+     "location": "Israel",
+     "dept": "Professional Services",
+     "published": "",
+     "url": "https://allcloud.io/careers/co/israel/5F.27C/technical-project-manager/all/"
+    }
+   ],
+   "hooks": [
+    "Biggest new push: Other (5 roles posted this month)",
+    "3 roles opened, 2 closed since last snapshot"
+   ]
+  },
+  {
    "name": "Gong",
    "ats": "greenhouse",
    "jobs": 82,
@@ -6670,8 +6776,8 @@
    "us_pay_roles": 0,
    "us_pay_median_mid": null,
    "top_paid": null,
-   "opened": 3,
-   "closed": 2,
+   "opened": 1,
+   "closed": 1,
    "latest_israel": [
     {
      "title": "Senior Product Analyst",
@@ -6754,15 +6860,146 @@
    "hooks": [
     "3 of Gong's 11 Israel roles are AI/ML",
     "Biggest new push: New Business (5 roles posted this month)",
-    "3 roles opened, 2 closed since last snapshot"
+    "1 roles opened, 1 closed since last snapshot"
+   ]
+  },
+  {
+   "name": "Guesty",
+   "ats": "comeet",
+   "jobs": 46,
+   "israel": 10,
+   "israel_share": 0.22,
+   "new30": 17,
+   "israel_new30": 3,
+   "ai": 2,
+   "ai_israel": 2,
+   "ai_share_israel": 0.2,
+   "teams_israel": [
+    [
+     "Customer Experience",
+     2
+    ],
+    [
+     "Engineering",
+     2
+    ],
+    [
+     "Product",
+     2
+    ],
+    [
+     "Finance",
+     1
+    ]
+   ],
+   "new_teams": [
+    [
+     "Sales",
+     7
+    ],
+    [
+     "Customer Success",
+     5
+    ],
+    [
+     "Customer Experience",
+     1
+    ]
+   ],
+   "cities": [
+    [
+     "Israel (other)",
+     10
+    ]
+   ],
+   "us_pay_roles": 0,
+   "us_pay_median_mid": null,
+   "top_paid": null,
+   "opened": 1,
+   "closed": 0,
+   "latest_israel": [
+    {
+     "title": "Payments Operation Specialist",
+     "location": "Israel",
+     "dept": "Customer Experience",
+     "published": "2026-11-26",
+     "url": "https://www.comeet.com/jobs/guesty/10.000/payments-operation-specialist/0E.57B"
+    },
+    {
+     "title": "Talent Acquisition Partner",
+     "location": "Israel",
+     "dept": "People",
+     "published": "2026-11-25",
+     "url": "https://www.comeet.com/jobs/guesty/10.000/talent-acquisition-partner/7A.577"
+    },
+    {
+     "title": "Senior Software Engineer",
+     "location": "Israel",
+     "dept": "Engineering",
+     "published": "2026-11-17",
+     "url": "https://www.comeet.com/jobs/guesty/10.000/senior-software-engineer/85.572"
+    },
+    {
+     "title": "Director of Corporate Development",
+     "location": "Israel",
+     "dept": "Finance",
+     "published": "",
+     "url": "https://www.comeet.com/jobs/guesty/10.000/director-of-corporate-development/C2.472"
+    },
+    {
+     "title": "Head of AI Transformation",
+     "location": "Israel",
+     "dept": "AI",
+     "published": "",
+     "url": "https://www.comeet.com/jobs/guesty/10.000/head-of-ai-transformation/F6.479"
+    },
+    {
+     "title": "Head of CX Operations",
+     "location": "Israel",
+     "dept": "Customer Experience",
+     "published": "",
+     "url": "https://www.comeet.com/jobs/guesty/10.000/head-of-cx-operations/13.275"
+    },
+    {
+     "title": "Head of Finance Applications",
+     "location": "Israel",
+     "dept": "Data & Information Systems",
+     "published": "",
+     "url": "https://www.comeet.com/jobs/guesty/10.000/head-of-finance-applications/0D.F6D"
+    },
+    {
+     "title": "Senior AI Platform Engineer",
+     "location": "Israel",
+     "dept": "Engineering",
+     "published": "",
+     "url": "https://www.comeet.com/jobs/guesty/10.000/senior-ai-platform-engineer/D2.374"
+    },
+    {
+     "title": "Staff Product Manager",
+     "location": "Israel",
+     "dept": "Product",
+     "published": "",
+     "url": "https://www.comeet.com/jobs/guesty/10.000/staff-product-manager/3C.37D"
+    },
+    {
+     "title": "Staff Product Manager",
+     "location": "Israel",
+     "dept": "Product",
+     "published": "",
+     "url": "https://www.comeet.com/jobs/guesty/10.000/staff-product-manager/FA.472"
+    }
+   ],
+   "hooks": [
+    "Biggest new push: Sales (7 roles posted this month)",
+    "1 roles opened, 0 closed since last snapshot"
    ]
   },
   {
    "name": "Playtika",
    "ats": "greenhouse",
-   "jobs": 9,
-   "israel": 8,
-   "israel_share": 0.89,
+   "jobs": 7,
+   "israel": 7,
+   "israel_share": 1.0,
    "new30": 3,
    "israel_new30": 3,
    "ai": 0,
@@ -6802,19 +7039,19 @@
    ],
    "cities": [
     [
-     "Herzliya",
+     "Israel (other)",
      4
     ],
     [
-     "Israel (other)",
-     4
+     "Herzliya",
+     3
     ]
    ],
    "us_pay_roles": 0,
    "us_pay_median_mid": null,
    "top_paid": null,
    "opened": 0,
-   "closed": 0,
+   "closed": 2,
    "latest_israel": [
     {
      "title": "DevSecOps Tech Lead",
@@ -6852,13 +7089,6 @@
      "url": "https://www.playtika.com/position/?gh_jid=5009505101"
     },
     {
-     "title": "Product Manager - Maternity leave replacement",
-     "location": "Herzliya",
-     "dept": "SM",
-     "published": "2026-10-04",
-     "url": "https://www.playtika.com/position/?gh_jid=4988423101"
-    },
-    {
      "title": "Product Security Tech Lead",
      "location": "Israel",
      "dept": "Shared Tech",
@@ -6871,6 +7101,105 @@
      "dept": "NGS",
      "published": "2026-09-07",
      "url": "https://www.playtika.com/position/?gh_jid=4929765101"
+    }
+   ],
+   "hooks": []
+  },
+  {
+   "name": "Transmit Security",
+   "ats": "greenhouse",
+   "jobs": 10,
+   "israel": 7,
+   "israel_share": 0.7,
+   "new30": 5,
+   "israel_new30": 3,
+   "ai": 0,
+   "ai_israel": 0,
+   "ai_share_israel": 0.0,
+   "teams_israel": [
+    [
+     "Engineering",
+     6
+    ],
+    [
+     "IT",
+     1
+    ]
+   ],
+   "new_teams": [
+    [
+     "Engineering",
+     3
+    ],
+    [
+     "Marketing",
+     1
+    ],
+    [
+     "Sales",
+     1
+    ]
+   ],
+   "cities": [
+    [
+     "Tel Aviv",
+     7
+    ]
+   ],
+   "us_pay_roles": 0,
+   "us_pay_median_mid": null,
+   "top_paid": null,
+   "opened": 0,
+   "closed": 1,
+   "latest_israel": [
+    {
+     "title": "Senior Full Stack Engineer",
+     "location": "Tel Aviv-Yafo, Gush Dan, Israel",
+     "dept": "Engineering",
+     "published": "2026-11-25",
+     "url": "https://www.transmitsecurity.com/about/careers/job?gh_jid=8957962002"
+    },
+    {
+     "title": "Senior Devops Engineer",
+     "location": "Tel Aviv-Yafo, Gush Dan, Israel",
+     "dept": "Engineering",
+     "published": "2026-11-12",
+     "url": "https://www.transmitsecurity.com/about/careers/job?gh_jid=8934498002"
+    },
+    {
+     "title": "Engineering Team Lead",
+     "location": "Tel Aviv-Yafo, Gush Dan, Israel",
+     "dept": "Engineering",
+     "published": "2026-11-11",
+     "url": "https://www.transmitsecurity.com/about/careers/job?gh_jid=8916714002"
+    },
+    {
+     "title": "Security Research",
+     "location": "Tel Aviv-Yafo, Gush Dan, Israel",
+     "dept": "Engineering",
+     "published": "2026-10-02",
+     "url": "https://www.transmitsecurity.com/about/careers/job?gh_jid=8857693002"
+    },
+    {
+     "title": "Senior Backend Engineer- Data Platform",
+     "location": "Tel Aviv-Yafo, Gush Dan, Israel",
+     "dept": "Engineering",
+     "published": "2026-05-06",
+     "url": "https://www.transmitsecurity.com/about/careers/job?gh_jid=8533933002"
+    },
+    {
+     "title": "IT Manager",
+     "location": "Tel Aviv-Yafo, Gush Dan, Israel",
+     "dept": "IT",
+     "published": "2026-05-03",
+     "url": "https://www.transmitsecurity.com/about/careers/job?gh_jid=8533931002"
+    },
+    {
+     "title": "Senior Mobile SDK Engineer",
+     "location": "Tel Aviv-Yafo, Gush Dan, Israel",
+     "dept": "Engineering",
+     "published": "2024-07-25",
+     "url": "https://www.transmitsecurity.com/about/careers/job?gh_jid=7565350002"
     }
    ],
    "hooks": []
@@ -7066,106 +7395,6 @@
    ]
   },
   {
-   "name": "Axonius",
-   "ats": "greenhouse",
-   "jobs": 18,
-   "israel": 5,
-   "israel_share": 0.28,
-   "new30": 7,
-   "israel_new30": 3,
-   "ai": 1,
-   "ai_israel": 1,
-   "ai_share_israel": 0.2,
-   "teams_israel": [
-    [
-     "Security",
-     2
-    ],
-    [
-     "Product Management",
-     1
-    ],
-    [
-     "Cyber Research",
-     1
-    ],
-    [
-     "Technical Account Management",
-     1
-    ]
-   ],
-   "new_teams": [
-    [
-     "Sales Management",
-     2
-    ],
-    [
-     "Security",
-     1
-    ],
-    [
-     "Product Marketing",
-     1
-    ]
-   ],
-   "cities": [
-    [
-     "Tel Aviv",
-     5
-    ]
-   ],
-   "us_pay_roles": 8,
-   "us_pay_median_mid": 279875,
-   "top_paid": {
-    "title": "Area Sales Director, Southwest",
-    "location": "Remote US",
-    "min": 415000,
-    "max": 435000
-   },
-   "opened": 0,
-   "closed": 1,
-   "latest_israel": [
-    {
-     "title": "Senior Technical Account Manager",
-     "location": "Tel Aviv, Israel",
-     "dept": "Technical Account Management",
-     "published": "2026-11-09",
-     "url": "https://www.axonius.com/company/careers/open-jobs?gh_jid=8197333003"
-    },
-    {
-     "title": "Director of Product Security",
-     "location": "Tel Aviv, Israel",
-     "dept": "Security",
-     "published": "2026-11-04",
-     "url": "https://www.axonius.com/company/careers/open-jobs?gh_jid=8181415003"
-    },
-    {
-     "title": "Senior AI Product Manager",
-     "location": "Tel Aviv, Israel",
-     "dept": "Product Management",
-     "published": "2026-10-28",
-     "url": "https://www.axonius.com/company/careers/open-jobs?gh_jid=8044523003"
-    },
-    {
-     "title": "Product Security Architect- 9-month temp position",
-     "location": "Tel Aviv, Israel",
-     "dept": "Security",
-     "published": "2026-08-18",
-     "url": "https://www.axonius.com/company/careers/open-jobs?gh_jid=7886132003"
-    },
-    {
-     "title": "Senior Security Researcher",
-     "location": "Tel Aviv, Israel",
-     "dept": "Cyber Research",
-     "published": "2026-07-21",
-     "url": "https://www.axonius.com/company/careers/open-jobs?gh_jid=7809799003"
-    }
-   ],
-   "hooks": [
-    "Top US pay posted: Area Sales Director, Southwest in Remote US, $415,000-$435,000 base"
-   ]
-  },
-  {
    "name": "Tailor Brands",
    "ats": "comeet",
    "jobs": 5,
@@ -7217,7 +7446,7 @@
    "us_pay_roles": 0,
    "us_pay_median_mid": null,
    "top_paid": null,
-   "opened": 1,
+   "opened": 0,
    "closed": 0,
    "latest_israel": [
     {
@@ -7256,9 +7485,7 @@
      "url": "https://www.tailorbrands.com/career/co/https-www-tailorbrands-com-careers/D3.27D/product-manager/all"
     }
    ],
-   "hooks": [
-    "1 roles opened, 0 closed since last snapshot"
-   ]
+   "hooks": []
   },
   {
    "name": "Windward",
@@ -7463,7 +7690,7 @@
    "us_pay_median_mid": null,
    "top_paid": null,
    "opened": 0,
-   "closed": 1,
+   "closed": 0,
    "latest_israel": [
     {
      "title": "Senior Car Insurance Pricing Expert (Relocation to TLV)",
@@ -7611,171 +7838,6 @@
    ]
   },
   {
-   "name": "AllCloud",
-   "ats": "comeet",
-   "jobs": 29,
-   "israel": 15,
-   "israel_share": 0.52,
-   "new30": 11,
-   "israel_new30": 2,
-   "ai": 3,
-   "ai_israel": 1,
-   "ai_share_israel": 0.07,
-   "teams_israel": [
-    [
-     "Professional Services",
-     8
-    ],
-    [
-     "Sales",
-     3
-    ],
-    [
-     "Finance",
-     1
-    ],
-    [
-     "IT/IS",
-     1
-    ]
-   ],
-   "new_teams": [
-    [
-     "Other",
-     5
-    ],
-    [
-     "Professional Services",
-     4
-    ],
-    [
-     "Sales",
-     2
-    ]
-   ],
-   "cities": [
-    [
-     "Israel (other)",
-     15
-    ]
-   ],
-   "us_pay_roles": 0,
-   "us_pay_median_mid": null,
-   "top_paid": null,
-   "opened": 0,
-   "closed": 2,
-   "latest_israel": [
-    {
-     "title": "AWS Cloud Presale Solution Architect",
-     "location": "Israel",
-     "dept": "Sales",
-     "published": "2026-11-23",
-     "url": "https://allcloud.io/careers/co/israel/AE.474/aws-cloud-presale-solution-architect/all/"
-    },
-    {
-     "title": "Backend Developer",
-     "location": "Israel",
-     "dept": "Professional Services",
-     "published": "2026-11-11",
-     "url": "https://allcloud.io/careers/co/israel/72.376/backend-developer/all/"
-    },
-    {
-     "title": "Cloud DevOps Engineer",
-     "location": "Israel",
-     "dept": "Professional Services",
-     "published": "",
-     "url": "https://allcloud.io/careers/co/israel/08.470/cloud-devops-engineer/all/"
-    },
-    {
-     "title": "D&A - Senior Data Engineer",
-     "location": "Israel",
-     "dept": "Professional Services",
-     "published": "",
-     "url": "https://allcloud.io/careers/co/israel/F2.F6D/senior-data-engineer/all/"
-    },
-    {
-     "title": "D&A - Senior Software Engineer GenAI",
-     "location": "Israel",
-     "dept": "Professional Services",
-     "published": "",
-     "url": "https://allcloud.io/careers/co/israel/CC.271/senior-software-engineer-genai/all/"
-    },
-    {
-     "title": "Data Architect",
-     "location": "Israel",
-     "dept": "Professional Services",
-     "published": "",
-     "url": "https://allcloud.io/careers/co/israel/EC.370/data-architect/all/"
-    },
-    {
-     "title": "Data Presale Solution Architect",
-     "location": "Israel",
-     "dept": "Sales",
-     "published": "",
-     "url": "https://allcloud.io/careers/co/israel/9B.473/data-presale-solution-architect/all/"
-    },
-    {
-     "title": "DevOps Engineer",
-     "location": "Israel",
-     "dept": "Professional Services",
-     "published": "",
-     "url": "https://allcloud.io/careers/co/israel/09.E62/devops-engineer/all/?t=1792579068024"
-    },
-    {
-     "title": "G&A - Assistant Financial Controller (Maternity Cover)",
-     "location": "Israel",
-     "dept": "Finance",
-     "published": "",
-     "url": "https://allcloud.io/careers/co/israel/1B.472/assistant-financial-controller-maternity-cover/all/"
-    },
-    {
-     "title": "G&A - IT Specialist",
-     "location": "Israel",
-     "dept": "IT/IS",
-     "published": "",
-     "url": "https://allcloud.io/careers/co/israel/3B.47E/it-specialist/all/"
-    },
-    {
-     "title": "G&A - Junior Office & Operations Assistant",
-     "location": "Israel",
-     "dept": "Employee Success",
-     "published": "",
-     "url": "https://allcloud.io/careers/co/israel/1F.27B/junior-office-operations-assistant/all/"
-    },
-    {
-     "title": "G&A - Paralegal Law Student",
-     "location": "Israel",
-     "dept": "Legal",
-     "published": "",
-     "url": "https://allcloud.io/careers/co/israel/D4.476/paralegal-law-student/all/"
-    },
-    {
-     "title": "Marketing Cloud Consultant",
-     "location": "Israel",
-     "dept": "Professional Services",
-     "published": "",
-     "url": "https://allcloud.io/careers/co/israel/7A.474/marketing-cloud-consultant/all/"
-    },
-    {
-     "title": "Sales - Account Executive - Enterprise Sector",
-     "location": "Israel",
-     "dept": "Sales",
-     "published": "",
-     "url": "https://allcloud.io/careers/co/israel/E0.47A/sales-account-executive-enterprise-sector/all/"
-    },
-    {
-     "title": "Technical Project Manager",
-     "location": "Israel",
-     "dept": "Professional Services",
-     "published": "",
-     "url": "https://allcloud.io/careers/co/israel/5F.27C/technical-project-manager/all/"
-    }
-   ],
-   "hooks": [
-    "Biggest new push: Other (5 roles posted this month)"
-   ]
-  },
-  {
    "name": "Silverfort",
    "ats": "comeet",
    "jobs": 33,
@@ -7827,8 +7889,8 @@
    "us_pay_roles": 0,
    "us_pay_median_mid": null,
    "top_paid": null,
-   "opened": 1,
-   "closed": 1,
+   "opened": 0,
+   "closed": 0,
    "latest_israel": [
     {
      "title": "Senior Data Engineer",
@@ -7895,132 +7957,7 @@
     }
    ],
    "hooks": [
-    "Biggest new push: Sales (4 roles posted this month)",
-    "1 roles opened, 1 closed since last snapshot"
-   ]
-  },
-  {
-   "name": "Guesty",
-   "ats": "comeet",
-   "jobs": 45,
-   "israel": 9,
-   "israel_share": 0.2,
-   "new30": 16,
-   "israel_new30": 2,
-   "ai": 2,
-   "ai_israel": 2,
-   "ai_share_israel": 0.22,
-   "teams_israel": [
-    [
-     "Engineering",
-     2
-    ],
-    [
-     "Product",
-     2
-    ],
-    [
-     "Finance",
-     1
-    ],
-    [
-     "AI",
-     1
-    ]
-   ],
-   "new_teams": [
-    [
-     "Sales",
-     7
-    ],
-    [
-     "Customer Success",
-     5
-    ],
-    [
-     "Operations",
-     1
-    ]
-   ],
-   "cities": [
-    [
-     "Israel (other)",
-     9
-    ]
-   ],
-   "us_pay_roles": 0,
-   "us_pay_median_mid": null,
-   "top_paid": null,
-   "opened": 1,
-   "closed": 0,
-   "latest_israel": [
-    {
-     "title": "Talent Acquisition Partner",
-     "location": "Israel",
-     "dept": "People",
-     "published": "2026-11-25",
-     "url": "https://www.comeet.com/jobs/guesty/10.000/talent-acquisition-partner/7A.577"
-    },
-    {
-     "title": "Senior Software Engineer",
-     "location": "Israel",
-     "dept": "Engineering",
-     "published": "2026-11-17",
-     "url": "https://www.comeet.com/jobs/guesty/10.000/senior-software-engineer/85.572"
-    },
-    {
-     "title": "Director of Corporate Development",
-     "location": "Israel",
-     "dept": "Finance",
-     "published": "",
-     "url": "https://www.comeet.com/jobs/guesty/10.000/director-of-corporate-development/C2.472"
-    },
-    {
-     "title": "Head of AI Transformation",
-     "location": "Israel",
-     "dept": "AI",
-     "published": "",
-     "url": "https://www.comeet.com/jobs/guesty/10.000/head-of-ai-transformation/F6.479"
-    },
-    {
-     "title": "Head of CX Operations",
-     "location": "Israel",
-     "dept": "Customer Experience",
-     "published": "",
-     "url": "https://www.comeet.com/jobs/guesty/10.000/head-of-cx-operations/13.275"
-    },
-    {
-     "title": "Head of Finance Applications",
-     "location": "Israel",
-     "dept": "Data & Information Systems",
-     "published": "",
-     "url": "https://www.comeet.com/jobs/guesty/10.000/head-of-finance-applications/0D.F6D"
-    },
-    {
-     "title": "Senior AI Platform Engineer",
-     "location": "Israel",
-     "dept": "Engineering",
-     "published": "",
-     "url": "https://www.comeet.com/jobs/guesty/10.000/senior-ai-platform-engineer/D2.374"
-    },
-    {
-     "title": "Staff Product Manager",
-     "location": "Israel",
-     "dept": "Product",
-     "published": "",
-     "url": "https://www.comeet.com/jobs/guesty/10.000/staff-product-manager/3C.37D"
-    },
-    {
-     "title": "Staff Product Manager",
-     "location": "Israel",
-     "dept": "Product",
-     "published": "",
-     "url": "https://www.comeet.com/jobs/guesty/10.000/staff-product-manager/FA.472"
-    }
-   ],
-   "hooks": [
-    "Biggest new push: Sales (7 roles posted this month)",
-    "1 roles opened, 0 closed since last snapshot"
+    "Biggest new push: Sales (4 roles posted this month)"
    ]
   },
   {
@@ -8192,7 +8129,7 @@
     "min": 210107,
     "max": 242000
    },
-   "opened": 1,
+   "opened": 0,
    "closed": 0,
    "latest_israel": [
     {
@@ -8239,8 +8176,7 @@
     }
    ],
    "hooks": [
-    "Top US pay posted: Head of Strategic Partnerships & Ecosystem in United States - Remote, $210,107-$242,000 base",
-    "1 roles opened, 0 closed since last snapshot"
+    "Top US pay posted: Head of Strategic Partnerships & Ecosystem in United States - Remote, $210,107-$242,000 base"
    ]
   },
   {
@@ -8292,7 +8228,7 @@
    "us_pay_median_mid": null,
    "top_paid": null,
    "opened": 0,
-   "closed": 1,
+   "closed": 0,
    "latest_israel": [
     {
      "title": "Product Builder",
@@ -8340,11 +8276,99 @@
    "hooks": []
   },
   {
+   "name": "Fiverr",
+   "ats": "comeet",
+   "jobs": 6,
+   "israel": 4,
+   "israel_share": 0.67,
+   "new30": 3,
+   "israel_new30": 2,
+   "ai": 0,
+   "ai_israel": 0,
+   "ai_share_israel": 0.0,
+   "teams_israel": [
+    [
+     "Marketplace Business Operations",
+     1
+    ],
+    [
+     "Technology",
+     1
+    ],
+    [
+     "G&A",
+     1
+    ],
+    [
+     "Customer Journey",
+     1
+    ]
+   ],
+   "new_teams": [
+    [
+     "Marketplace Business Operations",
+     1
+    ],
+    [
+     "Marketing",
+     1
+    ],
+    [
+     "G&A",
+     1
+    ]
+   ],
+   "cities": [
+    [
+     "Tel Aviv",
+     4
+    ]
+   ],
+   "us_pay_roles": 0,
+   "us_pay_median_mid": null,
+   "top_paid": null,
+   "opened": 1,
+   "closed": 0,
+   "latest_israel": [
+    {
+     "title": "Business Manager",
+     "location": "Tel Aviv",
+     "dept": "Marketplace Business Operations",
+     "published": "2026-11-26",
+     "url": "https://www.fiverr.com/jobs/MzguMTY4"
+    },
+    {
+     "title": "Experienced Legal Counsel",
+     "location": "Tel Aviv",
+     "dept": "G&A",
+     "published": "2026-11-12",
+     "url": "https://www.fiverr.com/jobs/NTMuNTdE"
+    },
+    {
+     "title": "Development Team Leader",
+     "location": "Tel Aviv",
+     "dept": "Technology",
+     "published": "",
+     "url": "https://www.fiverr.com/jobs/QkQuNDdB"
+    },
+    {
+     "title": "Operation Manager, Content Moderation",
+     "location": "Tel Aviv",
+     "dept": "Customer Journey",
+     "published": "",
+     "url": "https://www.fiverr.com/jobs/ODMuMjcw"
+    }
+   ],
+   "hooks": [
+    "1 roles opened, 0 closed since last snapshot"
+   ]
+  },
+  {
    "name": "Orca Security",
    "ats": "greenhouse",
-   "jobs": 14,
+   "jobs": 13,
    "israel": 4,
-   "israel_share": 0.29,
+   "israel_share": 0.31,
    "new30": 10,
    "israel_new30": 2,
    "ai": 2,
@@ -8356,7 +8380,7 @@
      3
     ],
     [
-     "Product",
+     "Finance",
      1
     ]
    ],
@@ -8384,14 +8408,14 @@
    "us_pay_median_mid": null,
    "top_paid": null,
    "opened": 1,
-   "closed": 0,
+   "closed": 2,
    "latest_israel": [
     {
-     "title": "Senior Product Manager",
+     "title": "FP&A Manager",
      "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
-     "dept": "Product",
-     "published": "2026-11-05",
-     "url": "https://orca.security/about/careers/6250364004?gh_jid=6250364004"
+     "dept": "Finance",
+     "published": "2026-11-25",
+     "url": "https://orca.security/about/careers/6270882004?gh_jid=6270882004"
     },
     {
      "title": "Staff Software Engineer - Data Platform Team",
@@ -8416,7 +8440,7 @@
     }
    ],
    "hooks": [
-    "1 roles opened, 0 closed since last snapshot"
+    "1 roles opened, 2 closed since last snapshot"
    ]
   },
   {
@@ -8498,77 +8522,6 @@
    "hooks": []
   },
   {
-   "name": "HoneyBook",
-   "ats": "ashby",
-   "jobs": 3,
-   "israel": 3,
-   "israel_share": 1.0,
-   "new30": 2,
-   "israel_new30": 2,
-   "ai": 0,
-   "ai_israel": 0,
-   "ai_share_israel": 0.0,
-   "teams_israel": [
-    [
-     "Marketing",
-     1
-    ],
-    [
-     "Design",
-     1
-    ],
-    [
-     "Development",
-     1
-    ]
-   ],
-   "new_teams": [
-    [
-     "Marketing",
-     1
-    ],
-    [
-     "Development",
-     1
-    ]
-   ],
-   "cities": [
-    [
-     "Tel Aviv",
-     3
-    ]
-   ],
-   "us_pay_roles": 0,
-   "us_pay_median_mid": null,
-   "top_paid": null,
-   "opened": 0,
-   "closed": 2,
-   "latest_israel": [
-    {
-     "title": "Application Security Engineer",
-     "location": "Tel Aviv",
-     "dept": "Development",
-     "published": "2026-11-05",
-     "url": "https://jobs.ashbyhq.com/honeybook/51f60adf-2c76-40f7-a462-1f03d96911c8"
-    },
-    {
-     "title": "Senior Marketing Designer",
-     "location": "Tel Aviv",
-     "dept": "Marketing",
-     "published": "2026-11-03",
-     "url": "https://jobs.ashbyhq.com/honeybook/5b41fb85-7d2a-4186-a26a-94f9afb66973"
-    },
-    {
-     "title": "Lead Motion Designer",
-     "location": "Tel Aviv",
-     "dept": "Design",
-     "published": "2026-09-17",
-     "url": "https://jobs.ashbyhq.com/honeybook/2e6bcde3-60e3-4f1d-9e62-c650f1c77ee8"
-    }
-   ],
-   "hooks": []
-  },
-  {
    "name": "Checkmarx",
    "ats": "comeet",
    "jobs": 22,
@@ -8640,14 +8593,141 @@
    "hooks": []
   },
   {
+   "name": "HoneyBook",
+   "ats": "ashby",
+   "jobs": 2,
+   "israel": 2,
+   "israel_share": 1.0,
+   "new30": 2,
+   "israel_new30": 2,
+   "ai": 0,
+   "ai_israel": 0,
+   "ai_share_israel": 0.0,
+   "teams_israel": [
+    [
+     "Marketing",
+     1
+    ],
+    [
+     "Development",
+     1
+    ]
+   ],
+   "new_teams": [
+    [
+     "Marketing",
+     1
+    ],
+    [
+     "Development",
+     1
+    ]
+   ],
+   "cities": [
+    [
+     "Tel Aviv",
+     2
+    ]
+   ],
+   "us_pay_roles": 0,
+   "us_pay_median_mid": null,
+   "top_paid": null,
+   "opened": 0,
+   "closed": 1,
+   "latest_israel": [
+    {
+     "title": "Application Security Engineer",
+     "location": "Tel Aviv",
+     "dept": "Development",
+     "published": "2026-11-05",
+     "url": "https://jobs.ashbyhq.com/honeybook/51f60adf-2c76-40f7-a462-1f03d96911c8"
+    },
+    {
+     "title": "Senior Marketing Designer",
+     "location": "Tel Aviv",
+     "dept": "Marketing",
+     "published": "2026-11-03",
+     "url": "https://jobs.ashbyhq.com/honeybook/5b41fb85-7d2a-4186-a26a-94f9afb66973"
+    }
+   ],
+   "hooks": []
+  },
+  {
+   "name": "Salt Security",
+   "ats": "greenhouse",
+   "jobs": 16,
+   "israel": 2,
+   "israel_share": 0.12,
+   "new30": 9,
+   "israel_new30": 2,
+   "ai": 0,
+   "ai_israel": 0,
+   "ai_share_israel": 0.0,
+   "teams_israel": [
+    [
+     "R&D",
+     1
+    ],
+    [
+     "Finance",
+     1
+    ]
+   ],
+   "new_teams": [
+    [
+     "Sales",
+     5
+    ],
+    [
+     "G&A",
+     1
+    ],
+    [
+     "R&D",
+     1
+    ]
+   ],
+   "cities": [
+    [
+     "Tel Aviv",
+     2
+    ]
+   ],
+   "us_pay_roles": 0,
+   "us_pay_median_mid": null,
+   "top_paid": null,
+   "opened": 1,
+   "closed": 0,
+   "latest_israel": [
+    {
+     "title": "Frontend Engineer",
+     "location": "Tel Aviv",
+     "dept": "R&D",
+     "published": "2026-11-25",
+     "url": "https://salt.security/job-board?gh_jid=5309341007"
+    },
+    {
+     "title": "Senior SecOps Engineer",
+     "location": "Tel Aviv",
+     "dept": "Finance",
+     "published": "2026-11-02",
+     "url": "https://salt.security/job-board?gh_jid=5281314007"
+    }
+   ],
+   "hooks": [
+    "Biggest new push: Sales (5 roles posted this month)",
+    "1 roles opened, 0 closed since last snapshot"
+   ]
+  },
+  {
    "name": "Moon Active",
    "ats": "ashby",
-   "jobs": 19,
+   "jobs": 18,
    "israel": 16,
-   "israel_share": 0.84,
+   "israel_share": 0.89,
    "new30": 2,
    "israel_new30": 1,
-   "ai": 1,
+   "ai": 0,
    "ai_israel": 0,
    "ai_share_israel": 0.0,
    "teams_israel": [
@@ -8684,7 +8764,7 @@
    "us_pay_median_mid": null,
    "top_paid": null,
    "opened": 0,
-   "closed": 0,
+   "closed": 1,
    "latest_israel": [
     {
      "title": "Market Researcher",
@@ -8800,16 +8880,16 @@
     }
    ],
    "hooks": [
-    "84% of open roles are in Israel"
+    "89% of open roles are in Israel"
    ]
   },
   {
    "name": "Zenity",
    "ats": "comeet",
-   "jobs": 32,
+   "jobs": 33,
    "israel": 11,
-   "israel_share": 0.34,
-   "new30": 5,
+   "israel_share": 0.33,
+   "new30": 6,
    "israel_new30": 1,
    "ai": 2,
    "ai_israel": 2,
@@ -8835,7 +8915,7 @@
    "new_teams": [
     [
      "Marketing",
-     2
+     3
     ],
     [
      "CTO",
@@ -8855,7 +8935,7 @@
    "us_pay_roles": 0,
    "us_pay_median_mid": null,
    "top_paid": null,
-   "opened": 0,
+   "opened": 1,
    "closed": 0,
    "latest_israel": [
     {
@@ -8919,7 +8999,7 @@
      "location": "Tel Aviv",
      "dept": "Engineering",
      "published": "",
-     "url": "https://zenity.io/careers/hybrid-tel-aviv-jaffa-tel-aviv-district-israel/senior-software-engineer/48.947"
+     "url": "https://zenity.io/careers/hybrid-tel-aviv-yafo-tel-aviv-district-israel/senior-software-engineer/48.947"
     },
     {
      "title": "Software Architect",
@@ -8936,151 +9016,17 @@
      "url": "https://zenity.io/careers/tel-aviv-jaffa-tel-aviv-district-israel/tech-lead-engineer-device-agent/73.D6E"
     }
    ],
-   "hooks": []
-  },
-  {
-   "name": "Taboola",
-   "ats": "greenhouse",
-   "jobs": 45,
-   "israel": 10,
-   "israel_share": 0.22,
-   "new30": 10,
-   "israel_new30": 1,
-   "ai": 2,
-   "ai_israel": 1,
-   "ai_share_israel": 0.1,
-   "teams_israel": [
-    [
-     "Products and AI R&D",
-     3
-    ],
-    [
-     "Finance",
-     2
-    ],
-    [
-     "Advertiser Product Management",
-     2
-    ],
-    [
-     "Publisher Professional Services",
-     1
-    ]
-   ],
-   "new_teams": [
-    [
-     "Advertising Sales",
-     5
-    ],
-    [
-     "Human Resources",
-     2
-    ],
-    [
-     "Publisher Professional Services",
-     1
-    ]
-   ],
-   "cities": [
-    [
-     "Tel Aviv",
-     10
-    ]
-   ],
-   "us_pay_roles": 10,
-   "us_pay_median_mid": 113250,
-   "top_paid": {
-    "title": "VP, Enterprise Advertising Sales - North America",
-    "location": "New York City (NYC), New York, United States",
-    "min": 300000,
-    "max": 375000
-   },
-   "opened": 0,
-   "closed": 3,
-   "latest_israel": [
-    {
-     "title": "Bid Ops Optimization Engineer (Maternity Leave Cover)",
-     "location": "Tel Aviv, Israel",
-     "dept": "Publisher Professional Services",
-     "published": "2026-10-28",
-     "url": "https://www.taboola.com/careers/job/8264354?gh_jid=8264354"
-    },
-    {
-     "title": "Revenue Operations Director",
-     "location": "Tel Aviv, Israel",
-     "dept": "Finance",
-     "published": "2026-10-23",
-     "url": "https://www.taboola.com/careers/job/8305421?gh_jid=8305421"
-    },
-    {
-     "title": "Senior Product Manager",
-     "location": "Tel Aviv, Israel",
-     "dept": "Advertiser Product Management",
-     "published": "2026-10-19",
-     "url": "https://www.taboola.com/careers/job/8278521?gh_jid=8278521"
-    },
-    {
-     "title": "Senior Product Manager",
-     "location": "Tel Aviv, Israel",
-     "dept": "Advertiser Product Management",
-     "published": "2026-10-14",
-     "url": "https://www.taboola.com/careers/job/8273430?gh_jid=8273430"
-    },
-    {
-     "title": "Tax Manager",
-     "location": "Tel Aviv, Israel",
-     "dept": "Finance",
-     "published": "2026-10-13",
-     "url": "https://www.taboola.com/careers/job/8261478?gh_jid=8261478"
-    },
-    {
-     "title": "Senior Data Scientist",
-     "location": "Tel Aviv, Israel",
-     "dept": "Products and AI R&D",
-     "published": "2026-07-26",
-     "url": "https://www.taboola.com/careers/job/8087797?gh_jid=8087797"
-    },
-    {
-     "title": "Algorithm Engineer (RTB)",
-     "location": "Tel Aviv, Israel",
-     "dept": "Products and AI R&D",
-     "published": "2026-07-23",
-     "url": "https://www.taboola.com/careers/job/8081260?gh_jid=8081260"
-    },
-    {
-     "title": "Senior Algorithm Engineer (RTB)",
-     "location": "Tel Aviv, Israel",
-     "dept": "Products and AI R&D",
-     "published": "2026-07-15",
-     "url": "https://www.taboola.com/careers/job/8064004?gh_jid=8064004"
-    },
-    {
-     "title": "Data Platform Engineering Team Leader",
-     "location": "Tel Aviv, Israel",
-     "dept": "R&D - Infrastructure",
-     "published": "2026-06-18",
-     "url": "https://www.taboola.com/careers/job/7903597?gh_jid=7903597"
-    },
-    {
-     "title": "VP R&D",
-     "location": "Tel Aviv, Israel",
-     "dept": "R&D - Supply",
-     "published": "2026-03-15",
-     "url": "https://www.taboola.com/careers/job/7694156?gh_jid=7694156"
-    }
-   ],
    "hooks": [
-    "Biggest new push: Advertising Sales (5 roles posted this month)",
-    "Top US pay posted: VP, Enterprise Advertising Sales - North America in New York City (NYC), New York, United States, $300,000-$375,000 base"
+    "1 roles opened, 0 closed since last snapshot"
    ]
   },
   {
    "name": "Coralogix",
    "ats": "comeet",
-   "jobs": 60,
+   "jobs": 59,
    "israel": 10,
    "israel_share": 0.17,
-   "new30": 17,
+   "new30": 18,
    "israel_new30": 1,
    "ai": 1,
    "ai_israel": 1,
@@ -9106,7 +9052,7 @@
    "new_teams": [
     [
      "Sales",
-     6
+     7
     ],
     [
      "Customer Success",
@@ -9126,8 +9072,8 @@
    "us_pay_roles": 0,
    "us_pay_median_mid": null,
    "top_paid": null,
-   "opened": 0,
-   "closed": 1,
+   "opened": 1,
+   "closed": 2,
    "latest_israel": [
     {
      "title": "Backend Engineer",
@@ -9201,7 +9147,8 @@
     }
    ],
    "hooks": [
-    "Biggest new push: Sales (6 roles posted this month)"
+    "Biggest new push: Sales (7 roles posted this month)",
+    "1 roles opened, 2 closed since last snapshot"
    ]
   },
   {
@@ -9210,7 +9157,7 @@
    "jobs": 14,
    "israel": 10,
    "israel_share": 0.71,
-   "new30": 2,
+   "new30": 1,
    "israel_new30": 1,
    "ai": 0,
    "ai_israel": 0,
@@ -9235,10 +9182,6 @@
    ],
    "new_teams": [
     [
-     "Finance",
-     1
-    ],
-    [
      "Marketing",
      1
     ]
@@ -9252,7 +9195,7 @@
    "us_pay_roles": 0,
    "us_pay_median_mid": null,
    "top_paid": null,
-   "opened": 1,
+   "opened": 0,
    "closed": 0,
    "latest_israel": [
     {
@@ -9327,8 +9270,136 @@
     }
    ],
    "hooks": [
-    "71% of open roles are in Israel",
-    "1 roles opened, 0 closed since last snapshot"
+    "71% of open roles are in Israel"
+   ]
+  },
+  {
+   "name": "Taboola",
+   "ats": "greenhouse",
+   "jobs": 44,
+   "israel": 9,
+   "israel_share": 0.2,
+   "new30": 9,
+   "israel_new30": 1,
+   "ai": 2,
+   "ai_israel": 1,
+   "ai_share_israel": 0.11,
+   "teams_israel": [
+    [
+     "Products and AI R&D",
+     3
+    ],
+    [
+     "Advertiser Product Management",
+     2
+    ],
+    [
+     "Publisher Professional Services",
+     1
+    ],
+    [
+     "R&D - Infrastructure",
+     1
+    ]
+   ],
+   "new_teams": [
+    [
+     "Advertising Sales",
+     4
+    ],
+    [
+     "Human Resources",
+     2
+    ],
+    [
+     "Publisher Professional Services",
+     1
+    ]
+   ],
+   "cities": [
+    [
+     "Tel Aviv",
+     9
+    ]
+   ],
+   "us_pay_roles": 10,
+   "us_pay_median_mid": 113250,
+   "top_paid": {
+    "title": "VP, Enterprise Advertising Sales - North America",
+    "location": "New York City (NYC), New York, United States",
+    "min": 300000,
+    "max": 375000
+   },
+   "opened": 0,
+   "closed": 1,
+   "latest_israel": [
+    {
+     "title": "Bid Ops Optimization Engineer (Maternity Leave Cover)",
+     "location": "Tel Aviv, Israel",
+     "dept": "Publisher Professional Services",
+     "published": "2026-10-28",
+     "url": "https://www.taboola.com/careers/job/8264354?gh_jid=8264354"
+    },
+    {
+     "title": "Revenue Operations Director",
+     "location": "Tel Aviv, Israel",
+     "dept": "Finance",
+     "published": "2026-10-23",
+     "url": "https://www.taboola.com/careers/job/8305421?gh_jid=8305421"
+    },
+    {
+     "title": "Senior Product Manager",
+     "location": "Tel Aviv, Israel",
+     "dept": "Advertiser Product Management",
+     "published": "2026-10-19",
+     "url": "https://www.taboola.com/careers/job/8278521?gh_jid=8278521"
+    },
+    {
+     "title": "Senior Product Manager",
+     "location": "Tel Aviv, Israel",
+     "dept": "Advertiser Product Management",
+     "published": "2026-10-14",
+     "url": "https://www.taboola.com/careers/job/8273430?gh_jid=8273430"
+    },
+    {
+     "title": "Senior Data Scientist",
+     "location": "Tel Aviv, Israel",
+     "dept": "Products and AI R&D",
+     "published": "2026-07-26",
+     "url": "https://www.taboola.com/careers/job/8087797?gh_jid=8087797"
+    },
+    {
+     "title": "Algorithm Engineer (RTB)",
+     "location": "Tel Aviv, Israel",
+     "dept": "Products and AI R&D",
+     "published": "2026-07-23",
+     "url": "https://www.taboola.com/careers/job/8081260?gh_jid=8081260"
+    },
+    {
+     "title": "Senior Algorithm Engineer (RTB)",
+     "location": "Tel Aviv, Israel",
+     "dept": "Products and AI R&D",
+     "published": "2026-07-15",
+     "url": "https://www.taboola.com/careers/job/8064004?gh_jid=8064004"
+    },
+    {
+     "title": "Data Platform Engineering Team Leader",
+     "location": "Tel Aviv, Israel",
+     "dept": "R&D - Infrastructure",
+     "published": "2026-06-18",
+     "url": "https://www.taboola.com/careers/job/7903597?gh_jid=7903597"
+    },
+    {
+     "title": "VP R&D",
+     "location": "Tel Aviv, Israel",
+     "dept": "R&D - Supply",
+     "published": "2026-03-15",
+     "url": "https://www.taboola.com/careers/job/7694156?gh_jid=7694156"
+    }
+   ],
+   "hooks": [
+    "Biggest new push: Advertising Sales (4 roles posted this month)",
+    "Top US pay posted: VP, Enterprise Advertising Sales - North America in New York City (NYC), New York, United States, $300,000-$375,000 base"
    ]
   },
   {
@@ -9383,15 +9454,15 @@
    "us_pay_roles": 0,
    "us_pay_median_mid": null,
    "top_paid": null,
-   "opened": 1,
-   "closed": 4,
+   "opened": 0,
+   "closed": 0,
    "latest_israel": [
     {
      "title": "Program Manager, Marketing",
      "location": "Tel Aviv - Israel",
      "dept": "Marketing",
      "published": "2026-11-13",
-     "url": "https://www.comeet.com/jobs/port/59.004/program-manager-marketing/FF.476?location=Tel%20Aviv%20-%20Israel"
+     "url": "https://www.comeet.com/jobs/port/59.004/program-manager-marketing/FF.476"
     },
     {
      "title": "BI Lead",
@@ -9444,14 +9515,13 @@
     }
    ],
    "hooks": [
-    "Biggest new push: Sales (5 roles posted this month)",
-    "1 roles opened, 4 closed since last snapshot"
+    "Biggest new push: Sales (5 roles posted this month)"
    ]
   },
   {
    "name": "Papaya Global",
    "ats": "comeet",
-   "jobs": 42,
+   "jobs": 41,
    "israel": 5,
    "israel_share": 0.12,
    "new30": 13,
@@ -9501,7 +9571,7 @@
    "us_pay_median_mid": null,
    "top_paid": null,
    "opened": 0,
-   "closed": 2,
+   "closed": 1,
    "latest_israel": [
     {
      "title": "IT Service Desk Specialist",
@@ -9529,7 +9599,7 @@
      "location": "Herzliya",
      "dept": "Operations",
      "published": "",
-     "url": "https://www.papayaglobal.com/positions/implementation-manager-56/?gh_src=Scale+Venture+Partners+job+board"
+     "url": "https://www.papayaglobal.com/positions/implementation-manager-56/"
     },
     {
      "title": "Product Manager",
@@ -9540,6 +9610,90 @@
     }
    ],
    "hooks": []
+  },
+  {
+   "name": "Overwolf",
+   "ats": "comeet",
+   "jobs": 8,
+   "israel": 4,
+   "israel_share": 0.5,
+   "new30": 2,
+   "israel_new30": 1,
+   "ai": 0,
+   "ai_israel": 0,
+   "ai_share_israel": 0.0,
+   "teams_israel": [
+    [
+     "Legal",
+     1
+    ],
+    [
+     "Business Development",
+     1
+    ],
+    [
+     "AI System",
+     1
+    ],
+    [
+     "Overwolf Ads",
+     1
+    ]
+   ],
+   "new_teams": [
+    [
+     "AI System",
+     1
+    ],
+    [
+     "Tebex",
+     1
+    ]
+   ],
+   "cities": [
+    [
+     "Israel (other)",
+     4
+    ]
+   ],
+   "us_pay_roles": 0,
+   "us_pay_median_mid": null,
+   "top_paid": null,
+   "opened": 1,
+   "closed": 0,
+   "latest_israel": [
+    {
+     "title": "Forward Deployed Specialist - Kiteline",
+     "location": "Overwolf's lair",
+     "dept": "AI System",
+     "published": "2026-11-26",
+     "url": "https://careers.overwolf.com/career/ED.579?src=LinkedIn"
+    },
+    {
+     "title": "Commercial & Compliance Legal Counsel",
+     "location": "Overwolf's lair",
+     "dept": "Legal",
+     "published": "",
+     "url": "https://careers.overwolf.com/career/FC.37D?src=LinkedIn"
+    },
+    {
+     "title": "Developer Relations Manager",
+     "location": "Overwolf's lair",
+     "dept": "Business Development",
+     "published": "",
+     "url": "https://careers.overwolf.com/career/A1.D4D"
+    },
+    {
+     "title": "Publisher Operations Manager",
+     "location": "Overwolf's lair",
+     "dept": "Overwolf Ads",
+     "published": "",
+     "url": "https://careers.overwolf.com/career/2A.27B?t=1795185111110"
+    }
+   ],
+   "hooks": [
+    "1 roles opened, 0 closed since last snapshot"
+   ]
   },
   {
    "name": "AI21 Labs",
@@ -9611,140 +9765,6 @@
      "dept": "Engineering",
      "published": "",
      "url": "https://www.ai21.com/careers/technical-project-manager-post-training/95.47D/"
-    }
-   ],
-   "hooks": []
-  },
-  {
-   "name": "Fiverr",
-   "ats": "comeet",
-   "jobs": 5,
-   "israel": 3,
-   "israel_share": 0.6,
-   "new30": 2,
-   "israel_new30": 1,
-   "ai": 0,
-   "ai_israel": 0,
-   "ai_share_israel": 0.0,
-   "teams_israel": [
-    [
-     "Technology",
-     1
-    ],
-    [
-     "G&A",
-     1
-    ],
-    [
-     "Customer Journey",
-     1
-    ]
-   ],
-   "new_teams": [
-    [
-     "Marketing",
-     1
-    ],
-    [
-     "G&A",
-     1
-    ]
-   ],
-   "cities": [
-    [
-     "Tel Aviv",
-     3
-    ]
-   ],
-   "us_pay_roles": 0,
-   "us_pay_median_mid": null,
-   "top_paid": null,
-   "opened": 0,
-   "closed": 1,
-   "latest_israel": [
-    {
-     "title": "Experienced Legal Counsel",
-     "location": "Tel Aviv",
-     "dept": "G&A",
-     "published": "2026-11-12",
-     "url": "https://www.fiverr.com/jobs/NTMuNTdE"
-    },
-    {
-     "title": "Development Team Leader",
-     "location": "Tel Aviv",
-     "dept": "Technology",
-     "published": "",
-     "url": "https://www.fiverr.com/jobs/QkQuNDdB"
-    },
-    {
-     "title": "Operation Manager, Content Moderation",
-     "location": "Tel Aviv",
-     "dept": "Customer Journey",
-     "published": "",
-     "url": "https://www.fiverr.com/jobs/ODMuMjcw"
-    }
-   ],
-   "hooks": []
-  },
-  {
-   "name": "D-ID",
-   "ats": "workable",
-   "jobs": 3,
-   "israel": 3,
-   "israel_share": 1.0,
-   "new30": 1,
-   "israel_new30": 1,
-   "ai": 1,
-   "ai_israel": 1,
-   "ai_share_israel": 0.33,
-   "teams_israel": [
-    [
-     "R&D",
-     2
-    ],
-    [
-     "Product",
-     1
-    ]
-   ],
-   "new_teams": [
-    [
-     "R&D",
-     1
-    ]
-   ],
-   "cities": [
-    [
-     "Tel Aviv",
-     3
-    ]
-   ],
-   "us_pay_roles": 0,
-   "us_pay_median_mid": null,
-   "top_paid": null,
-   "opened": 0,
-   "closed": 0,
-   "latest_israel": [
-    {
-     "title": "Senior Full Stack Developer",
-     "location": "Tel Aviv-Yafo, Israel",
-     "dept": "R&D",
-     "published": "2026-10-26",
-     "url": "https://apply.workable.com/j/536F1A63B7"
-    },
-    {
-     "title": "Senior Product Manager",
-     "location": "Tel Aviv-Yafo, Israel",
-     "dept": "Product",
-     "published": "2026-10-22",
-     "url": "https://apply.workable.com/j/A256513A9D"
-    },
-    {
-     "title": "AI Researcher - Video Generation",
-     "location": "Tel Aviv-Yafo, Israel",
-     "dept": "R&D",
-     "published": "2026-08-16",
-     "url": "https://apply.workable.com/j/514DE2B215"
     }
    ],
    "hooks": []
@@ -9985,7 +10005,7 @@
    "us_pay_median_mid": null,
    "top_paid": null,
    "opened": 0,
-   "closed": 1,
+   "closed": 0,
    "latest_israel": [
     {
      "title": "FP&A Specialist \u2013 AI & Automation",
@@ -10003,62 +10023,6 @@
     }
    ],
    "hooks": []
-  },
-  {
-   "name": "Salt Security",
-   "ats": "greenhouse",
-   "jobs": 15,
-   "israel": 1,
-   "israel_share": 0.07,
-   "new30": 8,
-   "israel_new30": 1,
-   "ai": 0,
-   "ai_israel": 0,
-   "ai_share_israel": 0.0,
-   "teams_israel": [
-    [
-     "Finance",
-     1
-    ]
-   ],
-   "new_teams": [
-    [
-     "Sales",
-     5
-    ],
-    [
-     "Finance",
-     1
-    ],
-    [
-     "G&A",
-     1
-    ]
-   ],
-   "cities": [
-    [
-     "Tel Aviv",
-     1
-    ]
-   ],
-   "us_pay_roles": 0,
-   "us_pay_median_mid": null,
-   "top_paid": null,
-   "opened": 1,
-   "closed": 0,
-   "latest_israel": [
-    {
-     "title": "Cloud Security Engineer",
-     "location": "Tel Aviv",
-     "dept": "Finance",
-     "published": "2026-11-02",
-     "url": "https://salt.security/job-board?gh_jid=5281314007"
-    }
-   ],
-   "hooks": [
-    "Biggest new push: Sales (5 roles posted this month)",
-    "1 roles opened, 0 closed since last snapshot"
-   ]
   },
   {
    "name": "Noma Security",
@@ -10280,56 +10244,56 @@
      "location": "Israel",
      "dept": "Velocity MDR",
      "published": "",
-     "url": "https://www.sygnia.co/careers/co/israel/49.477/detection-engineer/all/?_hsenc=p2ANqtz-9B8ynsSG2YiTMTjBK4rSJbSel4-oxnqnFWmaYtdhsejSth_g3Quc4If7nyDtF7LDRmEx-D1puL8XkRxw-9CRR-oElW1XjBJ3GSOLXESb6almuc8Y0&_hsmi=409366041"
+     "url": "https://www.sygnia.co/careers/co/israel/49.477/detection-engineer/all/?/?utm_cta=&gclsrc=3p.ds&hsLang=en&mkt_tok=undefined&regcode=SUMMIT-26-LIP"
     },
     {
      "title": "FP&A Analyst",
      "location": "Israel",
      "dept": "G&A",
      "published": "",
-     "url": "https://www.sygnia.co/careers/co/israel/21.470/fpa-analyst/all/?hsa_acc=507992289&hsa_cam=635441063&hsa_grp=221032113&hsa_net=linkedin&hsa_ver=3"
+     "url": "https://www.sygnia.co/careers/co/israel/21.470/fpa-analyst/all/"
     },
     {
      "title": "Incident Response Expert",
      "location": "Israel",
      "dept": "Incident Response",
      "published": "",
-     "url": "https://www.sygnia.co/careers/co/israel/CF.53A/incident-response-expert/all/?/=&mkt_tok=3p.ds&regcode=SUMMIT-26-LIP"
+     "url": "https://www.sygnia.co/careers/co/israel/CF.53A/incident-response-expert/all/?gclsrc=aw.ds&service_filter=&vertical_filter="
     },
     {
      "title": "Incident Response Manager",
      "location": "Israel",
      "dept": "Incident Response",
      "published": "",
-     "url": "https://www.sygnia.co/careers/co/israel/8C.27D/incident-response-manager/all/?/=&mkt_tok=MjUy&service_filter=75&vertical_filter="
+     "url": "https://www.sygnia.co/careers/co/israel/8C.27D/incident-response-manager/all/?_hsenc=p2ANqtz-8Yg4O4LtdDpxCMa0g0I2B8WTfreCPH2J-cm9lD5HthpciBs9Ujo8Aj7gJ1tphn8fKyNQ56WvB2thtYbqqh8x4B_rKZQOOvcMEexpV1kByLsE-Mxz8&_hsmi=450799331"
     },
     {
      "title": "Incident Response Team Lead",
      "location": "Israel",
      "dept": "Incident Response",
      "published": "",
-     "url": "https://www.sygnia.co/careers/co/israel/EA.370/incident-response-team-lead/all/?hsa_acc=507992289&hsa_cam=635441063&hsa_net=linkedin"
+     "url": "https://www.sygnia.co/careers/co/israel/EA.370/incident-response-team-lead/all/?;amp;hsLang=en"
     },
     {
      "title": "Senior DevOps Engineer",
      "location": "Israel",
      "dept": "R&D",
      "published": "",
-     "url": "https://www.sygnia.co/careers/co/israel/0C.278/senior-devops-engineer/all/?gclsrc=aw.ds"
+     "url": "https://www.sygnia.co/careers/co/israel/0C.278/senior-devops-engineer/all/?gclsrc=aw.ds&mkt_tok=3p.ds&regcode=SUMMITCLIMBER-300"
     },
     {
      "title": "Senior DevSecOps Engineer",
      "location": "Israel",
      "dept": "R&D",
      "published": "",
-     "url": "https://www.sygnia.co/careers/co/israel/EF.868/senior-devsecops-engineer/all/?__hsfp=1288459853&__hssc=242190173.1.1763918055115&__hstc=242190173.3c09ab01feded4e75321ff34c79f0cad.1763918055114.1763918055114.1763918055114.1&category=98"
+     "url": "https://www.sygnia.co/careers/co/israel/EF.868/senior-devsecops-engineer/all/"
     },
     {
      "title": "Senior Full Stack Engineer",
      "location": "Israel",
      "dept": "R&D",
      "published": "",
-     "url": "https://www.sygnia.co/careers/co/israel/CB.27E/senior-full-stack-engineer/all???????="
+     "url": "https://www.sygnia.co/careers/co/israel/CB.27E/senior-full-stack-engineer/all/"
     },
     {
      "title": "SOC Analyst",
@@ -10409,7 +10373,7 @@
      "location": "Tel Aviv, Israel",
      "dept": "R&D",
      "published": "",
-     "url": "https://www.oligo.security/positions/position-12_f54"
+     "url": "https://www.oligo.security/positions/position-12_f54?gh_src=Red%20Dot%20Capital%20Partners%20job%20board"
     },
     {
      "title": "Low-level Quality Lead",
@@ -10545,10 +10509,10 @@
   {
    "name": "Novee Security",
    "ats": "comeet",
-   "jobs": 12,
+   "jobs": 11,
    "israel": 5,
-   "israel_share": 0.42,
-   "new30": 1,
+   "israel_share": 0.45,
+   "new30": 0,
    "israel_new30": 0,
    "ai": 2,
    "ai_israel": 2,
@@ -10571,12 +10535,7 @@
      1
     ]
    ],
-   "new_teams": [
-    [
-     "Sales",
-     1
-    ]
-   ],
+   "new_teams": [],
    "cities": [
     [
      "Tel Aviv",
@@ -10587,7 +10546,7 @@
    "us_pay_median_mid": null,
    "top_paid": null,
    "opened": 0,
-   "closed": 0,
+   "closed": 1,
    "latest_israel": [
     {
      "title": "AI Engineer",
@@ -10608,7 +10567,7 @@
      "location": "Tel Aviv Office",
      "dept": "Engineering",
      "published": "",
-     "url": "https://novee.security/careers/co/tel-aviv-office/03.47F/full-stack-engineer/all/"
+     "url": "https://novee.security/careers/co/tel-aviv-office/03.47f/full-stack-engineer/all/#apply_form"
     },
     {
      "title": "Head of Technical Alliances & Partnerships",
@@ -10674,7 +10633,7 @@
      "location": "Tel Aviv",
      "dept": "Business",
      "published": "",
-     "url": "https://www.naturalint.com/jobs/co/tel-aviv/43.F61/business-development-manager/all/?t=1795603136835"
+     "url": "https://www.naturalint.com/jobs/co/tel-aviv/43.F61/business-development-manager/all/?t=1795607008542&fbclid=IwdGRleAV1EO9leHRuA2FlbQIxMQBwZG9mBWZkaWQWUS_tcIbUAqSxx3GeKnqbrErCWkW1jXNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR85uJGkcJyr8IHnPIte4dnqPPdBiXrGrO5Ofk8iDyFyS-MelK0qDclsvWz2TA_aem_o_eJle2IUC-lN20eVZ3HwA"
     },
     {
      "title": "Content Marketing Manager",
@@ -10695,14 +10654,14 @@
      "location": "Tel Aviv",
      "dept": "Analytics",
      "published": "",
-     "url": "https://www.naturalint.com/jobs/co/tel-aviv/9C.37C/marketing-analyst/all/?t=1795601749199"
+     "url": "https://www.naturalint.com/jobs/co/tel-aviv/9C.37C/marketing-analyst/all/?t=1795606798093&fbclid=IwY2xjawV1EWZleHRuA2FlbQIxMABwZG9mBXNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR-VNOg6KY_b18w5wZGWgUGX-HMigSzsmGvpLXBmrnQIkcXr7CZ6Sxx4rLXzCA_aem_jDhaZ8Y0T053w6H56Nfi7w"
     },
     {
      "title": "Natural Intelligence career opportunity",
      "location": "Tel Aviv",
      "dept": "Other",
      "published": "",
-     "url": "https://www.naturalint.com/jobs/?t=1795606853861"
+     "url": "https://www.naturalint.com/jobs/"
     }
    ],
    "hooks": []
@@ -10816,7 +10775,7 @@
    "us_pay_median_mid": null,
    "top_paid": null,
    "opened": 0,
-   "closed": 1,
+   "closed": 0,
    "latest_israel": [
     {
      "title": "Applied AI Researcher",
@@ -10895,28 +10854,28 @@
      "location": "Israel",
      "dept": "Engineering.06",
      "published": "",
-     "url": "https://gloat.com/careers-at-gloat/co/israel/90.376/ai-engineer-team-leader/all/"
+     "url": "https://synq.ai/company/careers/90-376/ai-engineer-team-leader"
     },
     {
      "title": "Demand Generation lead- AI Native",
      "location": "Israel",
      "dept": "Marketing.03",
      "published": "",
-     "url": "https://gloat.com/careers-at-gloat/co/israel/14.E64/growth-marketing-lead-ai-native/all/?gh_src=HighFive+Partners+job+board"
+     "url": "https://synq.ai/company/careers/14-E64/demand-generation-lead-ai-native"
     },
     {
      "title": "Senior AI Engineer - Agentic Systems",
      "location": "Israel",
      "dept": "Engineering.06",
      "published": "",
-     "url": "https://gloat.com/careers-at-gloat/co/israel/44.F6B/senior-ai-engineer-agentic-systems/"
+     "url": "https://synq.ai/company/careers/44-F6B/senior-ai-engineer-agentic-systems"
     },
     {
      "title": "Senior Backend Engineer",
      "location": "Israel",
      "dept": "Engineering.06",
      "published": "",
-     "url": "https://gloat.com/careers-at-gloat/co/israel/13.F62/senior-backend-engineer/all/"
+     "url": "https://synq.ai/company/careers/13-F62/senior-backend-engineer"
     }
    ],
    "hooks": [
@@ -10987,7 +10946,7 @@
   {
    "name": "OX Security",
    "ats": "comeet",
-   "jobs": 31,
+   "jobs": 30,
    "israel": 3,
    "israel_share": 0.1,
    "new30": 2,
@@ -11020,8 +10979,8 @@
    "us_pay_roles": 0,
    "us_pay_median_mid": null,
    "top_paid": null,
-   "opened": 1,
-   "closed": 3,
+   "opened": 0,
+   "closed": 1,
    "latest_israel": [
     {
      "title": "AI Security Team Leader (Backend Focus)",
@@ -11045,9 +11004,7 @@
      "url": "https://www.ox.security/careers-position/co/ramat-gan/1C.379/team-leader-agentic-pentest/all"
     }
    ],
-   "hooks": [
-    "1 roles opened, 3 closed since last snapshot"
-   ]
+   "hooks": []
   },
   {
    "name": "Aqua Security",
@@ -11082,7 +11039,7 @@
    "us_pay_median_mid": null,
    "top_paid": null,
    "opened": 0,
-   "closed": 1,
+   "closed": 0,
    "latest_israel": [
     {
      "title": "Senior Machine Learning & AI Engineer",
@@ -11104,73 +11061,6 @@
      "dept": "Engineering",
      "published": "",
      "url": "https://www.aquasec.com/about-us/careers/co/ramat-gan-israel/1D.F68/senior-software-architect-ai-products/all/"
-    }
-   ],
-   "hooks": []
-  },
-  {
-   "name": "Overwolf",
-   "ats": "comeet",
-   "jobs": 7,
-   "israel": 3,
-   "israel_share": 0.43,
-   "new30": 1,
-   "israel_new30": 0,
-   "ai": 0,
-   "ai_israel": 0,
-   "ai_share_israel": 0.0,
-   "teams_israel": [
-    [
-     "Legal",
-     1
-    ],
-    [
-     "Business Development",
-     1
-    ],
-    [
-     "Overwolf Ads",
-     1
-    ]
-   ],
-   "new_teams": [
-    [
-     "Tebex",
-     1
-    ]
-   ],
-   "cities": [
-    [
-     "Israel (other)",
-     3
-    ]
-   ],
-   "us_pay_roles": 0,
-   "us_pay_median_mid": null,
-   "top_paid": null,
-   "opened": 0,
-   "closed": 0,
-   "latest_israel": [
-    {
-     "title": "Commercial & Compliance Legal Counsel",
-     "location": "Overwolf's lair",
-     "dept": "Legal",
-     "published": "",
-     "url": "https://careers.overwolf.com/career/FC.37D"
-    },
-    {
-     "title": "Developer Relations Manager",
-     "location": "Overwolf's lair",
-     "dept": "Business Development",
-     "published": "",
-     "url": "https://careers.overwolf.com/career/A1.D4D"
-    },
-    {
-     "title": "Publisher Operations Manager",
-     "location": "Overwolf's lair",
-     "dept": "Overwolf Ads",
-     "published": "",
-     "url": "https://careers.overwolf.com/career/2A.27B"
     }
    ],
    "hooks": []
@@ -11227,14 +11117,14 @@
      "location": "Tel Aviv, Israel",
      "dept": "Engineering",
      "published": "",
-     "url": "https://cycode.com/careers/position/?pos_title=backend-engineer&pos_id=FF.049"
+     "url": "https://cycode.com/careers/position/?pos_id=FF.049&pos_title=backend-engineer"
     },
     {
      "title": "DevOps Team Lead",
      "location": "Tel Aviv, Israel",
      "dept": "Engineering",
      "published": "",
-     "url": "https://cycode.com/careers/position/?pos_title=devops-team-lead&pos_id=10.96B"
+     "url": "https://cycode.com/careers/position/?pos_id=10.96B"
     },
     {
      "title": "Explore New Opportunities",
@@ -11242,6 +11132,64 @@
      "dept": "",
      "published": "",
      "url": "https://cycode.com/careers/"
+    }
+   ],
+   "hooks": []
+  },
+  {
+   "name": "D-ID",
+   "ats": "workable",
+   "jobs": 3,
+   "israel": 3,
+   "israel_share": 1.0,
+   "new30": 0,
+   "israel_new30": 0,
+   "ai": 1,
+   "ai_israel": 1,
+   "ai_share_israel": 0.33,
+   "teams_israel": [
+    [
+     "R&D",
+     2
+    ],
+    [
+     "Product",
+     1
+    ]
+   ],
+   "new_teams": [],
+   "cities": [
+    [
+     "Tel Aviv",
+     3
+    ]
+   ],
+   "us_pay_roles": 0,
+   "us_pay_median_mid": null,
+   "top_paid": null,
+   "opened": 0,
+   "closed": 0,
+   "latest_israel": [
+    {
+     "title": "Senior Full Stack Developer",
+     "location": "Tel Aviv-Yafo, Israel",
+     "dept": "R&D",
+     "published": "2026-10-26",
+     "url": "https://apply.workable.com/j/536F1A63B7"
+    },
+    {
+     "title": "Senior Product Manager",
+     "location": "Tel Aviv-Yafo, Israel",
+     "dept": "Product",
+     "published": "2026-10-22",
+     "url": "https://apply.workable.com/j/A256513A9D"
+    },
+    {
+     "title": "AI Researcher - Video Generation",
+     "location": "Tel Aviv-Yafo, Israel",
+     "dept": "R&D",
+     "published": "2026-08-16",
+     "url": "https://apply.workable.com/j/514DE2B215"
     }
    ],
    "hooks": []
@@ -11279,7 +11227,7 @@
    "us_pay_median_mid": null,
    "top_paid": null,
    "opened": 0,
-   "closed": 2,
+   "closed": 0,
    "latest_israel": [
     {
      "title": "Product Designer Usability & Customer Research",
@@ -11451,9 +11399,9 @@
   {
    "name": "Island",
    "ats": "greenhouse",
-   "jobs": 22,
+   "jobs": 24,
    "israel": 1,
-   "israel_share": 0.05,
+   "israel_share": 0.04,
    "new30": 9,
    "israel_new30": 0,
    "ai": 1,
@@ -11468,15 +11416,15 @@
    "new_teams": [
     [
      "Marketing",
-     4
-    ],
-    [
-     "Support",
      2
     ],
     [
      "Mid Market Sales",
-     1
+     2
+    ],
+    [
+     "Support",
+     2
     ]
    ],
    "cities": [
@@ -11488,7 +11436,7 @@
    "us_pay_roles": 0,
    "us_pay_median_mid": null,
    "top_paid": null,
-   "opened": 3,
+   "opened": 2,
    "closed": 0,
    "latest_israel": [
     {
@@ -11500,8 +11448,7 @@
     }
    ],
    "hooks": [
-    "Biggest new push: Marketing (4 roles posted this month)",
-    "3 roles opened, 0 closed since last snapshot"
+    "2 roles opened, 0 closed since last snapshot"
    ]
   },
   {
@@ -11587,10 +11534,10 @@
   {
    "name": "Snyk",
    "ats": "ashby",
-   "jobs": 36,
+   "jobs": 35,
    "israel": 1,
    "israel_share": 0.03,
-   "new30": 12,
+   "new30": 11,
    "israel_new30": 0,
    "ai": 1,
    "ai_israel": 0,
@@ -11608,7 +11555,7 @@
     ],
     [
      "R&D",
-     4
+     3
     ],
     [
      "G&A",
@@ -11621,8 +11568,8 @@
      1
     ]
    ],
-   "us_pay_roles": 17,
-   "us_pay_median_mid": 210000,
+   "us_pay_roles": 16,
+   "us_pay_median_mid": 213000,
    "top_paid": {
     "title": "Account Director - Southeast",
     "location": "United States - GA Remote",
@@ -11630,7 +11577,7 @@
     "max": 340000
    },
    "opened": 0,
-   "closed": 2,
+   "closed": 1,
    "latest_israel": [
     {
      "title": "Account Director Central",
